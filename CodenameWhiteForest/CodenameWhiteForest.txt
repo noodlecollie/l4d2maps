@@ -1,0 +1,55 @@
+			   _____           _                                 
+			  / ____|         | |                                
+			 | |      ___   __| | ___ _ __   __ _ _ __ ___   ___ 
+			 | |     / _ \ / _` |/ _ \ '_ \ / _` | '_ ` _ \ / _ \
+			 | |____| (_) | (_| |  __/ | | | (_| | | | | | |  __/
+			  \_____|\___/ \__,_|\___|_| |_|\__,_|_| |_| |_|\___|
+		 __          ___     _ _          ______                 _   
+		 \ \        / / |   (_) |        |  ____|               | |  
+		  \ \  /\  / /| |__  _| |_  ___  | |__ ___  _ __ ___ ___| |_ 
+		   \ \/  \/ / | '_ \| | __|/ _ \ |  __/ _ \| '__/ _ | __| __|
+			\  /\  /  | | | | | |_|  __/ | | | (_) | | |  __|__ \ |_ 
+			 \/  \/   |_| |_|_|\__|\___| |_|  \___/|_|  \___|___/\__|
+	 
+	Does a falling tree make a noise if no-one's alive to hear it?
+	A customised Half-Life 2: Episode 2 conversion by [X6] Herbius, 23/03/2012
+
+Notes:
+	Include radio tower from EP2 in the former Hunter area.
+	
+Entities that can be safely removed from decompiled maps:
+info_node*
+item*
+weapon*
+ai_*
+ais*
+script*
+npc_*
+color*
+env_tonemap*
+shadow*
+light_env*
+env_fog*
+logic_choreo*
+logic_* (but check map-specific functions)
+env_cubemap
+env_soundscape*
+game*
+point_template
+info_player_start
+info_landmark
+filter_*
+*vehicle*
+info_particle_system
+info_target
+
+scenes/gambler/worldc3m1b06.vcd
+scenes/producer/worldc1m3b30.vcd
+scenes/coach/dlc1_c6m1_initialmeeting10.vcd
+scenes/gambler/worldc1m4b04.vcd
+
+Map 1: Antlion guard map leads on to bridge map. Antlion guard area is a dense forest with huts, like in the woodland approach at the start of Blood Harvest. Lift up cliffside causes panic event. Bridge in next area is fixed but requires getting to other side. Alarmed cars on bridge.
+Map 2: Hunter area leads on to Advisor map. Advisor area leads on to train track area, triggers an alarm, survivors have to turn off the alarm (maybe run to the safe room instead if it's not too far?).
+Map 3: Helicopter map leads on to autogun map. Alarmed cars in autogun area.
+
+Content unable to be moved to its own folder:
