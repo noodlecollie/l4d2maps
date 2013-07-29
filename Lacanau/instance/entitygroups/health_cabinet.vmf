@@ -1,0 +1,464 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5852"
+	"mapversion" "128"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "1"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "128"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"musicpostfix" "Waterfront"
+	"skyname" "sky_l4d_rural02_hdr"
+	group
+	{
+		"id" "1998"
+		editor
+		{
+			"color" "248 205 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "2019"
+		editor
+		{
+			"color" "222 187 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "1629"
+	"classname" "weapon_first_aid_kit_spawn"
+	"angles" "0 180 -90"
+	"body" "0"
+	"disableshadows" "0"
+	"model" "models/w_models/weapons/w_eq_defibrillator.mdl"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "item"
+	"origin" "1.12061 -1 -0.173374"
+	editor
+	{
+		"color" "248 205 0"
+		"groupid" "1998"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "1514"
+	"classname" "prop_dynamic"
+	"angles" "0 180 -90"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"disableX360" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"glowrange" "0"
+	"glowrangemin" "0"
+	"glowstate" "0"
+	"LagCompensate" "0"
+	"MaxAnimTime" "10"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"MinAnimTime" "5"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "models/w_models/weapons/w_eq_medkit.mdl"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "prop_item"
+	"updatechildren" "0"
+	"origin" "1.12061 -1 -0.173374"
+	editor
+	{
+		"color" "248 205 0"
+		"groupid" "1998"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "1930"
+	"classname" "prop_dynamic"
+	"angles" "0 180 -90"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"disableX360" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"glowrange" "0"
+	"glowrangemin" "0"
+	"glowstate" "0"
+	"LagCompensate" "0"
+	"MaxAnimTime" "10"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"MinAnimTime" "5"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "models/w_models/weapons/w_eq_medkit.mdl"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "prop_item"
+	"updatechildren" "0"
+	"origin" "1.12061 9 -0.173374"
+	editor
+	{
+		"color" "222 187 0"
+		"groupid" "2019"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "1934"
+	"classname" "weapon_first_aid_kit_spawn"
+	"angles" "0 180 -90"
+	"body" "0"
+	"disableshadows" "0"
+	"model" "models/w_models/weapons/w_eq_defibrillator.mdl"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "item"
+	"origin" "1.12061 9 -0.173374"
+	editor
+	{
+		"color" "222 187 0"
+		"groupid" "2019"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "28"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "template_item"
+	"Template02" "item"
+	"origin" "19.1206 16 -0.736574"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "183"
+	"classname" "logic_relay"
+	"spawnflags" "1"
+	"StartDisabled" "0"
+	"targetname" "relay_item_restock"
+	connections
+	{
+		"OnTrigger" "template_itemForceSpawn0-1"
+		"OnTrigger" "prop_itemKill0-1"
+		"OnTrigger" "health_cabinetSetAnimationOpen01"
+		"OnTrigger" "template_itemKill0.1-1"
+		"OnTrigger" "signKill0.1-1"
+		"OnTrigger" "hintFireUser401"
+	}
+	"origin" "19.1206 -16 -0.736574"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "1950"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"disableX360" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "78 184 41"
+	"glowrange" "240"
+	"glowrangemin" "0"
+	"glowstate" "3"
+	"LagCompensate" "0"
+	"MaxAnimTime" "10"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"MinAnimTime" "5"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "models/props_buildables/buildable_button.mdl"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "sign"
+	"updatechildren" "0"
+	"origin" "1.12061 1.6687e-007 -21.7366"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1954"
+	"classname" "point_script_use_target"
+	"model" "sign"
+	"origin" "19.12 0 -0.74"
+	"targetname" "use_target_cabinet"
+	"vscripts" "usetargets/health_cabinet"
+	connections
+	{
+		"OnUser1" "relay_item_restockTrigger0-1"
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "2038"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"disableX360" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"glowrange" "0"
+	"glowrangemin" "0"
+	"glowstate" "0"
+	"LagCompensate" "0"
+	"MaxAnimTime" "10"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"MinAnimTime" "5"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "models/props_buildables/small_cabinet_firstaid.mdl"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "health_cabinet"
+	"updatechildren" "0"
+	"origin" "0.12061 0 -8.73657"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "2057"
+	"classname" "env_instructor_hint"
+	"hint_allow_nodraw_target" "1"
+	"hint_alphaoption" "0"
+	"hint_auto_start" "1"
+	"hint_binding" "+use"
+	"hint_caption" "These healthkits are free!"
+	"hint_color" "255 255 255"
+	"hint_display_limit" "2"
+	"hint_forcecaption" "1"
+	"hint_icon_offscreen" "icon_tip"
+	"hint_icon_offset" "0"
+	"hint_icon_onscreen" "use_binding"
+	"hint_instance_type" "2"
+	"hint_name" "health_cabinet_lesson"
+	"hint_nooffscreen" "0"
+	"hint_pulseoption" "0"
+	"hint_range" "130"
+	"hint_shakeoption" "0"
+	"hint_static" "0"
+	"hint_suppress_rest" "1"
+	"hint_target" "cabinet"
+	"hint_timeout" "5"
+	"targetname" "hint"
+	connections
+	{
+		"OnUser4" "!selfEndHint0-1"
+		"OnUser4" "!selfKill0.01-1"
+	}
+	"origin" "-0.572197 -1.08785 17.2634"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "2059"
+	"classname" "logic_branch"
+	"InitialValue" "$show_hint"
+	"targetname" "hint_branch"
+	connections
+	{
+		"OnFalse" "!selfKill0-1"
+		"OnFalse" "hintFireUser40-1"
+		"OnTrue" "!selfKill0.1-1"
+	}
+	"origin" "-0.572197 -1.08785 17.2634"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "2061"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "hint_branchTest0-1"
+	}
+	"origin" "-0.572197 -1.08785 17.2634"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "2063"
+	"classname" "func_instance_parms"
+	"parm1" "$show_hint string 0"
+	"origin" "-0.572197 -1.08785 22.9716"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+cameras
+{
+	"activecamera" "0"
+	camera
+	{
+		"position" "[96.252 -50.6557 49.5678]"
+		"look" "[45.915 -3.386 27.663]"
+	}
+	camera
+	{
+		"position" "[21.0504 53.4614 65.6332]"
+		"look" "[-19.7992 -2.76105 45.1796]"
+	}
+}
+cordons
+{
+	"active" "0"
+}

@@ -1,0 +1,881 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5712"
+	"mapversion" "7"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "1"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "7"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"musicpostfix" "Waterfront"
+	"skyname" "sky_l4d_rural02_hdr"
+}
+entity
+{
+	"id" "2"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"glowrange" "0"
+	"glowrangemin" "0"
+	"glowstate" "0"
+	"LagCompensate" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_vehicles/floodlight_generator_nolight_static.mdl"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 128 64"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"updatechildren" "0"
+	"origin" "0.906898 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "6"
+	"classname" "point_spotlight"
+	"angles" "-45 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HaloScale" "60"
+	"HDRColorScale" "0.7"
+	"parentname" "generator_1_spotlight_4_body"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "0"
+	"spotlightlength" "500"
+	"spotlightwidth" "50"
+	"targetname" "generator_1_spotlight_4"
+	connections
+	{
+		"OnLightOff" "generator_1_spotlight_4_bodySkin10-1"
+		"OnLightOn" "generator_1_spotlight_4_bodySkin00-1"
+		"OnLightOff" "generator_1_light_off_soundPlaySound0-1"
+		"OnLightOn" "generator_1_light_on_soundPlaySound0-1"
+	}
+	"origin" "2.3338 18.741 95"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -3768]"
+	}
+}
+entity
+{
+	"id" "8"
+	"classname" "prop_dynamic"
+	"angles" "-45 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_lamp.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "generator_1_spotlight_2_body"
+	"origin" "1.9069 -35 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "12"
+	"classname" "prop_dynamic"
+	"angles" "-45 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_lamp.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "6"
+	"targetname" "generator_1_spotlight_1_body"
+	"origin" "26.9069 -9.99999 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "16"
+	"classname" "prop_dynamic"
+	"angles" "-45 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_lamp.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "6"
+	"targetname" "generator_1_spotlight_4_body"
+	"origin" "1.9069 15 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "20"
+	"classname" "prop_dynamic"
+	"angles" "-45 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_lamp.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "generator_1_spotlight_3_body"
+	"origin" "-23.0931 -9.99999 86"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "24"
+	"classname" "point_spotlight"
+	"angles" "-45 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HaloScale" "60"
+	"HDRColorScale" "0.7"
+	"parentname" "generator_1_spotlight_2_body"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "0"
+	"spotlightlength" "500"
+	"spotlightwidth" "50"
+	"targetname" "generator_1_spotlight_2"
+	connections
+	{
+		"OnLightOff" "generator_1_spotlight_2_bodySkin10-1"
+		"OnLightOn" "generator_1_spotlight_2_bodySkin00-1"
+		"OnLightOn" "generator_1_light_on_soundPlaySound0-1"
+		"OnLightOff" "generator_1_light_off_soundPlaySound0-1"
+	}
+	"origin" "3 -38 95"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -3768]"
+	}
+}
+entity
+{
+	"id" "26"
+	"classname" "point_spotlight"
+	"angles" "-45 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HaloScale" "60"
+	"HDRColorScale" "0.7"
+	"parentname" "generator_1_spotlight_1_body"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "0"
+	"spotlightlength" "500"
+	"spotlightwidth" "50"
+	"targetname" "generator_1_spotlight_1"
+	connections
+	{
+		"OnLightOff" "generator_1_spotlight_1_bodySkin10-1"
+		"OnLightOn" "generator_1_spotlight_1_bodySkin00-1"
+		"OnLightOff" "generator_1_light_off_soundPlaySound0-1"
+		"OnLightOn" "generator_1_light_on_soundPlaySound0-1"
+	}
+	"origin" "31 -10 95"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -3768]"
+	}
+}
+entity
+{
+	"id" "28"
+	"classname" "point_spotlight"
+	"angles" "-45 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HaloScale" "60"
+	"HDRColorScale" "0.7"
+	"parentname" "generator_1_spotlight_3_body"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "0"
+	"spotlightlength" "500"
+	"spotlightwidth" "50"
+	"targetname" "generator_1_spotlight_3"
+	connections
+	{
+		"OnLightOn" "generator_1_spotlight_3_bodySkin00-1"
+		"OnLightOff" "generator_1_spotlight_3_bodySkin10-1"
+		"OnLightOff" "generator_1_light_off_soundPlaySound0-1"
+		"OnLightOn" "generator_1_light_on_soundPlaySound0-1"
+	}
+	"origin" "-27 -10 95"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -3768]"
+	}
+}
+entity
+{
+	"id" "30"
+	"classname" "prop_dynamic"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_base.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "1.9069 -29 82.3421"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "34"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_base.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "20.9069 -9.99999 82.3421"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "38"
+	"classname" "prop_dynamic"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_base.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "1.9069 9 82.3421"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "42"
+	"classname" "prop_dynamic"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_wasteland/light_spotlight01_base.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-17.0931 -9.99999 82.3421"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "46"
+	"classname" "func_rotating"
+	"angles" "0 0 0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"disableX360" "0"
+	"dmg" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"fanfriction" "20"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"maxspeed" "30"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"origin" "1.91 -10 64.99"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"solidbsp" "0"
+	"spawnflags" "144"
+	"targetname" "generator_1_spotlight_rotator"
+	"volume" "10"
+	connections
+	{
+		"OnUser2" "generator_1_stop_soundPlaySound0-1"
+		"OnUser2" "generator_1_idle_soundStopSound0-1"
+		"OnUser4" "generator_1_idle_soundPlaySound0-1"
+		"OnUser2" "generator_1_sputter_soundStopSound0-1"
+		"OnUser1" "generator_1_brake_light_spriteShowSprite0-1"
+		"OnUser2" "generator_1_brake_light_spriteHideSprite0-1"
+		"OnUser3" "generator_1_sputter_soundPlaySound0-1"
+		"OnUser3" "generator_1_idle_soundStopSound2-1"
+		"OnUser4" "generator_1_sputter_soundStopSound0-1"
+		"OnUser3" "generator_1_idle_soundPlaySound0-1"
+	}
+	solid
+	{
+		"id" "52"
+		side
+		{
+			"id" "78"
+			"plane" "(-0.0931015 -12 60.0003) (-0.0931015 -8.00166 60.0003) (-0.0931015 -8.00166 68.999)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 0 1 -11.996] 0.25"
+			"vaxis" "[0 -1 0 -0.00139618] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "77"
+			"plane" "(3.9069 -8.00166 60.0003) (3.9069 -12 60.0003) (3.9069 -12 68.999)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 0 1 -11.996] 0.25"
+			"vaxis" "[0 -1 0 -0.00139618] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "76"
+			"plane" "(-0.09375 -8.00166 59.999) (-0.09375 -12 59.999) (3.9069 -12 59.999)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0.00139618] 0.25"
+			"vaxis" "[1 0 0 -43.627] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "75"
+			"plane" "(-0.09375 -12 68.999) (-0.09375 -8.00166 68.999) (3.9069 -8.00166 68.999)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0.00139618] 0.25"
+			"vaxis" "[1 0 0 -43.627] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "74"
+			"plane" "(-0.09375 -7.99999 68.999) (-0.09375 -7.99999 60.0003) (3.9069 -7.99999 60.0003)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 0 1 -11.996] 0.25"
+			"vaxis" "[1 0 0 -43.627] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "73"
+			"plane" "(3.9069 -12 68.999) (3.9069 -12 60.0003) (-0.09375 -12 60.0003)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 0 1 -11.996] 0.25"
+			"vaxis" "[1 0 0 -43.627] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "55"
+	"classname" "logic_script"
+	"targetname" "@generator_script"
+	"thinkfunction" "GeneratorThink"
+	"vscripts" "holdout_searchlight"
+	"origin" "-45.2756 -21.627 9.7347"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "57"
+	"classname" "point_prop_use_target"
+	"nozzle" "gas_nozzle"
+	"origin" "6.3 -57.66 54.15"
+	"spawnflags" "1"
+	"targetname" "pour_target"
+	connections
+	{
+		"OnUseFinished" "@generator_scriptRunScriptCodeAddFuel()0-1"
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "60"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"disablereceiveshadows" "1"
+	"disableshadows" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "2200"
+	"fademindist" "2000"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "255 31 26"
+	"glowrange" "1800"
+	"glowstate" "3"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_vehicles/radio_generator_fillup.mdl"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "0"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "gas_nozzle"
+	"updatechildren" "0"
+	"origin" "2.02121 2.3892 -0.828777"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 -4268]"
+	}
+}
+entity
+{
+	"id" "64"
+	"classname" "info_game_event_proxy"
+	"event_name" "explain_scavenge_goal"
+	"range" "800"
+	"spawnflags" "1"
+	"targetname" "event_scavenge_pour"
+	"origin" "2.16168 -49.654 65.7347"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "66"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "scavenge.generator_turnoff"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "generator_1_stop_sound"
+	"volstart" "0"
+	"origin" "0 -66.654 23.7347"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "69"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "scavenge.generator_sputter_loop"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "16"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "generator_1_sputter_sound"
+	"volstart" "0"
+	"origin" "17 -64.654 15.7347"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "72"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "scavenge.generator_on_loop"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "16"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "generator_1_idle_sound"
+	"volstart" "0"
+	"origin" "-17 -68.654 16.7347"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "75"
+	"classname" "env_sprite"
+	"disablereceiveshadows" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"framerate" "10.0"
+	"GlowProxySize" "4"
+	"HDRColorScale" ".7"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "sprites/light_glow01.vmt"
+	"renderamt" "240"
+	"rendercolor" "255 61 55"
+	"renderfx" "0"
+	"rendermode" "9"
+	"scale" "0.39"
+	"spawnflags" "0"
+	"targetname" "generator_1_brake_light_sprite"
+	"origin" "-17 -48.654 30.7347"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 11000]"
+	}
+}
+entity
+{
+	"id" "78"
+	"classname" "env_sprite"
+	"disablereceiveshadows" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"framerate" "10.0"
+	"GlowProxySize" "4"
+	"HDRColorScale" ".7"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "sprites/light_glow01.vmt"
+	"renderamt" "240"
+	"rendercolor" "255 61 55"
+	"renderfx" "0"
+	"rendermode" "9"
+	"scale" "0.39"
+	"spawnflags" "0"
+	"targetname" "generator_1_brake_light_sprite"
+	"origin" "18 -47.654 29.7347"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 11000]"
+	}
+}
+entity
+{
+	"id" "81"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "c2m5.stage_light_on"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "generator_1_light_on_sound"
+	"volstart" "0"
+	"origin" "-20 -37.654 71.857"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "84"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "c2m5.house_light_off"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "generator_1_light_off_sound"
+	"volstart" "0"
+	"origin" "-3 -38.654 71.857"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "138"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_buildables/spotlight_arms.mdl"
+	"parentname" "generator_1_spotlight_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "2 -10 56"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

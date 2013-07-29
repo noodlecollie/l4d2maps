@@ -1,0 +1,221 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5852"
+	"mapversion" "34"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "4"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "34"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"musicpostfix" "Waterfront"
+	"skyname" "sky_l4d_rural02_hdr"
+}
+entity
+{
+	"id" "2"
+	"classname" "prop_dynamic"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_collectables/alchemy_table.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"targetname" "combiner_model"
+	"origin" "0 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "75"
+	"classname" "logic_script"
+	"Group00" "combiner_model"
+	"Group01" "combiner_spawn_target"
+	"Group02" "combiner_creation_fx_relay"
+	"targetname" "combiner_script"
+	"thinkfunction" "Think"
+	"vscripts" "usetargets/combiner"
+	"origin" "0 0 28"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "135"
+	"classname" "prop_dynamic_override"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_collectables/piepan.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"targetname" "combiner_spawn_target"
+	"origin" "-24 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "248"
+	"classname" "info_particle_system"
+	"angles" "-90 0 0"
+	"effect_name" "electrical_arc_01_system"
+	"targetname" "combiner_creation_particles"
+	"origin" "-24 0 4"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1507"
+	"classname" "info_particle_target"
+	"angles" "0 0 0"
+	"targetname" "combiner_creation_arc_particles_target_2"
+	"origin" "-24 0 0.508902"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1509"
+	"classname" "info_particle_system"
+	"angles" "-90 0 0"
+	"cpoint1" "combiner_creation_arc_particles_target_1"
+	"cpoint2" "combiner_creation_arc_particles_target_2"
+	"effect_name" "electrical_arc_01"
+	"targetname" "combiner_creation_arc_particles"
+	"origin" "0 0 -0.491098"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1574"
+	"classname" "info_particle_target"
+	"angles" "0 0 0"
+	"targetname" "combiner_creation_arc_particles_target_1"
+	"origin" "0 0 20.5089"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1730"
+	"classname" "logic_relay"
+	"targetname" "combiner_creation_fx_relay"
+	connections
+	{
+		"OnTrigger" "combiner_creation_arc_particlesStart0-1"
+		"OnTrigger" "combiner_creation_arc_particlesStop2-1"
+		"OnTrigger" "combiner_creation_particlesStart0-1"
+		"OnTrigger" "combiner_creation_particlesStop2-1"
+	}
+	"origin" "0 0 44"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "1867"
+	"classname" "prop_dynamic"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"MaxAnimTime" "10"
+	"MinAnimTime" "5"
+	"model" "models/props_collectables/alchemy_table_glass.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"targetname" "combiner_glass_model"
+	"origin" "0 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}

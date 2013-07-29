@@ -1,0 +1,1525 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5852"
+	"mapversion" "43"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "0"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "16"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "43"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"musicpostfix" "Waterfront"
+	"skyname" "sky_l4d_rural02_hdr"
+	group
+	{
+		"id" "672"
+		editor
+		{
+			"color" "125 194 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "679"
+		editor
+		{
+			"color" "185 222 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "686"
+		editor
+		{
+			"color" "195 100 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "693"
+		editor
+		{
+			"color" "203 200 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "700"
+		editor
+		{
+			"color" "140 153 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "673"
+	"classname" "move_rope"
+	"angles" "0 0 0"
+	"MoveSpeed" "64"
+	"NextKey" "balloon_1_rope_bottom_1"
+	"parentname" "balloon"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_top_1"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "-26 -27 236"
+	editor
+	{
+		"color" "125 194 0"
+		"groupid" "672"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "676"
+	"classname" "keyframe_rope"
+	"angles" "0 0 0"
+	"MoveSpeed" "64"
+	"parentname" "chair"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_bottom_1"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "-29 -9 177"
+	editor
+	{
+		"color" "125 194 0"
+		"groupid" "672"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "680"
+	"classname" "move_rope"
+	"angles" "0 90 0"
+	"MoveSpeed" "64"
+	"NextKey" "balloon_1_rope_bottom_4"
+	"parentname" "balloon"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_top_4"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "21 -37 236"
+	editor
+	{
+		"color" "185 222 0"
+		"groupid" "679"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "683"
+	"classname" "keyframe_rope"
+	"angles" "0 90 0"
+	"MoveSpeed" "64"
+	"parentname" "chair"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_bottom_4"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "4 -13 175"
+	editor
+	{
+		"color" "185 222 0"
+		"groupid" "679"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "687"
+	"classname" "move_rope"
+	"angles" "0 180 0"
+	"MoveSpeed" "64"
+	"NextKey" "balloon_1_rope_bottom_3"
+	"parentname" "balloon"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_top_3"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "21 36 236"
+	editor
+	{
+		"color" "195 100 0"
+		"groupid" "686"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "690"
+	"classname" "keyframe_rope"
+	"angles" "0 180 0"
+	"MoveSpeed" "64"
+	"NextKey" "balloon_1_rope_bottom_5"
+	"parentname" "chair"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_bottom_3"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "1 12 179"
+	editor
+	{
+		"color" "195 100 0"
+		"groupid" "686"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "694"
+	"classname" "move_rope"
+	"angles" "0 270 0"
+	"MoveSpeed" "64"
+	"NextKey" "balloon_1_rope_bottom_2"
+	"parentname" "balloon"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_top_2"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "-26 28 236"
+	editor
+	{
+		"color" "203 200 0"
+		"groupid" "693"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "697"
+	"classname" "keyframe_rope"
+	"angles" "0 270 0"
+	"MoveSpeed" "64"
+	"parentname" "chair"
+	"RopeMaterial" "cable/cable.vmt"
+	"Slack" "25"
+	"Subdiv" "2"
+	"targetname" "balloon_1_rope_bottom_2"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "-29 9 179"
+	editor
+	{
+		"color" "203 200 0"
+		"groupid" "693"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "701"
+	"classname" "env_shooter"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gibangles" "0 0 0"
+	"gibanglevelocity" "25"
+	"gibgravityscale" "1"
+	"m_flGibLife" "6"
+	"m_flVariance" "0.15"
+	"m_flVelocity" "300"
+	"m_iGibs" "1"
+	"parentname" "chair"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"shootmodel" "models/infected/limbs/common_infected_w_torso_gib1.mdl"
+	"shootsounds" "-1"
+	"simulation" "2"
+	"spawnflags" "4"
+	"targetname" "explode_1_gib_shooter"
+	"origin" "-30 0 200"
+	editor
+	{
+		"color" "140 153 0"
+		"groupid" "700"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "703"
+	"classname" "env_shooter"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gibangles" "0 0 0"
+	"gibanglevelocity" "25"
+	"gibgravityscale" "1"
+	"m_flGibLife" "6"
+	"m_flVariance" "0.15"
+	"m_flVelocity" "300"
+	"m_iGibs" "1"
+	"parentname" "chair"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"shootmodel" "models/infected/limbs/common_infected_w_l_arm_upper_gib.mdl"
+	"shootsounds" "-1"
+	"simulation" "2"
+	"spawnflags" "4"
+	"targetname" "explode_1_gib_shooter"
+	"origin" "-11 -21 174"
+	editor
+	{
+		"color" "140 153 0"
+		"groupid" "700"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "705"
+	"classname" "env_shooter"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gibangles" "0 0 0"
+	"gibanglevelocity" "25"
+	"gibgravityscale" "1"
+	"m_flGibLife" "6"
+	"m_flVariance" "0.15"
+	"m_flVelocity" "300"
+	"m_iGibs" "1"
+	"parentname" "chair"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"shootmodel" "models/infected/limbs/common_infected_w_l_arm_upper_gib.mdl"
+	"shootsounds" "-1"
+	"simulation" "2"
+	"spawnflags" "4"
+	"targetname" "explode_1_gib_shooter"
+	"origin" "-5 27 174"
+	editor
+	{
+		"color" "140 153 0"
+		"groupid" "700"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "707"
+	"classname" "env_shooter"
+	"angles" "90 0 0"
+	"delay" "0"
+	"disablereceiveshadows" "0"
+	"disableX360" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gibangles" "0 0 0"
+	"gibanglevelocity" "0"
+	"gibgravityscale" "1"
+	"m_flGibLife" "6"
+	"m_flVariance" "0"
+	"m_flVelocity" "0"
+	"m_iGibs" "1"
+	"massoverride" "0"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"nogibshadows" "0"
+	"parentname" "chair"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"shootmodel" "models/props/cs_office/chair_office.mdl"
+	"shootsounds" "-1"
+	"simulation" "1"
+	"skin" "0"
+	"spawnflags" "6"
+	"targetname" "explode_1_gib_shooter"
+	"origin" "15 3 153"
+	editor
+	{
+		"color" "140 153 0"
+		"groupid" "700"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "709"
+	"classname" "env_shooter"
+	"angles" "0 90 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gibangles" "0 0 0"
+	"gibanglevelocity" "25"
+	"gibgravityscale" "1"
+	"m_flGibLife" "6"
+	"m_flVariance" "0.15"
+	"m_flVelocity" "300"
+	"m_iGibs" "1"
+	"parentname" "chair"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"shootmodel" "models/infected/limbs/common_infected_w_l_leg_upper_gib.mdl"
+	"shootsounds" "-1"
+	"simulation" "2"
+	"spawnflags" "4"
+	"targetname" "explode_1_gib_shooter"
+	"origin" "47 25 158"
+	editor
+	{
+		"color" "140 153 0"
+		"groupid" "700"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "711"
+	"classname" "env_shooter"
+	"angles" "0 270 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gibangles" "0 0 0"
+	"gibanglevelocity" "25"
+	"gibgravityscale" "1"
+	"m_flGibLife" "6"
+	"m_flVariance" "0.15"
+	"m_flVelocity" "300"
+	"m_iGibs" "1"
+	"parentname" "chair"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"shootmodel" "models/infected/limbs/common_infected_w_l_leg_upper_gib.mdl"
+	"shootsounds" "-1"
+	"simulation" "2"
+	"spawnflags" "4"
+	"targetname" "explode_1_gib_shooter"
+	"origin" "41 -23 158"
+	editor
+	{
+		"color" "140 153 0"
+		"groupid" "700"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "713"
+	"classname" "prop_physics_multiplayer"
+	"angles" "0 0 0"
+	"BreakableType" "0"
+	"damagetoenablemotion" "0"
+	"Damagetype" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"forcetoenablemotion" "0"
+	"glowcolor" "0 0 0"
+	"inertiaScale" "1.0"
+	"massScale" "0"
+	"minhealthdmg" "0"
+	"model" "models/props_unique/airport/atlas_break_ball.mdl"
+	"nodamageforces" "0"
+	"overridescript" "mass,10"
+	"physdamagescale" "0.1"
+	"physicsmode" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"spawnflags" "258"
+	"targetname" "balloon"
+	connections
+	{
+		"OnTakeDamage" "balloon_1_explode_rlTrigger01"
+		"OnTakeDamage" "chair_medkit_makerForceSpawn01"
+		"OnTakeDamage" "supply_box_template_makerForceSpawn01"
+		"OnTakeDamage" "chair_grenade_launcher_makerForceSpawn01"
+	}
+	"origin" "1 0 106"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "717"
+	"classname" "phys_thruster"
+	"angles" "-90 0 0"
+	"attach1" "balloon"
+	"force" "2250"
+	"spawnflags" "51"
+	"targetname" "balloon_thruster_up"
+	"origin" "0 0 351"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "719"
+	"classname" "phys_thruster"
+	"angles" "0 0 0"
+	"attach1" "balloon"
+	"force" "600"
+	"spawnflags" "50"
+	"targetname" "balloon_thruster_side"
+	"origin" "0 0 332"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "721"
+	"classname" "prop_physics_multiplayer"
+	"angles" "-44.5744 353.052 9.85082"
+	"BreakableType" "0"
+	"damagetoenablemotion" "0"
+	"Damagetype" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"forcetoenablemotion" "0"
+	"glowcolor" "0 0 0"
+	"inertiaScale" "1.0"
+	"minhealthdmg" "0"
+	"model" "models/deadbodies/dead_male_sittingchair.mdl"
+	"nodamageforces" "0"
+	"overridescript" "mass,10"
+	"physdamagescale" "0.1"
+	"physicsmode" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"spawnflags" "256"
+	"targetname" "chair"
+	"origin" "17 3 151"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "725"
+	"classname" "phys_spring"
+	"attach1" "balloon"
+	"attach2" "chair"
+	"breaklength" "0"
+	"constant" "50"
+	"damping" "6"
+	"length" "0"
+	"relativedamping" "0.1"
+	"spawnflags" "0"
+	"springaxis" "-26 -27 236"
+	"targetname" "balloon_1_spring_bottom_1"
+	"origin" "-29 -9 177"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "728"
+	"classname" "phys_spring"
+	"attach1" "balloon"
+	"attach2" "chair"
+	"breaklength" "0"
+	"constant" "50"
+	"damping" "6"
+	"length" "0"
+	"relativedamping" "0.1"
+	"springaxis" "21 -37 236"
+	"targetname" "balloon_1_spring_bottom_4"
+	"origin" "4 -13 175"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "731"
+	"classname" "phys_spring"
+	"attach1" "balloon"
+	"attach2" "chair"
+	"breaklength" "0"
+	"constant" "50"
+	"damping" "6"
+	"length" "0"
+	"relativedamping" "0.1"
+	"spawnflags" "0"
+	"springaxis" "21 36 236"
+	"targetname" "balloon_1_spring_bottom_3"
+	"origin" "1 12 179"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "734"
+	"classname" "phys_spring"
+	"attach1" "balloon"
+	"attach2" "chair"
+	"breaklength" "0"
+	"constant" "50"
+	"damping" "6"
+	"length" "0"
+	"relativedamping" "0.1"
+	"springaxis" "-26 28 236"
+	"targetname" "balloon_1_spring_bottom_2"
+	"origin" "-29 9 179"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "737"
+	"classname" "phys_spring"
+	"attach1" "anchor_rope_link"
+	"constant" "50"
+	"damping" "2.0"
+	"relativedamping" "0.1"
+	"spawnflags" "0"
+	"springaxis" "-2 2 59"
+	"targetname" "bottom_link_spring"
+	"origin" "0 0 1"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "740"
+	"classname" "prop_physics_multiplayer"
+	"angles" "0 0 0"
+	"BreakableType" "0"
+	"damagetoenablemotion" "0"
+	"Damagetype" "0"
+	"disablereceiveshadows" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"forcetoenablemotion" "0"
+	"glowcolor" "0 0 0"
+	"inertiaScale" "1.0"
+	"massScale" "0"
+	"minhealthdmg" "0"
+	"model" "models/props_debris/wood_board04a.mdl"
+	"nodamageforces" "0"
+	"overridescript" "mass,3"
+	"physdamagescale" "0.1"
+	"physicsmode" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"spawnflags" "8450"
+	"targetname" "anchor_rope_link"
+	connections
+	{
+		"OnTakeDamage" "anchor_break_rlTrigger01"
+		"OnBreak" "anchor_break_rlTrigger01"
+	}
+	"origin" "16 2 91"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "744"
+	"classname" "phys_spring"
+	"attach1" "chair"
+	"attach2" "anchor_rope_link"
+	"constant" "5000"
+	"damping" "2.0"
+	"relativedamping" "0.1"
+	"spawnflags" "0"
+	"springaxis" "16 2 154"
+	"targetname" "top_link_spring"
+	"origin" "16 2 123"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "747"
+	"classname" "move_rope"
+	"angles" "0 180 0"
+	"Breakable" "1"
+	"MoveSpeed" "64"
+	"NextKey" "anchor_rope_bottom"
+	"parentname" "anchor_rope_link"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/rope"
+	"Slack" "100"
+	"spawnflags" "0"
+	"Subdiv" "2"
+	"targetname" "anchor_rope_top"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "16 2 59"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "750"
+	"classname" "keyframe_rope"
+	"angles" "0 180 0"
+	"MoveSpeed" "64"
+	"RopeMaterial" "cable/rope"
+	"Slack" "25"
+	"spawnflags" "0"
+	"Subdiv" "2"
+	"targetname" "anchor_rope_bottom"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "0 0 1"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "753"
+	"classname" "keyframe_rope"
+	"angles" "0 0 -180"
+	"Breakable" "1"
+	"MoveSpeed" "64"
+	"parentname" "chair"
+	"RopeMaterial" "cable/rope"
+	"Slack" "25"
+	"spawnflags" "0"
+	"Subdiv" "2"
+	"targetname" "chair_rope"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "16 2 154"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "756"
+	"classname" "move_rope"
+	"angles" "0 0 -180"
+	"Breakable" "1"
+	"MoveSpeed" "64"
+	"NextKey" "chair_rope"
+	"parentname" "anchor_rope_link"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/rope"
+	"Slack" "100"
+	"spawnflags" "0"
+	"Subdiv" "2"
+	"targetname" "link_rope_top"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "16 2 123"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "759"
+	"classname" "logic_relay"
+	"spawnflags" "1"
+	connections
+	{
+		"OnSpawn" "anchor_rope_linkSetHealth99990-1"
+		"OnSpawn" "supply_boxSetHealth99990-1"
+		"OnSpawn" "balloonSetHealth99990-1"
+		"OnSpawn" "anchor_rope_linkBreak5-1"
+	}
+	"origin" "5 2 91"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "761"
+	"classname" "weapon_first_aid_kit_spawn"
+	"angles" "0 270 0"
+	"solid" "6"
+	"spawnflags" "1"
+	"targetname" "chair_medkit"
+	"origin" "-3 -13 157"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "763"
+	"classname" "prop_dynamic"
+	"angles" "-7.43547 256.936 -29.1474"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"disableX360" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"glowrange" "0"
+	"glowrangemin" "0"
+	"glowstate" "0"
+	"LagCompensate" "0"
+	"MaxAnimTime" "10"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"MinAnimTime" "5"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "models/w_models/weapons/w_eq_medkit.mdl"
+	"parentname" "chair"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "chair_medkit_proxy"
+	"updatechildren" "0"
+	connections
+	{
+		"OnTakeDamage" "chair_medkit_makerForceSpawn01"
+		"OnTakeDamage" "!selfKill01"
+	}
+	"origin" "-3 -13 156"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "767"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "chair_medkit_template"
+	"Template01" "chair_medkit"
+	"origin" "-1 -27 159"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "769"
+	"classname" "env_entity_maker"
+	"angles" "-7.43547 256.936 -29.1474"
+	"EntityTemplate" "chair_medkit_template"
+	"parentname" "chair"
+	"PostSpawnDirection" "0 0 0"
+	"PostSpawnDirectionVariance" "0"
+	"PostSpawnInheritAngles" "0"
+	"PostSpawnSpeed" "0"
+	"spawnflags" "0"
+	"targetname" "chair_medkit_maker"
+	connections
+	{
+		"OnEntitySpawned" "!selfKill01"
+		"OnEntitySpawned" "chair_medkit_templateKill01"
+	}
+	"origin" "-3 -13 156"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "771"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "balloon_thrust_rl"
+	connections
+	{
+		"OnTrigger" "balloon_thruster_sideActivate0-1"
+		"OnTrigger" "balloon_thrust_timerEnable1-1"
+		"OnTrigger" "!selfKill0-1"
+	}
+	"origin" "0.394012 16 351.027"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "773"
+	"classname" "logic_timer"
+	"LowerRandomBound" "3"
+	"spawnflags" "1"
+	"StartDisabled" "1"
+	"targetname" "balloon_thrust_timer"
+	"UpperRandomBound" "4"
+	"UseRandomTime" "1"
+	connections
+	{
+		"OnTimerHigh" "balloon_thruster_upScale.70-1"
+		"OnTimerLow" "balloon_thruster_upScale.900-1"
+	}
+	"origin" "5 -19 343"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "775"
+	"classname" "keyframe_rope"
+	"angles" "0 0 0"
+	"Breakable" "1"
+	"MoveSpeed" "64"
+	"parentname" "supply_box"
+	"RopeMaterial" "cable/rope"
+	"Slack" "25"
+	"spawnflags" "0"
+	"Subdiv" "2"
+	"targetname" "supply_box_rope_top"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "14 17 145"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "778"
+	"classname" "move_rope"
+	"angles" "0 0 0"
+	"Breakable" "0"
+	"MoveSpeed" "64"
+	"NextKey" "supply_box_rope_top"
+	"parentname" "chair"
+	"PositionInterpolator" "2"
+	"RopeMaterial" "cable/rope"
+	"Slack" "100"
+	"spawnflags" "0"
+	"Subdiv" "2"
+	"targetname" "supply_box_rope_bottom"
+	"TextureScale" "1"
+	"Width" "2"
+	"origin" "14 17 152"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "781"
+	"classname" "phys_spring"
+	"attach1" "supply_box"
+	"attach2" "chair"
+	"constant" "100"
+	"damping" "10"
+	"relativedamping" "0.1"
+	"spawnflags" "0"
+	"springaxis" "14 17 152"
+	"targetname" "supply_box_spring"
+	"origin" "14 17 143.441"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "784"
+	"classname" "prop_physics_multiplayer"
+	"angles" "30 0 75"
+	"BreakableType" "0"
+	"disablereceiveshadows" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowcolor" "0 0 0"
+	"inertiaScale" "1.0"
+	"model" "models/props_crates/supply_crate01.mdl"
+	"overridescript" "mass,1"
+	"physdamagescale" "0.1"
+	"physicsmode" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"skin" "0"
+	"spawnflags" "8194"
+	"targetname" "supply_box"
+	connections
+	{
+		"OnTakeDamage" "supply_box_rope_topClearParent01"
+		"OnTakeDamage" "supply_box_rope_topBreak01"
+		"OnTakeDamage" "supply_box_springKill01"
+		"OnTakeDamage" "!selfBreak0.11"
+		"OnTakeDamage" "supply_box_template_makerForceSpawn01"
+	}
+	"origin" "16 19 127.441"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "788"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "supply_box_template"
+	"Template01" "supply_box_item"
+	"origin" "18 32 120"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "790"
+	"classname" "env_entity_maker"
+	"angles" "-7.43547 256.936 -29.1474"
+	"EntityTemplate" "supply_box_template"
+	"parentname" "supply_box"
+	"PostSpawnDirection" "0 0 0"
+	"PostSpawnDirectionVariance" "0"
+	"PostSpawnInheritAngles" "0"
+	"PostSpawnSpeed" "0"
+	"spawnflags" "0"
+	"targetname" "supply_box_template_maker"
+	connections
+	{
+		"OnEntitySpawned" "!selfKill01"
+		"OnEntitySpawned" "supply_box_templateKill01"
+	}
+	"origin" "18 21 127.307"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "792"
+	"classname" "weapon_pipe_bomb_spawn"
+	"angles" "0 0 0"
+	"count" "1"
+	"solid" "6"
+	"spawnflags" "1"
+	"targetname" "supply_box_item"
+	"origin" "11 19 129"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "794"
+	"classname" "weapon_adrenaline_spawn"
+	"angles" "0 0 90"
+	"solid" "6"
+	"spawnflags" "1"
+	"targetname" "supply_box_item"
+	"origin" "23 16 128"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "796"
+	"classname" "weapon_grenade_launcher_spawn"
+	"angles" "10.7299 280.544 -135.007"
+	"count" "1"
+	"solid" "6"
+	"spawnflags" "1"
+	"targetname" "chair_grenade_launcher"
+	"origin" "0.309998 -2.646 194.09"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "798"
+	"classname" "prop_dynamic_override"
+	"angles" "10.7299 280.544 -135.007"
+	"disablereceiveshadows" "0"
+	"disableX360" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"glowbackfacemult" "1.0"
+	"glowcolor" "0 0 0"
+	"glowrange" "0"
+	"glowrangemin" "0"
+	"glowstate" "0"
+	"health" "0"
+	"LagCompensate" "0"
+	"MaxAnimTime" "10"
+	"maxcpulevel" "0"
+	"maxgpulevel" "0"
+	"MinAnimTime" "5"
+	"mincpulevel" "0"
+	"mingpulevel" "0"
+	"model" "models/w_models/weapons/w_grenade_launcher.mdl"
+	"parentname" "chair"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"targetname" "chair_grenade_launcher_proxy"
+	"updatechildren" "0"
+	connections
+	{
+		"OnTakeDamage" "!selfKill01"
+		"OnTakeDamage" "chair_grenade_launcher_makerForceSpawn01"
+	}
+	"origin" "0.309998 -2.646 186.09"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "800"
+	"classname" "env_entity_maker"
+	"angles" "0 0 0"
+	"EntityTemplate" "chair_grenade_launcher_template"
+	"parentname" "chair"
+	"PostSpawnDirection" "0 0 0"
+	"PostSpawnDirectionVariance" "0"
+	"spawnflags" "0"
+	"targetname" "chair_grenade_launcher_maker"
+	connections
+	{
+		"OnEntitySpawned" "!selfKill0-1"
+	}
+	"origin" "6 -4 184"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "802"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "chair_grenade_launcher_template"
+	"Template01" "chair_grenade_launcher"
+	"origin" "-6 -4 188"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "804"
+	"classname" "env_explosion"
+	"fireballsprite" "sprites/zerogxplode.spr"
+	"iMagnitude" "100"
+	"parentname" "balloon"
+	"rendermode" "5"
+	"spawnflags" "1"
+	"targetname" "explode_1"
+	"origin" "2 0 211"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "806"
+	"classname" "logic_relay"
+	"spawnflags" "1"
+	"targetname" "balloon_1_explode_rl"
+	connections
+	{
+		"OnTrigger" "balloonKill0.1-1"
+		"OnTrigger" "explode_1Explode0-1"
+		"OnTrigger" "chair_grenade_launcher_proxyKill0-1"
+		"OnTrigger" "supply_box_rope_topBreak0-1"
+		"OnTrigger" "supply_boxBreak0.1-1"
+		"OnTrigger" "explode_1_gib_shooterShoot0.1-1"
+		"OnTrigger" "chairKill0.1-1"
+		"OnTrigger" "chair_ropeBreak0-1"
+		"OnTrigger" "explode_1ClearParent0-1"
+		"OnTrigger" "explode_1_particlesClearParent0-1"
+		"OnTrigger" "explode_1_particlesStart0-1"
+		"OnTrigger" "explode_1_gib_shooterClearParent0-1"
+		"OnTrigger" "balloon_1_spring_bottom_1Kill0.1-1"
+		"OnTrigger" "balloon_1_spring_bottom_2Kill0.1-1"
+		"OnTrigger" "balloon_1_spring_bottom_4Kill0.1-1"
+		"OnTrigger" "balloon_1_spring_bottom_3Kill0.1-1"
+		"OnTrigger" "supply_box_springKill0.1-1"
+		"OnTrigger" "bottom_link_springKill0.1-1"
+		"OnTrigger" "top_link_springKill0.1-1"
+		"OnTrigger" "balloon_thruster_sideKill0.1-1"
+		"OnTrigger" "balloon_thruster_upKill0.1-1"
+		"OnTrigger" "balloon_thrust_timerKill0.1-1"
+		"OnTrigger" "balloon_thrust_rlKill0.1-1"
+		"OnTrigger" "anchor_rope_linkBreak0.1-1"
+		"OnTrigger" "balloon_explode_1_soundPlaySound0-1"
+		"OnTrigger" "balloon_explode_1_soundKill5-1"
+		"OnTrigger" "anchor_rope_bottomKill3-1"
+		"OnTrigger" "chair_medkit_templateKill0.11"
+		"OnTrigger" "supply_box_templateKill0.11"
+		"OnTrigger" "chair_grenade_launcher_templateKill0.11"
+		"OnTrigger" "explode_1_particlesKill5-1"
+	}
+	"origin" "-22 0 208"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "808"
+	"classname" "info_particle_system"
+	"angles" "0 0 0"
+	"cpoint1_parent" "0"
+	"cpoint2_parent" "0"
+	"cpoint3_parent" "0"
+	"cpoint4_parent" "0"
+	"cpoint5_parent" "0"
+	"cpoint6_parent" "0"
+	"cpoint7_parent" "0"
+	"effect_name" "weapon_grenadelauncher_dirt"
+	"parentname" "balloon"
+	"render_in_front" "0"
+	"start_active" "0"
+	"targetname" "explode_1_particles"
+	"origin" "2.14899 -1.01001 202.934"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "873"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "GrenadeLauncher.Explode"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"SourceEntityName" "balloon"
+	"spawnflags" "48"
+	"targetname" "balloon_explode_1_sound"
+	"origin" "2.14899 -1.01001 213.934"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1021"
+	"classname" "light_dynamic"
+	"_cone" "45"
+	"_inner_cone" "30"
+	"_light" "255 255 255 1500"
+	"angles" "-353 31 0"
+	"brightness" "5"
+	"distance" "105"
+	"parentname" "chair"
+	"pitch" "-353"
+	"spawnflags" "1"
+	"spotlight_radius" "80"
+	"targetname" "balloon_1_dynamic_light"
+	"origin" "-38 -34 151"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1189"
+	"classname" "logic_relay"
+	"spawnflags" "1"
+	"targetname" "anchor_break_rl"
+	connections
+	{
+		"OnTrigger" "link_rope_topKill3-1"
+		"OnTrigger" "anchor_rope_topKill3-1"
+		"OnTrigger" "anchor_rope_bottomKill3-1"
+		"OnTrigger" "anchor_rope_linkBreak0.1-1"
+		"OnTrigger" "balloon_thrust_rlTrigger0-1"
+		"OnTrigger" "bottom_link_springKill0-1"
+		"OnTrigger" "link_rope_topClearParent0-1"
+		"OnTrigger" "link_rope_topBreak0-1"
+		"OnTrigger" "anchor_rope_topClearParent0-1"
+		"OnTrigger" "anchor_rope_topBreak0-1"
+		"OnTrigger" "top_link_springKill0-1"
+	}
+	"origin" "20 -1 89"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+cameras
+{
+	"activecamera" "0"
+	camera
+	{
+		"position" "[-159.322 94.2685 264.102]"
+		"look" "[-45.7919 28.7169 309.767]"
+	}
+}
+cordons
+{
+	"active" "0"
+}
