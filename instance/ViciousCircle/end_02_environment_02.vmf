@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "5454"
-	"mapversion" "92"
+	"editorbuild" "6082"
+	"mapversion" "93"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "92"
+	"mapversion" "93"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -5351,7 +5351,7 @@ world
 			dispinfo
 			{
 				"power" "2"
-				"startposition" "[-768 0 -0]"
+				"startposition" "[-768 0 0]"
 				"flags" "0"
 				"elevation" "0"
 				"subdiv" "0"
@@ -5756,7 +5756,7 @@ world
 			dispinfo
 			{
 				"power" "2"
-				"startposition" "[-768 -512 -0]"
+				"startposition" "[-768 -512 0]"
 				"flags" "0"
 				"elevation" "0"
 				"subdiv" "0"
@@ -16405,6 +16405,94 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "4316"
+	"classname" "func_ladder"
+	solid
+	{
+		"id" "4317"
+		side
+		{
+			"id" "2028"
+			"plane" "(40 320 208) (40 332 208) (64 332 208)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2027"
+			"plane" "(40 332 8) (40 320 8) (64 320 8)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2026"
+			"plane" "(40 320 8) (40 332 8) (40 332 208)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2025"
+			"plane" "(64 332 8) (64 320 8) (64 320 208)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2024"
+			"plane" "(40 332 8) (64 332 8) (64 332 208)"
+			"material" "TOOLS/CLIMB_VERSUS"
+			"uaxis" "[1 0 0 -16] 0.25"
+			"vaxis" "[0 0 -1 64] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2023"
+			"plane" "(64 320 8) (40 320 8) (40 320 208)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras

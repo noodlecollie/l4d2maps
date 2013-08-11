@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "5879"
-	"mapversion" "24"
+	"editorbuild" "6082"
+	"mapversion" "26"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "24"
+	"mapversion" "26"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1603,7 +1603,7 @@ entity
 	"id" "471"
 	"classname" "weapon_item_spawn"
 	"angles" "0 0 0"
-	"item1" "1"
+	"item1" "0"
 	"item11" "1"
 	"item3" "1"
 	"item4" "1"

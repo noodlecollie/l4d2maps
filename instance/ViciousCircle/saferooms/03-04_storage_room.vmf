@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6082"
-	"mapversion" "65"
+	"mapversion" "66"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "65"
+	"mapversion" "66"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2573,9 +2573,13 @@ entity
 entity
 {
 	"id" "796"
-	"classname" "weapon_first_aid_kit"
+	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 0 0"
+	"body" "0"
+	"disableshadows" "0"
+	"skin" "0"
 	"solid" "6"
+	"spawnflags" "2"
 	"origin" "-256.008 292.663 37.1235"
 	editor
 	{
@@ -2588,9 +2592,13 @@ entity
 entity
 {
 	"id" "802"
-	"classname" "weapon_first_aid_kit"
+	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 304.5 0"
+	"body" "0"
+	"disableshadows" "0"
+	"skin" "0"
 	"solid" "6"
+	"spawnflags" "2"
 	"origin" "-250.008 284.608 37.1235"
 	editor
 	{
@@ -2603,9 +2611,13 @@ entity
 entity
 {
 	"id" "804"
-	"classname" "weapon_first_aid_kit"
+	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 95.5 0"
+	"body" "0"
+	"disableshadows" "0"
+	"skin" "0"
 	"solid" "6"
+	"spawnflags" "2"
 	"origin" "-238.837 288.495 37.1235"
 	editor
 	{
@@ -2618,9 +2630,13 @@ entity
 entity
 {
 	"id" "806"
-	"classname" "weapon_first_aid_kit"
+	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 337 0"
+	"body" "0"
+	"disableshadows" "0"
+	"skin" "0"
 	"solid" "6"
+	"spawnflags" "2"
 	"origin" "-234.279 268.958 37.1235"
 	editor
 	{
