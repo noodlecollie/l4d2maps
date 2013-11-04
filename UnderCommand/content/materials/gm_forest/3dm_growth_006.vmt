@@ -1,0 +1,7 @@
+UnLitGeneric
+{
+$baseTexture "gm_forest/3dm_growth_006"
+$alphatest 1
+$model 1
+$nocull 1
+}

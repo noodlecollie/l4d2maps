@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+$baseTexture "gm_forest\rings"
+$model 1
+}

@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+$basetexture "gm_forest\plum_1"
+$alphatest 1
+$nocull 1
+$surfaceprop dirt
+}

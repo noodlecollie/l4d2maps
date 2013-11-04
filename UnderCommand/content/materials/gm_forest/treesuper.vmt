@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+$baseTexture "gm_forest\treesuper"
+$nocull 1
+$alphatest 1
+}

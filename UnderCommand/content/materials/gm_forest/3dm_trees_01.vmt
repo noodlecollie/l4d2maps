@@ -1,0 +1,6 @@
+UnLitGeneric
+{
+$baseTexture "gm_forest/3dm_trees_01"
+$translucent 1
+$model 1
+}

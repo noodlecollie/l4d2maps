@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+$baseTexture "gm_forest/3dm_wood_001"
+$bumpmap "gm_forest/3dm_wood_001_normal"
+}

@@ -1,0 +1,7 @@
+UnLitGeneric
+{
+$baseTexture "gm_forest/3dm_detail_004"
+$alphatest 1
+$nocull 1
+$model 1
+}

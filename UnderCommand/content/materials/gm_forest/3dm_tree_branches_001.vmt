@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+$baseTexture "gm_forest/3dm_tree_branches_001"
+$nocull 1
+$alphatest 1
+$color "0.2 0.2 0.2"
+}

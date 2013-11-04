@@ -1,0 +1,5 @@
+vertexlitgeneric
+{
+$basetexture "models/brg_foliage/brg_alder_brk_w"
+$surfaceprop wood
+}

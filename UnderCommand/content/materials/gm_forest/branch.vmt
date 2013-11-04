@@ -1,0 +1,9 @@
+VertexLitGeneric
+{
+$color "[1 1 1]"
+$baseTexture "gm_forest/branch"
+$selfIllum 0
+$translucent 1
+$alphatest 1
+$nocull 1
+}

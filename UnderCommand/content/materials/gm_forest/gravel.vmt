@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+$basetexture "gm_forest\gravel"
+$surfaceprop sand
+}
