@@ -1,15 +1,15 @@
 Water
 {
 $normalmap "liquids/water_normal_x"
-$flowmap "viciouscircle/water/water_flow_south_moderate"
+$flowmap "viciouscircle/water/water_flow_sewers"
 $flow_normaluvscale 150.0
-$flow_worlduvscale 0.5
-$flow_timeintervalinseconds 0.2 
+$flow_worlduvscale 16
+$flow_timeintervalinseconds 0.18
 $flow_uvscrolldistance 0.7 
 $flow_bumpstrength 1.0
 $flow_timescale 0.35
 $flow_noise_texture "liquids/water_noise"
-$flow_noise_scale 0.0005
+$flow_noise_scale 0.0001
 $flow_debug 0
 $reflecttexture _rt_WaterReflection
 $reflectamount "0.4"
