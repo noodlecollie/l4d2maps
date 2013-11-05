@@ -1,2 +1,4 @@
-- Everything in ViciousCircle
+- Everything in materials/ViciousCircle, sound/ViciousCircle
 - Everything in materials/gm_forest and models/gm_forest to the woodland map
+- Particles_manifest file in the addons folder
+- viciouscircle.pcf in the particles folder
