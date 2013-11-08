@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6158"
-	"mapversion" "655"
+	"mapversion" "659"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "655"
+	"mapversion" "659"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -157977,6 +157977,7 @@ entity
 	"spawnflags" "8192"
 	"spawnpos" "1"
 	"speed" "200"
+	"targetname" "checkpoint_entrance"
 	"origin" "3392 3588 308"
 	editor
 	{
@@ -183811,8 +183812,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[10778.8 356.075 -1091.7]"
-		"look" "[10750.5 373.801 -1103.54]"
+		"position" "[12124.6 3686.59 92.4965]"
+		"look" "[12112 3716.61 78.5374]"
 	}
 }
 cordons
