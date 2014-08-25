@@ -93,7 +93,7 @@ MapSpawns <-
     // [ "MedCabinet" ],
     // [ "ResourceLocker" ],
 	// [ "CarnivalgameStachewhacker" ],     // Requires survivors to win the minigame to gain items.
-    // [ "PlaceableResource" ],             // Dropped from the supply helicopter.
+    // [ "PlaceableResource" ],             // Dropped by special infected.
 	
 	// Utility vehicles.
 	// [ "GascanHelicopter" ],
@@ -105,7 +105,7 @@ MapSpawns <-
     // [ "FireworkLauncher" ],          // Aesthetical only - used to simulate calling in the resupply helicopter.
     // [ "CooldownExtensionButton" ],   // Gives the survivors more time to prepare for the next wave.
     // [ "UnbreakablePanel" ],          // Simple sheet of metal.
-    // [ "Searchlight" ],               // Sits on top of the generator to simulate calling the rescue helicopter.
+    // [ "Searchlight" ],               // Searchlight and generator that call the helicopter.
     // [ "Hintboard" ],                 // Provides gameplay hints. See HintBoardStringTable() to define your own.
     // [ "TankManhole" ],               // Spawn point for a tank on special stages.
     // [ "C4m1MilltownAMisc" ],         // Entities specific to Milltown - you probably won't need these.
@@ -189,6 +189,7 @@ SanitizeTable <-
     // { classname		= "func_breakable", input = "break" },                                  // Uncomment this if you want all func_breakables to be dispensed with.
     // { classname		= "prop_door_rotating", input = "kill" },                               // Uncomment this if you want rotating doors to be removed.
     // { model 		    = "models/props/de_inferno/ceiling_fan_blade.mdl", input = "kill" },    // Removes ceiling fan blades. These can then be replaced with weaponised blades if desired.
+    // { targetname    = "ds_int-attack_timer", input = "kill" },                               // Disables air strikes on c5m4.
 ]
 
 // ==================== End map sanitiation list ==================== //
