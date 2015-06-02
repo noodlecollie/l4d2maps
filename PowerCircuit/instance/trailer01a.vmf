@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "5879"
-	"mapversion" "50"
+	"editorbuild" "6262"
+	"mapversion" "51"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "64"
+	"nGridSpacing" "4"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "50"
+	"mapversion" "51"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -3953,17 +3953,17 @@ entity
 {
 	"id" "71"
 	"classname" "prop_static"
-	"angles" "0 90 0"
+	"angles" "0 0 0"
 	"disableselfshadowing" "1"
 	"disablevertexlighting" "1"
 	"fademindist" "-1"
 	"fadescale" "1"
-	"model" "models/razor/toilet_glass.mdl"
+	"model" "models/props_interiors/toilet_c.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-88 -50 28"
+	"origin" "-124 -52 4"
 	editor
 	{
 		"color" "255 255 0"
