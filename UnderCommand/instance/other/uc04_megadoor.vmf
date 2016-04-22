@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6602"
-	"mapversion" "5"
+	"mapversion" "7"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "5"
+	"mapversion" "7"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -9232,7 +9232,7 @@ entity
 {
 	"id" "749"
 	"classname" "logic_relay"
-	"targetname" "weapon_door_open_trigger"
+	"targetname" "weapon_door_open_relay"
 	connections
 	{
 		"OnTrigger" "weapon_door_leftOpen0-1"
