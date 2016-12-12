@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "6082"
-	"mapversion" "66"
+	"editorbuild" "7145"
+	"mapversion" "68"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "66"
+	"mapversion" "68"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2561,7 +2561,7 @@ entity
 	"model" "models/props/terror/ammo_stack.mdl"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-277.396 287.221 34.7832"
+	"origin" "-277.396 286.969 34.909"
 	editor
 	{
 		"color" "0 0 200"
