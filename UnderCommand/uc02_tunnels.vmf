@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7145"
-	"mapversion" "662"
+	"mapversion" "663"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "662"
+	"mapversion" "663"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -183896,13 +183896,103 @@ entity
 		"logicalpos" "[0 -12768]"
 	}
 }
+entity
+{
+	"id" "160323"
+	"classname" "prop_static"
+	"angles" "0 0 -90"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props/de_nuke/light_red2.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "0"
+	"origin" "6752 2816 -616"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "160366"
+	"classname" "prop_static"
+	"angles" "0 0 -90"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"model" "models/props/de_nuke/light_red2.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "1"
+	"solid" "0"
+	"origin" "6880 2816 -616"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "160370"
+	"classname" "light"
+	"_castentityshadow" "1"
+	"_fifty_percent_distance" "72"
+	"_light" "250 84 108 200"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "0.5"
+	"_quadratic_attn" "1"
+	"_shadoworiginoffset" "0 0 0"
+	"_zero_percent_distance" "192"
+	"origin" "6752 2800 -616"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "160423"
+	"classname" "light"
+	"_castentityshadow" "1"
+	"_fifty_percent_distance" "72"
+	"_light" "250 84 108 200"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "0.5"
+	"_quadratic_attn" "1"
+	"_shadoworiginoffset" "0 0 0"
+	"_zero_percent_distance" "192"
+	"origin" "6880 2800 -616"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[3383.08 3695.28 351.401]"
-		"look" "[3353.69 3676.65 344.758]"
+		"position" "[5915.2 1546.61 -409.248]"
+		"look" "[5929.12 1577.84 -418.537]"
 	}
 }
 cordons
