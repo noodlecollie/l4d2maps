@@ -1,0 +1,100 @@
+L4D2 Under Command plans, V2
+
+Tagline: "One order: shoot to kill."
+
+Map 1: Broken Quarantine
+Map 2: Down and Dirty
+Map 3: Midnight Approach
+Map 4: Firepower
+Map 5: Taking Flight
+
+Map 1: Overground to river crossing
+Map 2: Underground to other side
+Map 3: Overground to military base
+Map 4: Inside military base
+Map 5: Gauntlet finale to rescue helicopter
+
+Map 1: late evening, raining
+Map 2: night (needs first glimpse of sky to be no earlier than half way through, approx) with medium-heavy rain
+Map 3: night with heavy rain
+Map 4: night (but mainly inside)
+Map 5: daybreak
+
+
+UCI
+Map 1: CEDA (beginning), riot police (in town)
+Map 2: Builders in all areas after smaller drainage pipes
+Map 3: Mudmen in woodland, lessening and some fallen survivors as base is neared
+Map 4: Fallen survivors
+Map 5: n/a
+
+
+Map 1: CEDA quarantine area (start) - drainage pipes - railway crossing (gauntlet panic) - rooftops - street (panic deactivation) - back yards - dockside - tunnels entrance (end)*
+
+* Define width of river after making 2nd level
+
+Map 2: Tunnels entrance (start) - sewer - drainage pipes (large, main) - smaller drainage pipes (multiple routes)* - underground boiler/drainage rooms - wooden walkways - storage rooms full of explosives/gas cans etc* - tunnels exit (like corresponding entrance earlier) - vents** - canals (think Lambda8) (long-ish) - maintainance building (end)
+
+* Series of rooms containing propane cannisters, oxygen tanks, gas cans and Sacrifice's explosive barrels. If explosives are shot, can damage survivors and will break hole(s) in the floor, enabling func_brush infected ladders and spawning a tank. While progressing through the rooms, tank sounds and splashes can be heard from below. Below nav marked as EMPTY, NO MOBS.
+
+** Exit doorway blocked, vents only way out.
+
+Map 3: Maintainance building (start) - woodland track - former camp - water hole similar to Sacrifice - cave* - small section of undergrowth - small road with burning tanker** - turn right and follow road to petrol station (alarmed car) - another small woodland track section - small military outpost with machine gun, some supplies, dead zombies and people - border of military base (gauntlet panic)*** - base approach - storage room (end)
+
+* Must almost fully submerge in water to get into cave, have to climb up a rockfall to get out of opening. Need to create a custom water which has an underneath material, or check if the pink/black is caused by lack of cubemaps instead.
+
+** Military vehicles start to appear from here onwards, signifying base is near.
+
+*** Alarm is triggered upon entering the boundary. Route includes climbing side of cliff, opening gate (press+hold button, 2 secs; button is in separate area to gate) and opening warehouse door (same settings as above; route forces survivors to detour through warehouse, door button is up on balcony).
+
+Map 4: Storage room (start) - corridor - broken airlock - generator room* - office room corridor with some broken wall pieces - down stairs - control room - vent (standing) - storage warehouse** - maint corridor - vent (crouching) - central vent area*** (lower level) - vent (crouching) - armoury (gauntlet panic)**** - corridor - stairs - vents (standing) - central vent area (middle level) - vent (standing) - storage room - offices•* - bathrooms - vent (standing) - central vent area (upper level) - vent (standing) - console room (panic deactivation)•** - down stairs - storage rooms (utility, dirty concrete) - pipe room similar to in Death Toll - storage room (end).
+
+* Lights and generators turn on as survivors walk  into room.
+
+** Make conveluted route like in CO.
+
+*** Repeated use of this area. Railings on middle/upper levels to help prevent falling down but not entirely prohibit it.
+
+**** Available weapons change depending on how angry the director is. Chainsaw, other melee, ammo, laser sights and fire/frag rounds always available; >66% anger = normal Tier 2 weapons; 33-66% anger = Tier 2 weapons,  M60/grenade launcher and 2x pills/adrenaline; <33% anger = 4 M60s, 2x pills/adrenaline, 1 health kit, 1 defib.
+
+•* Some weapons/pistols/ammo/pills in offices.
+
+•** Health kits available after panic event (max 2).
+
+Map 5: Storage room (start) - power room (gauntlet finale trigger) - vehicle garage - "canyon" track - top of dam - manhole* - press-and-hold generator to lower bridge and get across - "control" room - stairs to get back up to top of dam - Tank crate** - cliffside climb - rockfall - helicopter tower (scavenge arena) - helicopter (end).
+
+* Dam road is blocked by vehicles
+
+** Like in Sacrifice
+
+Note: quick references to items:
+o/n - old/new, referring to Tier 1 SMGs or shotguns.
+Throwable - any of pipe bomb, molotov or bile
+Consumable - pills or adrenaline
+AHealth - all health; any of health kit, defib, pills or adrenaline
+HHealth - hard health; health kit or defib
+f/f rounds - frag or fire rounds
+
+Map 1 in detail:
+
+[M1A1]: Former CaEDA evacuation area [stick the evac sign in]. One area of wall has been broken through by zombies and a house has been broken into, which is now cordoned off by the police. Because of this penetration the evac area is now deserted as the occupants have been infected, and the evacuation vehicles and services are no longer running. There are police cars along the road and signs of struggles with infected.
+
+[M1A2]: Battle house. At the far end of the road there is a house which appears to have been used by some survivors attempting to escape the area. Inside there is a small living room and kitchen, a bathroom and a bare room used as a bedroom along with some sleeping bags and supplies. Upstairs there is access to a balcony, where an o/n SMG and shotgun can be found. At the front of the house there is a heavy machine gun surrounded by dead zombies, some rubble strewn over the garden and an alarmed car on the road. In the garage to the right there are some gas cans and melee weapons (crowbar, axe) and in the garden a shed which holds propane cannisters, gas cans, pills, an axe, a crowbar, a machete and a chainsaw.
+
+[M1A3]: Stream area. At the back of the garden there is a gap in the wall which leads to a small stream running between the railway embankment and the gardens. There is a small path next to the stream which links to a road on the far left, but the way is blocked by metal barriers intending to keep people from the road out of the area. The stream passes through a tunnel that goes underneath the road and runs into a small pool.
+
+[M1A4]: Drainage tunnels. At the pool there is a crouching-height tunnel whose metal grate has fallen off. After a short length of waterlogged tunnel it opens out into a chamber with drain "skylights" on top. In the central area of the chamber there is a small section of dry land and a larger tunnel, blocked by a grating, leading off to the left. On the land there is a dead body of a person with some pills/adrenaline and any throwable next to him To the right, and back into more crouching tunnels, there is a short stretch before another, smaller chamber with "skylights", and then a few metres of tunnel later the survivors emerge back into open air.
+
+[M1A5]: Warehouse, outside. The stream flows down the right hand side of a driveway beside a warehouse. Along the side of the drive there is a pavement and railings separate it from the stream, where one nearest where the tunnel emerges has fallen over. Where the stream borders the pavement some of the rock has been worn away, showing the slabs of pavement sitting on rock. Around the back of the warehouse an open truck is sitting with its open compartment facing away from the stream. Some items, such as throwables, consumables, f/f rounds or ammo, are inside along with some boxes and wooden pallets. The warehouse borders a street which the drive gives access to (although there are fences at the end to block street access), and has doors at the front (closed) which would allow cargo in and out of the main area from trucks. The street itself includes some other office buildings, an extension of the warehouse around the street corner and a power control building at the end.
+
+[M1A6]: Warehouse, inside. Bordering the drive there is a door leading into a rescue closet, and another leading into a storage room full of shelves that is just off the main warehouse room itself. At the exit to this storage room is the first of a series of burglar alarms that are placed throughout the warehouse. In the main warehouse room there are a number of shelves that have collapsed upon each other in a domino-type effect, and a hole in the upper left wall that allows infected access to a raised platform. Further burglar alarms are placed along the walls.
+
+[M1A7]: Stairwell,
+
+Map 2: Area with wooden walkways before main explosives area has signs warning of explosives, has guns and ammo and some boomer bile. Make signs indicating no pipe bombs or molotovs? Random 1/4 chance of a grenade launcher spawning, to mix things up a little. Lighting comes from lanterns at floor level, battery-powered fluorescent tubes and some lights attached to ceiling beams/struts and corded to generators or batteries. Entrance to this room is through a broken wall; the previous corridor turns right and ends in a locked door, but the end wall has been broken through and boarded up with planks which must be broken to proceed through. Ceiling made of rock (displacement) and is low and rough. Ground around wooden walkways is dirt and littered with bricks, broken junk and rubble.
+
+Further map 2 notes: need to add some more fires into the tunnel area after the water. Change the fog depth from the top of the sewer water if possible, in order to be able to see the obstacles underneath, and increase fog start distance underwater. Large and small drainage pipes are dark; move auto shotgun from pipe room into main room along with some other weapons and ammo; add in a locked door or two into the second choice small pipe route, and maybe a locked doorway with a window next to it to see into a small intermediate room. Fix nav around third choice pipe route; add some items into the mini-cave in the waterlogged pipe room, along with a weapon or two and a dead human body.
+
+After the explosives room, use a staircase the same as that used to get down into the sewers. Measure the distance between the descent room and the ascent room and note for 3D skybox dimensions.
+
+Explosives system: while idle play tank sounds; when damaged start particle fire, play fire sound, start timer for two seconds; when timer expires stop sound, stop fire, disable barrel props, spawn metal gibs, wait 0.01s, trigger explosion, break breakable boards, stop tank idle sound timer, enable infected ladder, spawn tank.
