@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "5135"
-	"mapversion" "131"
+	"editorbuild" "7554"
+	"mapversion" "133"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "131"
+	"mapversion" "133"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -223,7 +223,7 @@ entity
 	"id" "135"
 	"classname" "shadow_control"
 	"angles" "15 18 0"
-	"color" "28 35 45"
+	"color" "37 24 48"
 	"disableallshadows" "0"
 	"distance" "70"
 	"enableshadowsfromlocallights" "1"
