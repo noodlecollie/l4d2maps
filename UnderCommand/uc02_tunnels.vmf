@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7554"
-	"mapversion" "670"
+	"mapversion" "675"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,13 +20,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "8"
+	"nGridSpacing" "64"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "670"
+	"mapversion" "675"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -183372,7 +183372,7 @@ entity
 	"angles" "0 0 0"
 	"effect_name" "sewer_flow_splash"
 	"start_active" "1"
-	"origin" "9696 336 -1360"
+	"origin" "9696 336 -1359"
 	editor
 	{
 		"color" "220 30 220"
@@ -183388,7 +183388,7 @@ entity
 	"angles" "0 0 0"
 	"effect_name" "sewer_flow_splash"
 	"start_active" "1"
-	"origin" "9696 560 -1360"
+	"origin" "9696 560 -1359"
 	editor
 	{
 		"color" "220 30 220"
@@ -183404,7 +183404,7 @@ entity
 	"angles" "0 270 0"
 	"effect_name" "sewer_flow_splash"
 	"start_active" "1"
-	"origin" "10672 1504 -1360"
+	"origin" "10672 1504 -1359"
 	editor
 	{
 		"color" "220 30 220"
@@ -183420,7 +183420,7 @@ entity
 	"angles" "0 270 0"
 	"effect_name" "sewer_flow_splash"
 	"start_active" "1"
-	"origin" "10448 1504 -1360"
+	"origin" "10448 1504 -1359"
 	editor
 	{
 		"color" "220 30 220"
@@ -184738,13 +184738,70 @@ entity
 		"logicalpos" "[0 1500]"
 	}
 }
+entity
+{
+	"id" "170080"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/ambience/rainscapes/crucial_waterrain_med_loop.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "0"
+	"origin" "8197.13 1758.44 -1053.35"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "170098"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/ambience/rainscapes/crucial_waterrain_med_loop.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "0"
+	"origin" "7866.85 1980.91 -956.567"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "170104"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/ambience/rainscapes/crucial_waterrain_med_loop.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"spawnflags" "0"
+	"origin" "7033.75 1986.01 -899.924"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[8201.18 1349.1 -913.011]"
-		"look" "[8228.82 1366.1 -927.192]"
+		"position" "[3289.68 3155.93 597.126]"
+		"look" "[3292.42 3188.56 583.633]"
 	}
 }
 cordons
