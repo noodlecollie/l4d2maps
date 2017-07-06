@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7145"
-	"mapversion" "7"
+	"editorbuild" "7554"
+	"mapversion" "8"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "7"
+	"mapversion" "8"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -3845,6 +3845,10 @@ entity
 	"speed" "9.6"
 	"startposition" "0"
 	"targetname" "weapon_door_right"
+	connections
+	{
+		"OnFullyOpen" "alarm_noisePlaySound0.5-1"
+	}
 	solid
 	{
 		"id" "49"
