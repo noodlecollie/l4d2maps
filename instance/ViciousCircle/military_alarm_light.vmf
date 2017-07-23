@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7554"
-	"mapversion" "11"
+	"mapversion" "12"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "11"
+	"mapversion" "12"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -66,7 +66,7 @@ entity
 	"_shadoworiginoffset" "0 0 0"
 	"_zero_percent_distance" "208"
 	"spawnflags" "1"
-	"style" "9"
+	"style" "0"
 	"targetname" "alarm_light"
 	"origin" "8 0 0"
 	editor
