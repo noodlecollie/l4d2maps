@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7554"
-	"mapversion" "37"
+	"mapversion" "66"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "8"
+	"nGridSpacing" "64"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "37"
+	"mapversion" "66"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -45,7 +45,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 197 242"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -68,7 +68,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 143 232"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -91,7 +91,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 197 146"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -114,7 +114,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 247 200"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -137,7 +137,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 177 254"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -160,7 +160,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 203 196"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -183,7 +183,7 @@ entity
 	"origin" "-64.0003 -448 -84.3149"
 	editor
 	{
-		"color" "0 225 206"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -250,7 +250,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 137 190"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -273,7 +273,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 163 136"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -296,7 +296,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 133 238"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -319,7 +319,7 @@ entity
 	"origin" "448 -448 -84.3149"
 	editor
 	{
-		"color" "0 179 216"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 5500]"
@@ -331,6 +331,7 @@ entity
 	"classname" "func_door_rotating"
 	"always_fire_blocked_outputs" "0"
 	"angles" "0 0 0"
+	"closesound" "common/null.wav"
 	"disablereceiveshadows" "0"
 	"disableshadows" "0"
 	"disableX360" "0"
@@ -349,6 +350,8 @@ entity
 	"maxgpulevel" "0"
 	"mincpulevel" "0"
 	"mingpulevel" "0"
+	"noise1" "common/null.wav"
+	"noise2" "common/null.wav"
 	"origin" "1185.04 -446.96 556"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -358,12 +361,19 @@ entity
 	"spawnflags" "40"
 	"spawnpos" "1"
 	"speed" "3"
+	"startclosesound" "common/null.wav"
 	"targetname" "freight_conveyor_rotator"
 	"unlocked_sentence" "0"
 	"wait" "-1"
 	connections
 	{
 		"OnFullyClosed" "freight_conveyor_collisionsEnable0-1"
+		"OnClose" "freight_conveyor_sprite_flash_timerEnable0-1"
+		"OnFullyClosed" "freight_conveyor_sprite_flash_timerDisable0-1"
+		"OnFullyClosed" "freight_conveyor_spritesHideSprite0.01-1"
+		"OnClose" "freight_conveyor_move_startPlaySound0-1"
+		"OnFullyClosed" "freight_conveyor_move_endPlaySound0-1"
+		"OnFullyClosed" "freight_conveyor_move_alarmStopSound0.01-1"
 	}
 	solid
 	{
@@ -862,7 +872,7 @@ entity
 		side
 		{
 			"id" "778"
-			"plane" "(842.852 827.474 612) (844.788 819.711 612) (844.788 819.711 604)"
+			"plane" "(844.788 819.711 612) (844.788 819.711 607.744) (842.852 827.477 607.744)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -873,7 +883,7 @@ entity
 		side
 		{
 			"id" "777"
-			"plane" "(885.545 838.118 604) (887.481 830.356 604) (887.481 830.356 612)"
+			"plane" "(885.545 838.117 612) (885.545 838.117 607.744) (887.481 830.356 607.744)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -884,7 +894,7 @@ entity
 		side
 		{
 			"id" "776"
-			"plane" "(842.852 827.474 612) (842.852 827.474 604) (885.545 838.118 604)"
+			"plane" "(842.852 827.474 612) (842.852 827.474 607.744) (885.544 838.117 607.744)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -895,7 +905,7 @@ entity
 		side
 		{
 			"id" "775"
-			"plane" "(887.481 830.356 612) (887.481 830.356 604) (844.788 819.711 604)"
+			"plane" "(887.481 830.356 612) (887.481 830.356 607.744) (844.791 819.711 607.744)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -906,7 +916,7 @@ entity
 		side
 		{
 			"id" "774"
-			"plane" "(844.788 819.711 612) (842.852 827.474 612) (885.545 838.118 612)"
+			"plane" "(844.789 819.707 612) (842.853 827.473 612) (885.546 838.121 612)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -917,7 +927,7 @@ entity
 		side
 		{
 			"id" "773"
-			"plane" "(887.481 830.356 604) (885.545 838.118 604) (842.852 827.474 604)"
+			"plane" "(842.845 827.473 607.744) (844.781 819.709 607.744) (887.484 830.355 607.744)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -938,7 +948,7 @@ entity
 		side
 		{
 			"id" "784"
-			"plane" "(800.022 999.258 661.043) (801.957 991.496 661.043) (801.957 991.496 653.043)"
+			"plane" "(801.957 991.496 661.043) (801.957 991.496 657.088) (800.022 999.256 657.088)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -949,7 +959,7 @@ entity
 		side
 		{
 			"id" "783"
-			"plane" "(842.715 1009.9 653.043) (844.65 1002.14 653.043) (844.65 1002.14 661.043)"
+			"plane" "(842.716 1009.9 661.043) (842.716 1009.9 657.088) (844.651 1002.14 657.088)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -960,7 +970,7 @@ entity
 		side
 		{
 			"id" "782"
-			"plane" "(800.022 999.258 661.043) (800.022 999.258 653.043) (842.715 1009.9 653.043)"
+			"plane" "(800.023 999.258 661.043) (800.023 999.258 657.088) (842.715 1009.9 657.088)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -971,7 +981,7 @@ entity
 		side
 		{
 			"id" "781"
-			"plane" "(844.65 1002.14 661.043) (844.65 1002.14 653.043) (801.957 991.496 653.043)"
+			"plane" "(844.649 1002.14 661.043) (844.649 1002.14 657.088) (801.955 991.496 657.088)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -982,7 +992,7 @@ entity
 		side
 		{
 			"id" "780"
-			"plane" "(801.957 991.496 661.043) (800.022 999.258 661.043) (842.715 1009.9 661.043)"
+			"plane" "(801.959 991.496 661.043) (800.023 999.258 661.043) (842.715 1009.9 661.043)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -993,7 +1003,7 @@ entity
 		side
 		{
 			"id" "779"
-			"plane" "(844.65 1002.14 653.043) (842.715 1009.9 653.043) (800.022 999.258 653.043)"
+			"plane" "(800.023 999.258 657.088) (801.958 991.496 657.088) (844.654 1002.14 657.088)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1014,7 +1024,7 @@ entity
 		side
 		{
 			"id" "790"
-			"plane" "(877.824 687.21 572.434) (879.76 679.448 572.434) (879.76 679.448 564.434)"
+			"plane" "(879.76 679.449 572.436) (879.76 679.449 568.419) (877.824 687.207 568.419)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1025,7 +1035,7 @@ entity
 		side
 		{
 			"id" "789"
-			"plane" "(920.517 697.855 564.434) (922.453 690.092 564.434) (922.453 690.092 572.434)"
+			"plane" "(920.517 697.852 572.436) (920.517 697.852 568.419) (922.452 690.093 568.419)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1036,7 +1046,7 @@ entity
 		side
 		{
 			"id" "788"
-			"plane" "(877.824 687.21 572.434) (877.824 687.21 564.434) (920.517 697.855 564.434)"
+			"plane" "(877.826 687.209 572.436) (877.826 687.209 568.419) (920.516 697.854 568.419)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1047,7 +1057,7 @@ entity
 		side
 		{
 			"id" "787"
-			"plane" "(922.453 690.092 572.434) (922.453 690.092 564.434) (879.76 679.448 564.434)"
+			"plane" "(922.453 690.092 572.436) (922.453 690.092 568.419) (879.762 679.449 568.419)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1058,7 +1068,7 @@ entity
 		side
 		{
 			"id" "786"
-			"plane" "(879.76 679.448 572.434) (877.824 687.21 572.434) (920.517 697.855 572.434)"
+			"plane" "(879.76 679.449 572.436) (877.825 687.203 572.436) (920.519 697.855 572.436)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1069,7 +1079,7 @@ entity
 		side
 		{
 			"id" "785"
-			"plane" "(922.453 690.092 564.434) (920.517 697.855 564.434) (877.824 687.21 564.434)"
+			"plane" "(877.824 687.207 568.419) (879.76 679.448 568.419) (922.454 690.094 568.419)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1090,7 +1100,7 @@ entity
 		side
 		{
 			"id" "796"
-			"plane" "(912.745 547.148 532.971) (914.681 539.386 532.971) (914.681 539.386 524.971)"
+			"plane" "(914.68 539.386 532.973) (914.68 539.386 527.628) (912.745 547.146 527.629)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1101,7 +1111,7 @@ entity
 		side
 		{
 			"id" "795"
-			"plane" "(955.438 557.793 524.971) (957.374 550.03 524.971) (957.374 550.03 532.971)"
+			"plane" "(955.438 557.789 532.973) (955.438 557.789 527.628) (957.374 550.031 527.629)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1112,7 +1122,7 @@ entity
 		side
 		{
 			"id" "794"
-			"plane" "(912.745 547.148 532.971) (912.745 547.148 524.971) (955.438 557.793 524.971)"
+			"plane" "(912.746 547.147 532.973) (912.746 547.147 527.628) (955.438 557.792 527.629)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1123,7 +1133,7 @@ entity
 		side
 		{
 			"id" "793"
-			"plane" "(957.374 550.03 532.971) (957.374 550.03 524.971) (914.681 539.386 524.971)"
+			"plane" "(957.373 550.029 532.973) (957.373 550.029 527.628) (914.682 539.385 527.629)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1134,7 +1144,7 @@ entity
 		side
 		{
 			"id" "792"
-			"plane" "(914.681 539.386 532.971) (912.745 547.148 532.971) (955.438 557.793 532.971)"
+			"plane" "(914.682 539.383 532.972) (912.746 547.145 532.972) (955.437 557.793 532.972)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1145,7 +1155,7 @@ entity
 		side
 		{
 			"id" "791"
-			"plane" "(957.374 550.03 524.971) (955.438 557.793 524.971) (912.745 547.148 524.971)"
+			"plane" "(912.744 547.141 527.628) (914.679 539.385 527.628) (957.371 550.031 527.628)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1166,7 +1176,7 @@ entity
 		side
 		{
 			"id" "802"
-			"plane" "(947.73 406.834 492.73) (949.665 399.072 492.73) (949.665 399.072 484.73)"
+			"plane" "(949.665 399.073 492.73) (949.665 399.073 487.689) (947.729 406.836 487.689)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1177,7 +1187,7 @@ entity
 		side
 		{
 			"id" "801"
-			"plane" "(990.423 417.479 484.73) (992.358 409.716 484.73) (992.358 409.716 492.73)"
+			"plane" "(990.422 417.484 492.73) (990.422 417.484 487.689) (992.358 409.715 487.689)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1188,7 +1198,7 @@ entity
 		side
 		{
 			"id" "800"
-			"plane" "(947.73 406.834 492.73) (947.73 406.834 484.73) (990.423 417.479 484.73)"
+			"plane" "(947.736 406.835 492.73) (947.736 406.835 487.689) (990.424 417.479 487.689)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1199,7 +1209,7 @@ entity
 		side
 		{
 			"id" "799"
-			"plane" "(992.358 409.716 492.73) (992.358 409.716 484.73) (949.665 399.072 484.73)"
+			"plane" "(992.357 409.716 492.73) (992.357 409.716 487.689) (949.664 399.072 487.689)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1210,7 +1220,7 @@ entity
 		side
 		{
 			"id" "798"
-			"plane" "(949.665 399.072 492.73) (947.73 406.834 492.73) (990.423 417.479 492.73)"
+			"plane" "(949.665 399.074 492.73) (947.73 406.836 492.73) (990.422 417.48 492.73)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1221,7 +1231,7 @@ entity
 		side
 		{
 			"id" "797"
-			"plane" "(992.358 409.716 484.73) (990.423 417.479 484.73) (947.73 406.834 484.73)"
+			"plane" "(947.729 406.836 487.689) (949.664 399.072 487.689) (992.357 409.715 487.689)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1242,7 +1252,7 @@ entity
 		side
 		{
 			"id" "808"
-			"plane" "(982.626 266.873 452.54) (984.561 259.111 452.54) (984.561 259.111 444.54)"
+			"plane" "(984.561 259.112 452.539) (984.561 259.112 447.015) (982.626 266.873 447.015)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1253,7 +1263,7 @@ entity
 		side
 		{
 			"id" "807"
-			"plane" "(1025.32 277.518 444.54) (1027.25 269.756 444.54) (1027.25 269.756 452.54)"
+			"plane" "(1025.32 277.518 452.539) (1025.32 277.518 447.015) (1027.25 269.755 447.015)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1264,7 +1274,7 @@ entity
 		side
 		{
 			"id" "806"
-			"plane" "(982.626 266.873 452.54) (982.626 266.873 444.54) (1025.32 277.518 444.54)"
+			"plane" "(982.625 266.873 452.539) (982.625 266.873 447.015) (1025.32 277.518 447.015)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1275,7 +1285,7 @@ entity
 		side
 		{
 			"id" "805"
-			"plane" "(1027.25 269.756 452.54) (1027.25 269.756 444.54) (984.561 259.111 444.54)"
+			"plane" "(1027.25 269.756 452.539) (1027.25 269.756 447.015) (984.564 259.111 447.015)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1286,7 +1296,7 @@ entity
 		side
 		{
 			"id" "804"
-			"plane" "(984.561 259.111 452.54) (982.626 266.873 452.54) (1025.32 277.518 452.54)"
+			"plane" "(984.563 259.113 452.54) (982.626 266.879 452.54) (1025.32 277.516 452.54)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1297,7 +1307,7 @@ entity
 		side
 		{
 			"id" "803"
-			"plane" "(1027.25 269.756 444.54) (1025.32 277.518 444.54) (982.626 266.873 444.54)"
+			"plane" "(982.628 266.871 447.015) (984.562 259.111 447.015) (1027.25 269.754 447.015)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1318,7 +1328,7 @@ entity
 		side
 		{
 			"id" "814"
-			"plane" "(1017.58 126.687 411.822) (1019.51 118.925 411.822) (1019.51 118.925 403.822)"
+			"plane" "(1019.51 118.923 411.821) (1019.51 118.923 406.72) (1017.58 126.688 406.719)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1329,7 +1339,7 @@ entity
 		side
 		{
 			"id" "813"
-			"plane" "(1060.27 137.331 403.822) (1062.21 129.569 403.822) (1062.21 129.569 411.822)"
+			"plane" "(1060.27 137.334 411.821) (1060.27 137.334 406.72) (1062.21 129.568 406.719)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1340,7 +1350,7 @@ entity
 		side
 		{
 			"id" "812"
-			"plane" "(1017.58 126.687 411.822) (1017.58 126.687 403.822) (1060.27 137.331 403.822)"
+			"plane" "(1017.58 126.687 411.821) (1017.58 126.687 406.72) (1060.27 137.331 406.719)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1351,7 +1361,7 @@ entity
 		side
 		{
 			"id" "811"
-			"plane" "(1062.21 129.569 411.822) (1062.21 129.569 403.822) (1019.51 118.925 403.822)"
+			"plane" "(1062.21 129.568 411.821) (1062.21 129.568 406.72) (1019.51 118.925 406.719)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1362,7 +1372,7 @@ entity
 		side
 		{
 			"id" "810"
-			"plane" "(1019.51 118.925 411.822) (1017.58 126.687 411.822) (1060.27 137.331 411.822)"
+			"plane" "(1019.51 118.922 411.822) (1017.58 126.684 411.822) (1060.27 137.332 411.822)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1373,7 +1383,7 @@ entity
 		side
 		{
 			"id" "809"
-			"plane" "(1062.21 129.569 403.822) (1060.27 137.331 403.822) (1017.58 126.687 403.822)"
+			"plane" "(1017.58 126.688 406.72) (1019.51 118.925 406.72) (1062.21 129.566 406.72)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1394,7 +1404,7 @@ entity
 		side
 		{
 			"id" "820"
-			"plane" "(1052.57 -13.6653 371.561) (1054.51 -21.4277 371.561) (1054.51 -21.4277 363.561)"
+			"plane" "(1054.51 -21.4286 371.564) (1054.51 -21.4286 366.882) (1052.57 -13.6641 366.883)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1405,7 +1415,7 @@ entity
 		side
 		{
 			"id" "819"
-			"plane" "(1095.27 -3.02075 363.561) (1097.2 -10.7831 363.561) (1097.2 -10.7831 371.561)"
+			"plane" "(1095.27 -3.0215 371.564) (1095.27 -3.0215 366.882) (1097.2 -10.7841 366.883)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1416,7 +1426,7 @@ entity
 		side
 		{
 			"id" "818"
-			"plane" "(1052.57 -13.6653 371.561) (1052.57 -13.6653 363.561) (1095.27 -3.02075 363.561)"
+			"plane" "(1052.57 -13.6641 371.564) (1052.57 -13.6641 366.882) (1095.27 -3.0196 366.883)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1427,7 +1437,7 @@ entity
 		side
 		{
 			"id" "817"
-			"plane" "(1097.2 -10.7831 371.561) (1097.2 -10.7831 363.561) (1054.51 -21.4277 363.561)"
+			"plane" "(1097.2 -10.7824 371.564) (1097.2 -10.7824 366.882) (1054.51 -21.4268 366.883)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1438,7 +1448,7 @@ entity
 		side
 		{
 			"id" "816"
-			"plane" "(1054.51 -21.4277 371.561) (1052.57 -13.6653 371.561) (1095.27 -3.02075 371.561)"
+			"plane" "(1054.51 -21.4297 371.563) (1052.57 -13.668 371.563) (1095.27 -3.01563 371.563)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1449,7 +1459,7 @@ entity
 		side
 		{
 			"id" "815"
-			"plane" "(1097.2 -10.7831 363.561) (1095.27 -3.02075 363.561) (1052.57 -13.6653 363.561)"
+			"plane" "(1052.57 -13.6602 366.882) (1054.51 -21.4273 366.882) (1097.2 -10.7852 366.882)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1470,7 +1480,7 @@ entity
 		side
 		{
 			"id" "826"
-			"plane" "(1083.29 -136.851 335.803) (1085.22 -144.613 335.803) (1085.22 -144.613 327.803)"
+			"plane" "(1085.22 -144.611 335.806) (1085.22 -144.611 331.305) (1083.29 -136.85 331.306)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1481,7 +1491,7 @@ entity
 		side
 		{
 			"id" "825"
-			"plane" "(1125.98 -126.206 327.803) (1127.91 -133.969 327.803) (1127.91 -133.969 335.803)"
+			"plane" "(1125.98 -126.203 335.806) (1125.98 -126.203 331.305) (1127.91 -133.971 331.306)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1492,7 +1502,7 @@ entity
 		side
 		{
 			"id" "824"
-			"plane" "(1083.29 -136.851 335.803) (1083.29 -136.851 327.803) (1125.98 -126.206 327.803)"
+			"plane" "(1083.29 -136.852 335.806) (1083.29 -136.852 331.305) (1125.98 -126.206 331.306)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1503,7 +1513,7 @@ entity
 		side
 		{
 			"id" "823"
-			"plane" "(1127.91 -133.969 335.803) (1127.91 -133.969 327.803) (1085.22 -144.613 327.803)"
+			"plane" "(1127.91 -133.968 335.806) (1127.91 -133.968 331.305) (1085.22 -144.612 331.306)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1514,7 +1524,7 @@ entity
 		side
 		{
 			"id" "822"
-			"plane" "(1085.22 -144.613 335.803) (1083.29 -136.851 335.803) (1125.98 -126.206 335.803)"
+			"plane" "(1085.22 -144.617 335.805) (1083.29 -136.848 335.805) (1125.98 -126.203 335.805)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1525,7 +1535,7 @@ entity
 		side
 		{
 			"id" "821"
-			"plane" "(1127.91 -133.969 327.803) (1125.98 -126.206 327.803) (1083.29 -136.851 327.803)"
+			"plane" "(1083.29 -136.852 331.305) (1085.22 -144.613 331.305) (1127.91 -133.969 331.305)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1546,7 +1556,7 @@ entity
 		side
 		{
 			"id" "832"
-			"plane" "(1119.45 -281.903 294.336) (1121.39 -289.665 294.336) (1121.39 -289.665 286.336)"
+			"plane" "(1121.39 -289.665 294.336) (1121.39 -289.665 289.657) (1119.45 -281.9 289.657)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1557,7 +1567,7 @@ entity
 		side
 		{
 			"id" "831"
-			"plane" "(1162.14 -271.258 286.336) (1164.08 -279.021 286.336) (1164.08 -279.021 294.336)"
+			"plane" "(1162.14 -271.258 294.336) (1162.14 -271.258 289.657) (1164.08 -279.022 289.657)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1568,7 +1578,7 @@ entity
 		side
 		{
 			"id" "830"
-			"plane" "(1119.45 -281.903 294.336) (1119.45 -281.903 286.336) (1162.14 -271.258 286.336)"
+			"plane" "(1119.45 -281.904 294.336) (1119.45 -281.904 289.657) (1162.14 -271.259 289.657)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1579,7 +1589,7 @@ entity
 		side
 		{
 			"id" "829"
-			"plane" "(1164.08 -279.021 294.336) (1164.08 -279.021 286.336) (1121.39 -289.665 286.336)"
+			"plane" "(1164.08 -279.021 294.336) (1164.08 -279.021 289.657) (1121.39 -289.665 289.657)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1590,7 +1600,7 @@ entity
 		side
 		{
 			"id" "828"
-			"plane" "(1121.39 -289.665 294.336) (1119.45 -281.903 294.336) (1162.14 -271.258 294.336)"
+			"plane" "(1121.39 -289.664 294.336) (1119.45 -281.902 294.336) (1162.14 -271.254 294.336)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1601,7 +1611,7 @@ entity
 		side
 		{
 			"id" "827"
-			"plane" "(1164.08 -279.021 286.336) (1162.14 -271.258 286.336) (1119.45 -281.903 286.336)"
+			"plane" "(1119.44 -281.906 289.657) (1121.38 -289.667 289.657) (1164.08 -279.02 289.657)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1622,7 +1632,7 @@ entity
 		side
 		{
 			"id" "838"
-			"plane" "(1140.79 -367.476 269.996) (1142.72 -375.239 269.996) (1142.72 -375.239 261.996)"
+			"plane" "(1142.72 -375.241 270) (1142.72 -375.241 265.502) (1140.79 -367.475 265.502)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1633,7 +1643,7 @@ entity
 		side
 		{
 			"id" "837"
-			"plane" "(1183.48 -356.832 261.996) (1185.42 -364.594 261.996) (1185.42 -364.594 269.996)"
+			"plane" "(1183.48 -356.832 270) (1183.48 -356.832 265.502) (1185.42 -364.594 265.502)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1644,7 +1654,7 @@ entity
 		side
 		{
 			"id" "836"
-			"plane" "(1140.79 -367.476 269.996) (1140.79 -367.476 261.996) (1183.48 -356.832 261.996)"
+			"plane" "(1140.79 -367.476 270) (1140.79 -367.476 265.502) (1183.48 -356.832 265.502)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1655,7 +1665,7 @@ entity
 		side
 		{
 			"id" "835"
-			"plane" "(1185.42 -364.594 269.996) (1185.42 -364.594 261.996) (1142.72 -375.239 261.996)"
+			"plane" "(1185.42 -364.595 270) (1185.42 -364.595 265.502) (1142.72 -375.24 265.502)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1666,7 +1676,7 @@ entity
 		side
 		{
 			"id" "834"
-			"plane" "(1142.72 -375.239 269.996) (1140.79 -367.476 269.996) (1183.48 -356.832 269.996)"
+			"plane" "(1142.72 -375.242 270) (1140.79 -367.477 270) (1183.48 -356.832 270)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1677,7 +1687,7 @@ entity
 		side
 		{
 			"id" "833"
-			"plane" "(1185.42 -364.594 261.996) (1183.48 -356.832 261.996) (1140.79 -367.476 261.996)"
+			"plane" "(1140.79 -367.473 265.502) (1142.72 -375.24 265.502) (1185.42 -364.594 265.502)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1698,7 +1708,7 @@ entity
 		side
 		{
 			"id" "844"
-			"plane" "(1161.65 -451.155 246.107) (1163.59 -458.917 246.107) (1163.59 -458.917 238.107)"
+			"plane" "(1163.59 -458.918 246.106) (1163.59 -458.918 240.763) (1161.65 -451.156 240.762)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1709,7 +1719,7 @@ entity
 		side
 		{
 			"id" "843"
-			"plane" "(1204.34 -440.51 238.107) (1206.28 -448.273 238.107) (1206.28 -448.273 246.107)"
+			"plane" "(1204.34 -440.51 246.106) (1204.34 -440.51 240.763) (1206.28 -448.273 240.762)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1720,7 +1730,7 @@ entity
 		side
 		{
 			"id" "842"
-			"plane" "(1161.65 -451.155 246.107) (1161.65 -451.155 238.107) (1204.34 -440.51 238.107)"
+			"plane" "(1161.65 -451.156 246.106) (1161.65 -451.156 240.763) (1204.34 -440.511 240.762)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1731,7 +1741,7 @@ entity
 		side
 		{
 			"id" "841"
-			"plane" "(1206.28 -448.273 246.107) (1206.28 -448.273 238.107) (1163.59 -458.917 238.107)"
+			"plane" "(1206.28 -448.273 246.106) (1206.28 -448.273 240.763) (1163.59 -458.917 240.762)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1742,7 +1752,7 @@ entity
 		side
 		{
 			"id" "840"
-			"plane" "(1163.59 -458.917 246.107) (1161.65 -451.155 246.107) (1204.34 -440.51 246.107)"
+			"plane" "(1163.59 -458.918 246.107) (1161.65 -451.156 246.107) (1204.34 -440.508 246.107)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1753,7 +1763,7 @@ entity
 		side
 		{
 			"id" "839"
-			"plane" "(1206.28 -448.273 238.107) (1204.34 -440.51 238.107) (1161.65 -451.155 238.107)"
+			"plane" "(1161.65 -451.152 240.763) (1163.59 -458.917 240.763) (1206.28 -448.27 240.763)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1774,7 +1784,7 @@ entity
 		side
 		{
 			"id" "850"
-			"plane" "(1165.72 -467.482 241.45) (1167.66 -475.245 241.45) (1167.66 -475.245 233.45)"
+			"plane" "(1167.66 -475.246 241.451) (1167.66 -475.246 236.288) (1165.72 -467.482 236.287)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1785,7 +1795,7 @@ entity
 		side
 		{
 			"id" "849"
-			"plane" "(1208.41 -456.838 233.45) (1210.35 -464.6 233.45) (1210.35 -464.6 241.45)"
+			"plane" "(1208.41 -456.836 241.451) (1208.41 -456.836 236.288) (1210.35 -464.601 236.287)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1796,7 +1806,7 @@ entity
 		side
 		{
 			"id" "848"
-			"plane" "(1165.72 -467.482 241.45) (1165.72 -467.482 233.45) (1208.41 -456.838 233.45)"
+			"plane" "(1165.72 -467.482 241.451) (1165.72 -467.482 236.288) (1208.41 -456.838 236.287)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1807,7 +1817,7 @@ entity
 		side
 		{
 			"id" "847"
-			"plane" "(1210.35 -464.6 241.45) (1210.35 -464.6 233.45) (1167.66 -475.245 233.45)"
+			"plane" "(1210.35 -464.601 241.451) (1210.35 -464.601 236.288) (1167.66 -475.247 236.287)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1818,7 +1828,7 @@ entity
 		side
 		{
 			"id" "846"
-			"plane" "(1167.66 -475.245 241.45) (1165.72 -467.482 241.45) (1208.41 -456.838 241.45)"
+			"plane" "(1167.66 -475.246 241.451) (1165.72 -467.484 241.451) (1208.41 -456.844 241.451)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1829,7 +1839,7 @@ entity
 		side
 		{
 			"id" "845"
-			"plane" "(1210.35 -464.6 233.45) (1208.41 -456.838 233.45) (1165.72 -467.482 233.45)"
+			"plane" "(1165.72 -467.484 236.288) (1167.66 -475.245 236.288) (1210.35 -464.602 236.288)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -5466,6 +5476,162 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 2500]"
+	}
+}
+entity
+{
+	"id" "731"
+	"classname" "env_sprite"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "0.7"
+	"model" "sprites/glow01.spr"
+	"parentname" "freight_conveyor_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 83 87"
+	"rendermode" "9"
+	"scale" "3"
+	"spawnflags" "0"
+	"targetname" "freight_conveyor_sprites"
+	"origin" "843.388 1020.42 656.259"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "757"
+	"classname" "env_sprite"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "0.7"
+	"model" "sprites/glow01.spr"
+	"parentname" "freight_conveyor_rotator"
+	"renderamt" "255"
+	"rendercolor" "255 83 87"
+	"rendermode" "9"
+	"scale" "3"
+	"spawnflags" "0"
+	"targetname" "freight_conveyor_sprites"
+	"origin" "796.074 1008.9 656.259"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "790"
+	"classname" "logic_timer"
+	"RefireTime" "1"
+	"spawnflags" "1"
+	"StartDisabled" "1"
+	"targetname" "freight_conveyor_sprite_flash_timer"
+	connections
+	{
+		"OnTimerLow" "freight_conveyor_spritesShowSprite0-1"
+		"OnTimerLow" "freight_conveyor_move_alarmPlaySound0-1"
+		"OnTimerHigh" "freight_conveyor_spritesHideSprite0-1"
+		"OnTimerHigh" "freight_conveyor_move_alarmStopSound0-1"
+	}
+	"origin" "1192 -544 592"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "829"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/floodgate_move_short1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "3392"
+	"SourceEntityName" "freight_conveyor_sound_target"
+	"spawnflags" "48"
+	"targetname" "freight_conveyor_move_start"
+	"origin" "1184 -448 656"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "853"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"parentname" "freight_conveyor_rotator"
+	"spawnflags" "0"
+	"targetname" "freight_conveyor_sound_target"
+	"origin" "816 1032 608"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "871"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/floodgate_stop1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"SourceEntityName" "freight_conveyor_sound_target"
+	"spawnflags" "48"
+	"targetname" "freight_conveyor_move_end"
+	"origin" "1184 -448 672"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "886"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/machines/truck_bu_lp.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "5568"
+	"SourceEntityName" "freight_conveyor_sound_target"
+	"spawnflags" "16"
+	"targetname" "freight_conveyor_move_alarm"
+	"origin" "1184 -448 688"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras
