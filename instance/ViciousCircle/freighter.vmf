@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7554"
-	"mapversion" "66"
+	"mapversion" "79"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "66"
+	"mapversion" "79"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -374,6 +374,7 @@ entity
 		"OnClose" "freight_conveyor_move_startPlaySound0-1"
 		"OnFullyClosed" "freight_conveyor_move_endPlaySound0-1"
 		"OnFullyClosed" "freight_conveyor_move_alarmStopSound0.01-1"
+		"OnFullyClosed" "freight_radio_spriteHideSprite0-1"
 	}
 	solid
 	{
@@ -5632,6 +5633,119 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "957"
+	"classname" "beam_spotlight"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HDRColorScale" "0.7"
+	"maxspeed" "180"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "7"
+	"spotlightlength" "300"
+	"spotlightwidth" "80"
+	"origin" "1420 -484 720"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "963"
+	"classname" "beam_spotlight"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"HDRColorScale" "0.7"
+	"maxspeed" "180"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"spawnflags" "7"
+	"spotlightlength" "300"
+	"spotlightwidth" "80"
+	"origin" "1420 -484 720"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1006"
+	"classname" "env_sprite"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "0.7"
+	"model" "sprites/glow01.spr"
+	"renderamt" "255"
+	"rendercolor" "72 223 95"
+	"renderfx" "3"
+	"rendermode" "9"
+	"scale" "10"
+	"spawnflags" "0"
+	"targetname" "freight_radio_sprite"
+	"origin" "1307.31 -447.896 696.994"
+	editor
+	{
+		"color" "20 140 20"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1048"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "ambient/random_amb_sfx/foghorn_close.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "8612"
+	"spawnflags" "16"
+	"targetname" "freight_radio_horn"
+	"origin" "1308.04 -446.835 711.626"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1085"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"targetname" "freight_conveyor_activate"
+	connections
+	{
+		"OnTrigger" "freight_radio_hornPlaySound0-1"
+		"OnTrigger" "freight_radio_spriteShowSprite0-1"
+		"OnTrigger" "freight_conveyor_rotatorClose4-1"
+	}
+	"origin" "1246.88 -462.512 704"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras
