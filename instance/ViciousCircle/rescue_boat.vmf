@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7554"
-	"mapversion" "4"
+	"mapversion" "8"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "4"
+	"mapversion" "8"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -404,87 +404,11 @@ entity
 	}
 	solid
 	{
-		"id" "25"
-		side
-		{
-			"id" "95"
-			"plane" "(-136 212 552.012) (144 212 552.012) (144 -12.0003 552.012)"
-			"material" "TOOLS/TOOLSBLOCKBULLETS"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "94"
-			"plane" "(-136 -12.0003 0.012085) (144 -12.0004 0.012085) (144 212 0.012085)"
-			"material" "TOOLS/TOOLSBLOCKBULLETS"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "93"
-			"plane" "(-136 212 0.012085) (-136 212 552.012) (-136 -12.0004 552.012)"
-			"material" "TOOLS/TOOLSBLOCKBULLETS"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "92"
-			"plane" "(144 -12.0004 0.012085) (144 -12.0003 552.012) (144 212 552.012)"
-			"material" "TOOLS/TOOLSBLOCKBULLETS"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "91"
-			"plane" "(144 212 0.012085) (144 212 552.012) (-136 212 552.012)"
-			"material" "TOOLS/TOOLSBLOCKBULLETS"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "90"
-			"plane" "(-136 -12.0003 0.012085) (-136 -12.0004 552.012) (144 -12.0003 552.012)"
-			"material" "TOOLS/TOOLSBLOCKBULLETS"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
 		"id" "26"
 		side
 		{
 			"id" "104"
-			"plane" "(-136 318 552.062) (-108 388 552.062) (4 500 552.062)"
+			"plane" "(-136 212 340) (-136 318 340) (-108 388 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -495,7 +419,7 @@ entity
 		side
 		{
 			"id" "103"
-			"plane" "(-136 212 -0.0380859) (144 212 -0.0380859) (144 315 -0.0380859)"
+			"plane" "(-136 318 -0.0382734) (-136 212 -0.0382734) (144 212 -0.0382734)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -506,7 +430,7 @@ entity
 		side
 		{
 			"id" "102"
-			"plane" "(-136 318 -0.0380859) (-136 318 552.062) (-136 212 552.062)"
+			"plane" "(-136 212 -0.0385752) (-136 318 -0.0385758) (-136 318 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -517,7 +441,7 @@ entity
 		side
 		{
 			"id" "101"
-			"plane" "(144 212 -0.0380859) (144 212 552.062) (144 315 552.062)"
+			"plane" "(144 315 -0.0385724) (144 212 -0.038573) (144 212 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -528,7 +452,7 @@ entity
 		side
 		{
 			"id" "100"
-			"plane" "(-136 212 -0.0380859) (-136 212 552.062) (144 212 552.062)"
+			"plane" "(144 212 -0.0385733) (-136 212 -0.0385748) (-136 212 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -539,7 +463,7 @@ entity
 		side
 		{
 			"id" "99"
-			"plane" "(4 500 -0.0380859) (4 500 552.062) (-108 388 552.062)"
+			"plane" "(-108 388 -0.0385752) (4 500 -0.038576) (4 500 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -550,7 +474,7 @@ entity
 		side
 		{
 			"id" "98"
-			"plane" "(108 396 -0.0380859) (108 396 552.062) (4 500 552.062)"
+			"plane" "(4 500 -0.0385723) (108 396 -0.038573) (108 396 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -561,7 +485,7 @@ entity
 		side
 		{
 			"id" "97"
-			"plane" "(144 315 -0.0380859) (144 315 552.062) (108 396 552.062)"
+			"plane" "(108 396 -0.0385724) (144 315 -0.0385729) (144 315 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -572,7 +496,7 @@ entity
 		side
 		{
 			"id" "96"
-			"plane" "(-108 387.999 -0.0380859) (-108 388 552.062) (-136 318 552.062)"
+			"plane" "(-136 318 -0.0385754) (-108 388 -0.0385758) (-108 388 340)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -821,7 +745,7 @@ entity
 		side
 		{
 			"id" "128"
-			"plane" "(-84 -12.0004 552.062) (92 -12.0004 552.062) (92 -104 552.062)"
+			"plane" "(-84 -104 332) (-84 -12 332) (92 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -832,7 +756,7 @@ entity
 		side
 		{
 			"id" "127"
-			"plane" "(-84 -104 152.062) (92 -104 152.062) (92 -12.0004 152.062)"
+			"plane" "(-84 -12 152.062) (-84 -104 152.062) (92 -104 152.062)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -843,7 +767,7 @@ entity
 		side
 		{
 			"id" "126"
-			"plane" "(-84 -12.0004 152.062) (-84 -12.0004 552.062) (-84 -104 552.062)"
+			"plane" "(-84 -104 152.062) (-84 -12 152.062) (-84 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -854,7 +778,7 @@ entity
 		side
 		{
 			"id" "125"
-			"plane" "(92 -104 152.062) (92 -104 552.062) (92 -12.0004 552.062)"
+			"plane" "(92 -12 152.062) (92 -104 152.062) (92 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -865,7 +789,7 @@ entity
 		side
 		{
 			"id" "124"
-			"plane" "(92 -12.0004 152.062) (92 -12.0004 552.062) (-84 -12.0004 552.062)"
+			"plane" "(-84 -12 152.062) (92 -12 152.062) (92 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -876,7 +800,7 @@ entity
 		side
 		{
 			"id" "123"
-			"plane" "(-84 -104 152.062) (-84 -104 552.062) (92 -104 552.062)"
+			"plane" "(92 -104 152.062) (-84 -104 152.062) (-84 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -897,7 +821,7 @@ entity
 		side
 		{
 			"id" "134"
-			"plane" "(-84 -104 552.062) (-48 -104 552.062) (-48 -128 552.062)"
+			"plane" "(-100 -140 332) (-84 -104 332) (-48 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -908,7 +832,7 @@ entity
 		side
 		{
 			"id" "133"
-			"plane" "(-100 -140 152.062) (-48 -128 152.062) (-48 -104 152.062)"
+			"plane" "(-84 -104 152.062) (-100 -140 152.062) (-48 -128 152.062)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -919,7 +843,7 @@ entity
 		side
 		{
 			"id" "132"
-			"plane" "(-84 -104 152.062) (-84 -104 552.062) (-100 -140 552.062)"
+			"plane" "(-100 -140 152.062) (-84 -104 152.062) (-84 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -930,7 +854,7 @@ entity
 		side
 		{
 			"id" "131"
-			"plane" "(-48 -128 152.062) (-48 -128 552.062) (-48 -104 552.062)"
+			"plane" "(-48 -104 152.062) (-48 -128 152.062) (-48 -128 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -941,7 +865,7 @@ entity
 		side
 		{
 			"id" "130"
-			"plane" "(-48 -104 152.062) (-48 -104 552.062) (-84 -104 552.062)"
+			"plane" "(-84 -104 152.062) (-48 -104 152.062) (-48 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -952,7 +876,7 @@ entity
 		side
 		{
 			"id" "129"
-			"plane" "(-100 -140 152.062) (-100 -140 552.062) (-48 -128 552.062)"
+			"plane" "(-48 -128 152.062) (-100 -140 152.062) (-100 -140 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -973,7 +897,7 @@ entity
 		side
 		{
 			"id" "140"
-			"plane" "(-48 -104 240.064) (-48 -104.004 552.062) (-48 -120 552.062)"
+			"plane" "(-48 -120 240.063) (-48 -104 240.063) (-48 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -984,7 +908,7 @@ entity
 		side
 		{
 			"id" "139"
-			"plane" "(92 -120 240.064) (92 -120 552.062) (92 -104 552.062)"
+			"plane" "(92 -104 240.063) (92 -120 240.063) (92 -120 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -995,7 +919,7 @@ entity
 		side
 		{
 			"id" "138"
-			"plane" "(-48 -120 240.064) (92 -120 240.064) (92 -104.004 240.064)"
+			"plane" "(-48 -104 240.063) (-48 -120 240.063) (92 -120 240.063)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1006,7 +930,7 @@ entity
 		side
 		{
 			"id" "137"
-			"plane" "(-48 -104.004 552.062) (92 -104 552.062) (92 -120 552.062)"
+			"plane" "(-48 -120 332) (-48 -104 332) (92 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1017,7 +941,7 @@ entity
 		side
 		{
 			"id" "136"
-			"plane" "(-48 -104 240.064) (92 -104.004 240.064) (92 -104 552.062)"
+			"plane" "(-48 -104 332) (-48 -104 240.063) (92 -104 240.064)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1028,7 +952,7 @@ entity
 		side
 		{
 			"id" "135"
-			"plane" "(92 -120 240.064) (-48 -120 240.064) (-48 -120 552.062)"
+			"plane" "(92 -120 332) (92 -120 240.063) (-48 -120 240.064)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1049,7 +973,7 @@ entity
 		side
 		{
 			"id" "146"
-			"plane" "(92 -12.0004 552.062) (108 -12.0004 552.062) (108 -120 552.062)"
+			"plane" "(92 -120 332) (92 -12 332) (108 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1060,7 +984,7 @@ entity
 		side
 		{
 			"id" "145"
-			"plane" "(92 -120 240.062) (108 -120 240.062) (108 -12.0004 240.062)"
+			"plane" "(92 -12 240.062) (92 -120 240.062) (108 -120 240.062)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1071,7 +995,7 @@ entity
 		side
 		{
 			"id" "144"
-			"plane" "(92 -12.0004 240.062) (92 -12.0004 552.062) (92 -120 552.062)"
+			"plane" "(92 -120 240.062) (92 -12 240.062) (92 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1082,7 +1006,7 @@ entity
 		side
 		{
 			"id" "143"
-			"plane" "(108 -120 240.062) (108 -120 552.062) (108 -12.0004 552.062)"
+			"plane" "(108 -12 240.062) (108 -120 240.062) (108 -120 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1093,7 +1017,7 @@ entity
 		side
 		{
 			"id" "142"
-			"plane" "(108 -12.0004 240.062) (108 -12.0004 552.062) (92 -12.0004 552.062)"
+			"plane" "(92 -12 240.062) (108 -12 240.062) (108 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1104,7 +1028,7 @@ entity
 		side
 		{
 			"id" "141"
-			"plane" "(92 -120 240.062) (92 -120 552.062) (108 -120 552.062)"
+			"plane" "(108 -120 240.062) (92 -120 240.062) (92 -120 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1125,7 +1049,7 @@ entity
 		side
 		{
 			"id" "159"
-			"plane" "(92 -12.0004 552.062) (152 -12.0004 552.062) (152 -20.0003 552.062)"
+			"plane" "(92 -20 336) (92 -12 336) (152 -12 336)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1136,7 +1060,7 @@ entity
 		side
 		{
 			"id" "158"
-			"plane" "(92 -20.0003 152.062) (152 -20.0004 152.062) (152 -12.0004 152.062)"
+			"plane" "(92 -12 152.062) (92 -20 152.062) (152 -20 152.062)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1147,7 +1071,7 @@ entity
 		side
 		{
 			"id" "157"
-			"plane" "(92 -12.0004 152.062) (92 -12.0004 552.062) (92 -20.0004 552.062)"
+			"plane" "(92 -20 152.062) (92 -12 152.062) (92 -12 336)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1158,7 +1082,7 @@ entity
 		side
 		{
 			"id" "156"
-			"plane" "(152 -20.0004 152.062) (152 -20.0003 552.062) (152 -12.0004 552.062)"
+			"plane" "(152 -12 152.062) (152 -20 152.062) (152 -20 336)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1169,7 +1093,7 @@ entity
 		side
 		{
 			"id" "155"
-			"plane" "(152 -12.0004 152.062) (152 -12.0004 552.062) (92 -12.0004 552.062)"
+			"plane" "(92 -12 152.062) (152 -12 152.062) (152 -12 336)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1180,7 +1104,7 @@ entity
 		side
 		{
 			"id" "154"
-			"plane" "(92 -20.0003 152.062) (92 -20.0004 552.062) (152 -20.0003 552.062)"
+			"plane" "(152 -20 152.062) (92 -20 152.062) (92 -20 336)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1201,7 +1125,7 @@ entity
 		side
 		{
 			"id" "180"
-			"plane" "(-100 -140 552.062) (-144 -96 552.062) (-144 -12 552.062)"
+			"plane" "(-144 -12 332) (-84 -12 332) (-84 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1223,7 +1147,7 @@ entity
 		side
 		{
 			"id" "178"
-			"plane" "(-84 -12 152.062) (-84 -104 152.062) (-84 -104 552.063)"
+			"plane" "(-84 -12 152.062) (-84 -104 152.062) (-84 -104 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1234,7 +1158,7 @@ entity
 		side
 		{
 			"id" "177"
-			"plane" "(-144 -12 152.062) (-84 -12 152.062) (-84 -12 552.063)"
+			"plane" "(-144 -12 152.062) (-84 -12 152.062) (-84 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1245,7 +1169,7 @@ entity
 		side
 		{
 			"id" "176"
-			"plane" "(-84 -104 152.062) (-100 -140 152.062) (-100 -140 552.063)"
+			"plane" "(-84 -104 152.062) (-100 -140 152.062) (-100 -140 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1256,7 +1180,7 @@ entity
 		side
 		{
 			"id" "175"
-			"plane" "(-144 -96 152.062) (-144 -12 152.062) (-144 -12 552.063)"
+			"plane" "(-144 -96 152.062) (-144 -12 152.062) (-144 -12 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1267,9 +1191,161 @@ entity
 		side
 		{
 			"id" "174"
-			"plane" "(-100 -140 152.062) (-144 -96 152.062) (-144 -96 552.063)"
+			"plane" "(-100 -140 152.062) (-144 -96 152.062) (-144 -96 332)"
 			"material" "TOOLS/TOOLSBLOCKBULLETS"
 			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "1046"
+		side
+		{
+			"id" "198"
+			"plane" "(-136 -12 336) (-136 68 336) (144 68 336)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "197"
+			"plane" "(-136 68 0.0120135) (-136 -12 0.0120135) (144 -12 0.0120135)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "196"
+			"plane" "(-136 -12 0.011902) (-136 68 0.0119018) (-136 68 336)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "195"
+			"plane" "(144 68 0.0119021) (144 -12 0.011902) (144 -12 336)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "194"
+			"plane" "(144 -12 0.0119023) (-136 -12 0.0119017) (-136 -12 336)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "193"
+			"plane" "(-136 68 0.0119022) (144 68 0.0119017) (144 68 336)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "1047"
+		side
+		{
+			"id" "204"
+			"plane" "(-136 68 340) (-136 212 340) (144 212 340)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "203"
+			"plane" "(-136 212 0.0120134) (-136 68 0.0120134) (144 68 0.0120134)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "202"
+			"plane" "(-136 68 0.0119005) (-136 212 0.0119002) (-136 212 340)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "201"
+			"plane" "(144 212 0.011901) (144 68 0.0119007) (144 68 340)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "200"
+			"plane" "(-136 212 0.0119009) (144 212 0.0119003) (144 212 340)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "199"
+			"plane" "(144 68 0.0119009) (-136 68 0.0119003) (-136 68 340)"
+			"material" "TOOLS/TOOLSBLOCKBULLETS"
+			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
