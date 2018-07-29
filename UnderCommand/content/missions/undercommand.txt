@@ -22,7 +22,7 @@
 	// who has a newer version, you will be directed to download the new
 	// version.  You must increment this to the next integer (whole numbers)every
     // time you release an update.
-	"Version"       "13"
+	"Version"       "15"
  
 	// Author is displayed in the UI when people see others playing your
 	// campaign.
@@ -122,6 +122,12 @@
 				"DisplayName" "The Armoury"
 				"Image" "maps/l4d_deadline"
 			}
+			"5"
+			{
+				"Map" "uc05_dockyard"
+				"DisplayName" "Cargo Run"
+				"Image" "maps/l4d_deadline"
+			}
 		}
  
 		"versus"
@@ -150,6 +156,12 @@
 			{
 				"Map" "uc04_military"
 				"DisplayName" "The Armoury (VS)"
+				"Image" "maps/l4d_deadline"
+			}
+			"5"
+			{
+				"Map" "uc05_dockyard"
+				"DisplayName" "Cargo Run (VS)"
 				"Image" "maps/l4d_deadline"
 			}
 		}	
