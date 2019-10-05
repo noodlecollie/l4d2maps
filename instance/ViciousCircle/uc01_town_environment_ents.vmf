@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7554"
-	"mapversion" "138"
+	"editorbuild" "7971"
+	"mapversion" "141"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "138"
+	"mapversion" "141"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -39,15 +39,15 @@ entity
 {
 	"id" "111"
 	"classname" "light_environment"
-	"_ambient" "133 152 167 15"
+	"_ambient" "133 152 167 30"
 	"_ambientHDR" "-1 -1 -1 1"
 	"_AmbientScaleHDR" "1"
-	"_light" "185 157 115 60"
+	"_light" "185 157 115 120"
 	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
+	"_lightscaleHDR" "0.5"
 	"angles" "0 18 0"
-	"pitch" "-15"
-	"SunSpreadAngle" "1"
+	"pitch" "-30"
+	"SunSpreadAngle" "7"
 	"origin" "-64 -12 16"
 	editor
 	{
