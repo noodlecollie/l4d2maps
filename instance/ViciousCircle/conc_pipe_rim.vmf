@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "5135"
-	"mapversion" "2"
+	"editorbuild" "7971"
+	"mapversion" "4"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2"
+	"mapversion" "4"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -39,7 +39,7 @@ entity
 		{
 			"id" "102"
 			"plane" "(8 0 -48) (8 -18 -44) (8 -17 -41)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -83,7 +83,7 @@ entity
 		{
 			"id" "98"
 			"plane" "(8 -18 -44) (8 0 -48) (0 0 -48)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -94,7 +94,7 @@ entity
 		{
 			"id" "97"
 			"plane" "(8 0 -44) (8 -17 -41) (0 -17 -41)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -115,7 +115,7 @@ entity
 		{
 			"id" "108"
 			"plane" "(8 -18 -44) (8 -34 -34) (8 -31 -31)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -159,7 +159,7 @@ entity
 		{
 			"id" "104"
 			"plane" "(8 -34 -34) (8 -18 -44) (0 -18 -44)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -170,7 +170,7 @@ entity
 		{
 			"id" "103"
 			"plane" "(8 -17 -41) (8 -31 -31) (0 -31 -31)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -191,7 +191,7 @@ entity
 		{
 			"id" "114"
 			"plane" "(8 -34 -34) (8 -44 -18) (8 -41 -17)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -235,7 +235,7 @@ entity
 		{
 			"id" "110"
 			"plane" "(8 -44 -18) (8 -34 -34) (0 -34 -34)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -246,7 +246,7 @@ entity
 		{
 			"id" "109"
 			"plane" "(8 -31 -31) (8 -41 -17) (0 -41 -17)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -267,7 +267,7 @@ entity
 		{
 			"id" "120"
 			"plane" "(8 -44 -18) (8 -48 0) (8 -44 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -311,7 +311,7 @@ entity
 		{
 			"id" "116"
 			"plane" "(8 -48 0) (8 -44 -18) (0 -44 -18)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -322,7 +322,7 @@ entity
 		{
 			"id" "115"
 			"plane" "(8 -41 -17) (8 -44 0) (0 -44 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -343,7 +343,7 @@ entity
 		{
 			"id" "126"
 			"plane" "(8 -48 0) (8 -44 18) (8 -41 17)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -387,7 +387,7 @@ entity
 		{
 			"id" "122"
 			"plane" "(8 -44 18) (8 -48 0) (0 -48 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -398,7 +398,7 @@ entity
 		{
 			"id" "121"
 			"plane" "(8 -44 0) (8 -41 17) (0 -41 17)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -419,7 +419,7 @@ entity
 		{
 			"id" "132"
 			"plane" "(8 -44 18) (8 -34 34) (8 -31 31)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -463,7 +463,7 @@ entity
 		{
 			"id" "128"
 			"plane" "(8 -34 34) (8 -44 18) (0 -44 18)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -474,7 +474,7 @@ entity
 		{
 			"id" "127"
 			"plane" "(8 -41 17) (8 -31 31) (0 -31 31)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -495,7 +495,7 @@ entity
 		{
 			"id" "138"
 			"plane" "(8 -34 34) (8 -18 44) (8 -17 41)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -539,7 +539,7 @@ entity
 		{
 			"id" "134"
 			"plane" "(8 -18 44) (8 -34 34) (0 -34 34)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -550,7 +550,7 @@ entity
 		{
 			"id" "133"
 			"plane" "(8 -31 31) (8 -17 41) (0 -17 41)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -571,7 +571,7 @@ entity
 		{
 			"id" "144"
 			"plane" "(8 -18 44) (8 0 48) (8 0 44)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -615,7 +615,7 @@ entity
 		{
 			"id" "140"
 			"plane" "(8 0 48) (8 -18 44) (0 -18 44)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -626,7 +626,7 @@ entity
 		{
 			"id" "139"
 			"plane" "(8 -17 41) (8 0 44) (0 0 44)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -647,7 +647,7 @@ entity
 		{
 			"id" "150"
 			"plane" "(8 0 48) (8 18 44) (8 17 41)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -691,7 +691,7 @@ entity
 		{
 			"id" "146"
 			"plane" "(8 18 44) (8 0 48) (0 0 48)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -702,7 +702,7 @@ entity
 		{
 			"id" "145"
 			"plane" "(8 0 44) (8 17 41) (0 17 41)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -723,7 +723,7 @@ entity
 		{
 			"id" "156"
 			"plane" "(8 18 44) (8 34 34) (8 31 31)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -767,7 +767,7 @@ entity
 		{
 			"id" "152"
 			"plane" "(8 34 34) (8 18 44) (0 18 44)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -778,7 +778,7 @@ entity
 		{
 			"id" "151"
 			"plane" "(8 17 41) (8 31 31) (0 31 31)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -799,7 +799,7 @@ entity
 		{
 			"id" "162"
 			"plane" "(8 34 34) (8 44 18) (8 41 17)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -843,7 +843,7 @@ entity
 		{
 			"id" "158"
 			"plane" "(8 44 18) (8 34 34) (0 34 34)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -854,7 +854,7 @@ entity
 		{
 			"id" "157"
 			"plane" "(8 31 31) (8 41 17) (0 41 17)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -875,7 +875,7 @@ entity
 		{
 			"id" "168"
 			"plane" "(8 44 18) (8 48 0) (8 44 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -919,7 +919,7 @@ entity
 		{
 			"id" "164"
 			"plane" "(8 48 0) (8 44 18) (0 44 18)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -930,7 +930,7 @@ entity
 		{
 			"id" "163"
 			"plane" "(8 41 17) (8 44 0) (0 44 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -951,7 +951,7 @@ entity
 		{
 			"id" "174"
 			"plane" "(8 48 0) (8 44 -18) (8 41 -17)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -995,7 +995,7 @@ entity
 		{
 			"id" "170"
 			"plane" "(8 44 -18) (8 48 0) (0 48 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1006,7 +1006,7 @@ entity
 		{
 			"id" "169"
 			"plane" "(8 44 0) (8 41 -17) (0 41 -17)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1027,7 +1027,7 @@ entity
 		{
 			"id" "180"
 			"plane" "(8 44 -18) (8 34 -34) (8 31 -31)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1071,7 +1071,7 @@ entity
 		{
 			"id" "176"
 			"plane" "(8 34 -34) (8 44 -18) (0 44 -18)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1082,7 +1082,7 @@ entity
 		{
 			"id" "175"
 			"plane" "(8 41 -17) (8 31 -31) (0 31 -31)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1103,7 +1103,7 @@ entity
 		{
 			"id" "186"
 			"plane" "(8 34 -34) (8 18 -44) (8 17 -41)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1147,7 +1147,7 @@ entity
 		{
 			"id" "182"
 			"plane" "(8 18 -44) (8 34 -34) (0 34 -34)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -1158,7 +1158,7 @@ entity
 		{
 			"id" "181"
 			"plane" "(8 31 -31) (8 17 -41) (0 17 -41)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -1179,7 +1179,7 @@ entity
 		{
 			"id" "192"
 			"plane" "(8 18 -44) (8 0 -48) (8 0 -44)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "METAL/METALWALL030A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1223,7 +1223,7 @@ entity
 		{
 			"id" "188"
 			"plane" "(8 0 -48) (8 18 -44) (0 18 -44)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -1234,7 +1234,7 @@ entity
 		{
 			"id" "187"
 			"plane" "(8 17 -41) (8 0 -44) (0 0 -44)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "METAL/METALTRUSS008A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"

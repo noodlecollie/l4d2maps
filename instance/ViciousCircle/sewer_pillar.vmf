@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7971"
-	"mapversion" "2"
+	"mapversion" "4"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2"
+	"mapversion" "4"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -34,43 +34,43 @@ entity
 	"classname" "func_detail"
 	solid
 	{
-		"id" "3"
+		"id" "99"
 		side
 		{
-			"id" "24"
+			"id" "42"
 			"plane" "(8 -8 148) (8 -8 152) (8 -56 152)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
 			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
 		}
 		side
 		{
-			"id" "23"
+			"id" "41"
 			"plane" "(56 -56 148) (56 -56 152) (56 -8 152)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
 			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
 		}
 		side
 		{
-			"id" "22"
+			"id" "40"
 			"plane" "(8 -8 148) (8 -56 148) (56 -56 148)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
 			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 -1 0 16] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
 		}
 		side
 		{
-			"id" "21"
+			"id" "39"
 			"plane" "(56 -8 152) (56 -56 152) (8 -56 152)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -81,22 +81,22 @@ entity
 		}
 		side
 		{
-			"id" "20"
+			"id" "38"
 			"plane" "(8 -8 152) (8 -8 148) (56 -8 148)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
 			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
 		}
 		side
 		{
-			"id" "19"
+			"id" "37"
 			"plane" "(56 -56 152) (56 -56 148) (8 -56 148)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
 			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -110,12 +110,12 @@ entity
 	}
 	solid
 	{
-		"id" "4"
+		"id" "100"
 		side
 		{
-			"id" "30"
+			"id" "48"
 			"plane" "(8 -8 0) (8 -8 4) (8 -56 4)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -124,9 +124,9 @@ entity
 		}
 		side
 		{
-			"id" "29"
+			"id" "47"
 			"plane" "(56 -56 0) (56 -56 4) (56 -8 4)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -135,7 +135,7 @@ entity
 		}
 		side
 		{
-			"id" "28"
+			"id" "46"
 			"plane" "(8 -8 0) (8 -56 0) (56 -56 0)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -146,20 +146,20 @@ entity
 		}
 		side
 		{
-			"id" "27"
+			"id" "45"
 			"plane" "(56 -8 4) (56 -56 4) (8 -56 4)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
 			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 -1 0 16] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
 		}
 		side
 		{
-			"id" "26"
+			"id" "44"
 			"plane" "(8 -8 4) (8 -8 0) (56 -8 0)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -168,9 +168,9 @@ entity
 		}
 		side
 		{
-			"id" "25"
+			"id" "43"
 			"plane" "(56 -56 4) (56 -56 0) (8 -56 0)"
-			"material" "CONCRETE/CONCRETEFLOOR010A"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -186,12 +186,88 @@ entity
 	}
 	solid
 	{
-		"id" "5"
+		"id" "101"
 		side
 		{
-			"id" "36"
-			"plane" "(12 -12 4) (12 -12 148) (12 -52 148)"
-			"material" "BRICK/BRICKWALL_MILL03"
+			"id" "54"
+			"plane" "(12 -12 128) (12 -12 148) (12 -52 148)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "53"
+			"plane" "(52 -52 128) (52 -52 148) (52 -12 148)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "52"
+			"plane" "(12 -52 148) (12 -12 148) (52 -12 148)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "51"
+			"plane" "(12 -12 148) (12 -12 128) (52 -12 128)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "50"
+			"plane" "(52 -52 148) (52 -52 128) (12 -52 128)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03A"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 16] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "49"
+			"plane" "(12 -12 128) (12 -52 128) (52 -52 128)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 180 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "102"
+		side
+		{
+			"id" "60"
+			"plane" "(12 -52 4) (12 -12 4) (12 -12 128)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -200,9 +276,9 @@ entity
 		}
 		side
 		{
-			"id" "35"
-			"plane" "(52 -52 4) (52 -52 148) (52 -12 148)"
-			"material" "BRICK/BRICKWALL_MILL03"
+			"id" "59"
+			"plane" "(52 -12 4) (52 -52 4) (52 -52 128)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -211,7 +287,7 @@ entity
 		}
 		side
 		{
-			"id" "34"
+			"id" "58"
 			"plane" "(12 -12 4) (12 -52 4) (52 -52 4)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -222,33 +298,33 @@ entity
 		}
 		side
 		{
-			"id" "33"
-			"plane" "(52 -12 148) (52 -52 148) (12 -52 148)"
-			"material" "TOOLS/TOOLSNODRAW"
+			"id" "57"
+			"plane" "(12 -12 128) (12 -12 4) (52 -12 4)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "56"
+			"plane" "(52 -52 128) (52 -52 4) (12 -52 4)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "55"
+			"plane" "(12 -52 128) (12 -12 128) (52 -12 128)"
+			"material" "BRICK/URBAN_A_BRICKWALL_03B"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "32"
-			"plane" "(12 -12 148) (12 -12 4) (52 -12 4)"
-			"material" "BRICK/BRICKWALL_MILL03"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "31"
-			"plane" "(52 -52 148) (52 -52 4) (12 -52 4)"
-			"material" "BRICK/BRICKWALL_MILL03"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
