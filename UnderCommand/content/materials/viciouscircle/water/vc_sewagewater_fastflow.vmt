@@ -8,8 +8,7 @@ Water
 	$flow_uvscrolldistance 0.8
 	$flow_bumpstrength 1.0
 	$flow_timescale 0.35
-	$flow_noise_texture "liquids/water_noise"
-	$flow_noise_scale 0.0003
+	$flow_noise_scale 0
 	$flow_debug 0
 	$reflecttexture _rt_WaterReflection
 	$reflectamount "0.4"

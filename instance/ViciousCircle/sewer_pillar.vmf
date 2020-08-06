@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "5135"
-	"mapversion" "1"
+	"editorbuild" "7971"
+	"mapversion" "2"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,13 +20,13 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1"
+	"mapversion" "2"
 	"classname" "worldspawn"
-	"skyname" "sky_l4d_rural02_hdr"
-	"maxpropscreenwidth" "-1"
-	"detailvbsp" "detail.vbsp"
 	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
 	"musicpostfix" "Waterfront"
+	"skyname" "sky_l4d_rural02_hdr"
 }
 entity
 {
@@ -39,7 +39,7 @@ entity
 		{
 			"id" "24"
 			"plane" "(8 -8 148) (8 -8 152) (8 -56 152)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -50,7 +50,7 @@ entity
 		{
 			"id" "23"
 			"plane" "(56 -56 148) (56 -56 152) (56 -8 152)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -61,7 +61,7 @@ entity
 		{
 			"id" "22"
 			"plane" "(8 -8 148) (8 -56 148) (56 -56 148)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -83,7 +83,7 @@ entity
 		{
 			"id" "20"
 			"plane" "(8 -8 152) (8 -8 148) (56 -8 148)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -94,7 +94,7 @@ entity
 		{
 			"id" "19"
 			"plane" "(56 -56 152) (56 -56 148) (8 -56 148)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -115,7 +115,7 @@ entity
 		{
 			"id" "30"
 			"plane" "(8 -8 0) (8 -8 4) (8 -56 4)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -126,7 +126,7 @@ entity
 		{
 			"id" "29"
 			"plane" "(56 -56 0) (56 -56 4) (56 -8 4)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -148,7 +148,7 @@ entity
 		{
 			"id" "27"
 			"plane" "(56 -8 4) (56 -56 4) (8 -56 4)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -159,7 +159,7 @@ entity
 		{
 			"id" "26"
 			"plane" "(8 -8 4) (8 -8 0) (56 -8 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -170,7 +170,7 @@ entity
 		{
 			"id" "25"
 			"plane" "(56 -56 4) (56 -56 0) (8 -56 0)"
-			"material" "DEV/DEV_MEASUREGENERIC01"
+			"material" "CONCRETE/CONCRETEFLOOR010A"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -191,7 +191,7 @@ entity
 		{
 			"id" "36"
 			"plane" "(12 -12 4) (12 -12 148) (12 -52 148)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "BRICK/BRICKWALL_MILL03"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -202,7 +202,7 @@ entity
 		{
 			"id" "35"
 			"plane" "(52 -52 4) (52 -52 148) (52 -12 148)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "BRICK/BRICKWALL_MILL03"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -235,7 +235,7 @@ entity
 		{
 			"id" "32"
 			"plane" "(12 -12 148) (12 -12 4) (52 -12 4)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "BRICK/BRICKWALL_MILL03"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -246,7 +246,7 @@ entity
 		{
 			"id" "31"
 			"plane" "(52 -52 148) (52 -52 4) (12 -52 4)"
-			"material" "DEV/DEV_MEASUREGENERIC01B"
+			"material" "BRICK/BRICKWALL_MILL03"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -255,7 +255,7 @@ entity
 		}
 		editor
 		{
-			"color" "0 146 135"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
