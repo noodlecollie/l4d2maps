@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7971"
-	"mapversion" "142"
+	"mapversion" "147"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "142"
+	"mapversion" "147"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -361,6 +361,75 @@ hidden
 			"visgroupautoshown" "1"
 			"logicalpos" "[0 -4768]"
 		}
+	}
+}
+entity
+{
+	"id" "188"
+	"classname" "info_map_parameters"
+	"AdrenalineDensity" "1.813"
+	"AmmoDensity" "6.48"
+	"angles" "0 0 0"
+	"ChainsawDensity" "1.0"
+	"ConfigurableWeaponClusterRange" "100"
+	"ConfigurableWeaponDensity" "-1.0"
+	"DefibrillatorDensity" "0.544"
+	"FinaleItemClusterCount" "3"
+	"GasCanDensity" "6.48"
+	"ItemClusterRange" "50"
+	"MagnumDensity" "-1.0"
+	"MeleeWeaponDensity" "6.48"
+	"MolotovDensity" "0.725"
+	"OxygenTankDensity" "6.48"
+	"PainPillDensity" "1.813"
+	"PipeBombDensity" "0.725"
+	"PistolDensity" "6.48"
+	"PropaneTankDensity" "6.48"
+	"targetname" "map_params"
+	"UpgradepackDensity" "1.0"
+	"VomitJarDensity" "0.725"
+	"origin" "-104 32 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "These values are based on the following counts for the entire map: 5 pills, 5 adrenaline; 2 pipe bombs, 2 molotovs, 2 boomer biles; 1.5 defibs"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "196"
+	"classname" "info_map_parameters_versus"
+	"AdrenalineDensity" "1.813"
+	"AmmoDensity" "6.48"
+	"angles" "0 0 0"
+	"ChainsawDensity" "1.0"
+	"ConfigurableWeaponClusterRange" "100"
+	"ConfigurableWeaponDensity" "-1.0"
+	"DefibrillatorDensity" "0.544"
+	"FinaleItemClusterCount" "3"
+	"GasCanDensity" "6.48"
+	"ItemClusterRange" "50"
+	"MagnumDensity" "-1.0"
+	"MeleeWeaponDensity" "6.48"
+	"MolotovDensity" "0.725"
+	"OxygenTankDensity" "6.48"
+	"PainPillDensity" "1.813"
+	"PipeBombDensity" "0.725"
+	"PistolDensity" "6.48"
+	"PropaneTankDensity" "6.48"
+	"targetname" "map_params"
+	"UpgradepackDensity" "1.0"
+	"VomitJarDensity" "0.725"
+	"origin" "-104 8 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras

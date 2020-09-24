@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7554"
-	"mapversion" "33"
+	"editorbuild" "7971"
+	"mapversion" "34"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "33"
+	"mapversion" "34"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1790,7 +1790,7 @@ entity
 	"targetname" "finale_outro_fade"
 	connections
 	{
-		"OnBeginFade" "outro_statsRollCredits0-1"
+		"OnBeginFade" "outro_statsRollStatsCrawl0-1"
 	}
 	"origin" "-80 -152 160"
 	editor
