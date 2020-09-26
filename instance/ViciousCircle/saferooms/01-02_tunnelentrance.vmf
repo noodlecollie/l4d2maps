@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8664"
-	"mapversion" "72"
+	"mapversion" "74"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "72"
+	"mapversion" "74"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1077,7 +1077,7 @@ world
 		{
 			"id" "247"
 			"plane" "(1.52588e-005 -640 0) (-216 -640 0) (-216 -640 160)"
-			"material" "CONCRETE/CINDERWALL04"
+			"material" "CONCRETE/POUREDCONCRETEWALL04C"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -1522,7 +1522,7 @@ world
 		{
 			"id" "320"
 			"plane" "(-216 -640 -32) (-296 -640 -32) (-296 -640 0)"
-			"material" "CONCRETE/CINDERWALL04"
+			"material" "CONCRETE/POUREDCONCRETEWALL04C"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -2103,6 +2103,7 @@ entity
 	"model" "models/props/terror/ammo_stack.mdl"
 	"skin" "0"
 	"solid" "6"
+	"weaponskin" "-1"
 	"origin" "-316.248 -271.155 39.5811"
 	editor
 	{
@@ -2120,6 +2121,7 @@ entity
 	"count" "5"
 	"solid" "6"
 	"weapon_selection" "any_smg"
+	"weaponskin" "-1"
 	"origin" "-324.378 -319.282 40.2975"
 	editor
 	{
@@ -2137,6 +2139,7 @@ entity
 	"count" "5"
 	"solid" "6"
 	"weapon_selection" "tier1_shotgun"
+	"weaponskin" "-1"
 	"origin" "-311.397 -316.036 40.2975"
 	editor
 	{
@@ -2152,6 +2155,7 @@ entity
 	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 273 0"
 	"solid" "6"
+	"weaponskin" "-1"
 	"origin" "-301.093 -307.5 41.9653"
 	editor
 	{
@@ -2167,6 +2171,7 @@ entity
 	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 288 0"
 	"solid" "6"
+	"weaponskin" "-1"
 	"origin" "-303.87 -317.019 41.9653"
 	editor
 	{
@@ -2182,6 +2187,7 @@ entity
 	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 86.5 0"
 	"solid" "6"
+	"weaponskin" "-1"
 	"origin" "-301.904 -306.388 41.9653"
 	editor
 	{
@@ -2197,6 +2203,7 @@ entity
 	"classname" "weapon_first_aid_kit_spawn"
 	"angles" "90 91.5 0"
 	"solid" "6"
+	"weaponskin" "-1"
 	"origin" "-300.811 -297.451 41.9653"
 	editor
 	{
@@ -2220,6 +2227,7 @@ entity
 	"item7" "1"
 	"item8" "1"
 	"spawnflags" "1"
+	"weaponskin" "-1"
 	"origin" "-320.641 -347.703 9"
 	editor
 	{
@@ -2240,6 +2248,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"spawnflags" "0"
+	"weaponskin" "-1"
 	"origin" "-301.004 -275.601 40.1574"
 	editor
 	{
@@ -3174,6 +3183,34 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "2536"
+	"classname" "info_overlay"
+	"BasisNormal" "1 -0 0"
+	"BasisOrigin" "0 -442.812 34.3434"
+	"BasisU" "0 1 0"
+	"BasisV" "-0 0 1"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "overlays/urban_paintswatch_03a"
+	"sides" "81"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-64 -32 0"
+	"uv1" "-64 32 0"
+	"uv2" "64 32 0"
+	"uv3" "64 -32 0"
+	"origin" "0 -442.812 34.3434"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
 	}
 }
 cameras
