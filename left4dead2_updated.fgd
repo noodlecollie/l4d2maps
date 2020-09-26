@@ -20,6 +20,34 @@
 [
 ]
 
+@PointClass base(Targetname, Angles, Parentname) studioprop() = info_item_position :
+	"An entity that represents a possible item location in a map. Scripts can"+ 
+	"search for these entities and use them to spawn objects for different game modes"
+[
+	model(studio) : "Helper Model"
+	group(integer) : "Group" : 0 : "Group Number"
+	rarity(choices) : "Rarity" : 0 : "Item rarity at this location" =
+	[
+		0 : "Common"
+		1 : "Occasional"
+		2 : "Scarce"
+	]
+
+	input SetGroup(integer) : "Set the group number."
+	input SetRarity(integer) : "Set the rarity."
+
+	replace01(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace02(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn groupe that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace03(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace04(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace05(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace06(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace07(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace08(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace09(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+	replace10(string) : "Replace" : : "This is a replacement parameter.  It goes in the form of $variable value.  All entities inside of the spawn group that have $variable somewhere will be replaced with the value contents.  Example: $color 255 0 0"
+]
+
 @PointClass base(Targetname) studio("models/survivors/survivor_biker.mdl") = info_l4d1_survivor_spawn : "Spawn a L4D1 survivor"
 [
 	character(choices) : "Character" : 5 : "Which survivor to spawn here" = 
@@ -94,7 +122,7 @@
 	]
 
 	// Inputs
-	input Enable(void) : "Enable the point_viewcontrol, and start controlling the player's view."
+	input Enable(string) : "Enable the point_viewcontrol, and start controlling the player's view. Pass a survivor name to control that survivor's view.(ie '!zoey')"
 	input Disable(void) : "Disable the point_viewcontrol, and stop controlling the player's view."
 	input StartMovement(void) : "Start the movement to first-person view."
 ]
@@ -254,7 +282,7 @@
 	input StripWeaponByClassname(string) : "Removes a weapon by classname, eg 'weapon_dieselcan'"
 ]
 
-@SolidClass base(Targetname) = func_nav_blocker : "A brush entity that can block nav areas touching its AABB." 
+@BaseClass = NavBlocker
 [
 	input BlockNav(string) : "Starts blocking nav areas."
 	input UnblockNav(void) : "Stops blocking nav areas."
@@ -272,6 +300,15 @@
 		1 : "Yes"
 	]
 ]
+@SolidClass base(Targetname, NavBlocker) = func_nav_blocker : "A brush entity that can block nav areas touching its AABB." 
+[
+]
+
+//@PointClass obb(boxmins, boxmaxs) base(Targetname, Angles, NavBlocker) = point_nav_blocker : "A point entity that can block nav areas touching its AABB."
+//[
+//	boxmins(vector) : "Mins" : "-8 -8 -8"
+//	boxmaxs(vector) : "Maxs" : "8 8 8"
+//]
 
 @SolidClass base(Targetname, EnableDisable) = func_nav_avoidance_obstacle : "A brush entity that tells bots to avoid nav areas touching its AABB." 
 [
@@ -310,6 +347,20 @@
 		0 : "Off"
 		1 : "On"
 	]
+	remove_attributes(integer) : "Remove Attributes" : 0 : "Should remove attributes from nav areas instead of applying them?"
+	tank_only(choices) : "Tank Only" : 0 =
+	[
+		0 : "Off"
+		1 : "On"
+	]
+	mob_only(choices) : "Mob Only" : 0 =
+	[
+		0 : "Off"
+		1 : "On"
+	]
+
+	// Inputs
+	input ApplyNavAttributes(void) : "Applies the nav attributes."
 ]
 
 @SolidClass base(Targetname,NavAttributeRegion) = func_nav_attribute_region : "A brush entity that holds attributes to be applied to regions of nav areas during generation."
@@ -684,7 +735,7 @@
 	]
 	
 	input SpawnZombie(void) : "Spawn a zombie now."
-	input StartleZombie(void) : "Startle the zombie (witches only)."
+	input StartleZombie(string) : "Startle the zombie (witches only). Optionally pass the name of a survivor to attack."
 	
 		// Outputs
 	output OnSpawnNormal(void) : "Fired when the spawner creates a normal infected."
@@ -719,6 +770,9 @@
 
 @BaseClass color(0 0 200) base(Parentname, Global, Targetname, Angles, Studiomodel) = WeaponSpawnSingle
 [
+	weaponskin(integer) : "Weapon Skin" : -1 : "Some weapons have multiple versions of their textures, called skins. Set this to a number other than -1 to make the given weapon use that skin instead of the default."
+	glowrange(float) : "Glow Range" : 0 : "Set a custom glow range for this spawner. 0 means use the default range."
+
 	solid(choices) : "Collisions" : 6 =
 	[
 		0: "Not Solid"
@@ -748,6 +802,9 @@
 
 @PointClass base(Targetname,Angles) = weapon_item_spawn
 [
+	weaponskin(integer) : "Weapon Skin" : -1 : "Some weapons have multiple versions of their textures, called skins. Set this to a number other than -1 to make the given weapon use that skin instead of the default."
+	glowrange(float) : "Glow Range" : 0 : "Set a custom glow range for this spawner. 0 means use the default range."
+
 	item1(integer) : "Ammo pile" : 0 
 	item2(integer) : "First aid kit" : 0 
 	item3(integer) : "Molotov Cocktail" : 0 
@@ -790,6 +847,19 @@
 	]
 ]
 
+@PointClass base(Targetname,Angles) studioprop("models/props/terror/exploding_ammo.mdl") = upgrade_ammo_explosive
+[
+	count(integer) : "Count" : 4 : "Max number of upgrades given before disappearing."
+]
+
+@PointClass base(Targetname,Angles) studioprop("models/props/terror/incendiary_ammo.mdl") = upgrade_ammo_incendiary
+[
+	count(integer) : "Count" : 4 : "Max number of upgrades given before disappearing."
+]
+
+@PointClass base(Targetname,Angles) studioprop("models/w_models/Weapons/w_laser_sights.mdl") = upgrade_laser_sight []
+
+
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_pistol_a.mdl") = weapon_pistol_spawn : "Pistols" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_desert_eagle.mdl") = weapon_pistol_magnum_spawn : "Magnum Pistol" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_smg_uzi.mdl") = weapon_smg_spawn : "Submachinegun" []
@@ -798,7 +868,7 @@
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_rifle_m16a2.mdl") = weapon_rifle_spawn : "Assault Rifle" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_sniper_mini14.mdl") = weapon_hunting_rifle_spawn : "Hunting Rifle" []
 
-@PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_smg_uzi.mdl") = weapon_smg_silenced_spawn : "MicroUZI" []
+@PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_smg_a.mdl") = weapon_smg_silenced_spawn : "MicroUZI" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_pumpshotgun_A.mdl") = weapon_shotgun_chrome_spawn : "Chrome Shotgun" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_shotgun_spas.mdl") = weapon_shotgun_spas_spawn : "SPAS Shotgun" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_rifle_B.mdl") = weapon_rifle_desert_spawn : "Desert Rifle" []
@@ -808,6 +878,12 @@
 @PointClass base(WeaponSpawn) studioprop("models/weapons/melee/w_chainsaw.mdl") = weapon_chainsaw_spawn : "Chainsaw" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/weapons/w_grenade_launcher.mdl") = weapon_grenade_launcher_spawn : "Grenade Launcher" []
 @PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_m60.mdl") = weapon_rifle_m60_spawn : "M60 Machinegun" []
+
+// CSS Guns
+@PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_smg_mp5.mdl") = weapon_smg_mp5_spawn : "MP5" []
+@PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_rifle_sg552.mdl") = weapon_rifle_sg552_spawn : "SG552" []
+@PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_sniper_awp.mdl") = weapon_sniper_awp_spawn : "AWP Sniper" []
+@PointClass base(WeaponSpawn) studioprop("models/w_models/Weapons/w_sniper_scout.mdl") = weapon_sniper_scout_spawn : "Scout Sniper" []
 
 // Grenades -----------------
 @PointClass base(WeaponSpawn) studioprop("models/w_models/weapons/w_eq_pipebomb.mdl") = weapon_pipe_bomb_spawn : "Pipe Bomb" []
@@ -823,6 +899,8 @@
 @PointClass base(WeaponSpawnSingle) studioprop("models/w_models/weapons/w_eq_incendiary_ammopack.mdl") = weapon_upgradepack_incendiary_spawn : "Upgrade Pack - Incendiary" []
 @PointClass base(WeaponSpawnSingle) studioprop("models/w_models/weapons/w_eq_explosive_ammopack.mdl") = weapon_upgradepack_explosive_spawn : "Upgrade Pack - Explosive" []
 
+@PointClass base(WeaponSpawnSingle) studioprop("models/w_models/weapons/w_eq_Medkit.mdl") = weapon_first_aid_kit : "Physics First Aid Kit - This entity is intended to be used in scripted events where a single item needs to spawned with physics active." []
+@PointClass base(WeaponSpawnSingle) studioprop("models/w_models/weapons/w_grenade_launcher.mdl") = weapon_grenade_launcher : "Grenade Launcher - This entity is intended to be used in scripted events where a single item needs to spawned with physics active." []
 
 // Melee --------------------
 @PointClass base(WeaponSpawn) studioprop("models/weapons/melee/w_fireaxe.mdl") = weapon_melee_spawn : "Melee Weapon"
@@ -856,6 +934,9 @@
 
 	nozzle(target_destination) : "Gas nozzle" : : "The name of the prop_dynamic gas nozzle for this use_target (scavenge mode)."
 
+	input Activate(void) : "Activate the use target."
+	input Deactivate(void) : "Deactivate the use target."
+
 	output OnUseStarted(void) : "Fired when a player starts using this target."	
 	output OnUseCancelled(void) : "Fired when a player use is cancelled."	
 	output OnUseFinished(void) : "Fired when a player use is complete."	
@@ -886,7 +967,7 @@
 		"any_shotgun" : "Any Shotgun"
 		"tier1_shotgun" : "Any tier 1 Shotgun"
 		"tier2_shotgun" : "Any tier 2 Shotgun"
-				
+		
 		// specific primary weapons	
 		"weapon_smg" : "SMG"
 		"weapon_smg_silenced" : "Silenced SMG"
@@ -899,9 +980,26 @@
 		"weapon_rifle_ak47" : "AK47"
 		"weapon_hunting_rifle" : "Hunting Rifle"
 		"weapon_sniper_military" : "Sniper Military"
+		
+		// specific css weapons	
+		"weapon_smg_mp5" : "MP5"
+		"weapon_rifle_sg552" : "SG552"
+		"weapon_sniper_awp" : "Sniper AWP"
+		"weapon_sniper_scout" : "Sniper Scout"
 	]	
 	
 	spawn_without_director(choices) : "Spawn instantly without director" : 0 : "Bypass the proximity checks that make nearby weapons be the same tier / not the same weapon" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]	
+
+	spawnflags(Flags) = 
+	[
+		16 : "Constrain to spawn position (don't drop to the ground)" : 0
+	]
+
+	no_cs_weapons(choices) : "No CS Weapons" : 0 : "When selecting 'any' weapon, set this to true if you do not want CS weapons." =
 	[
 		0 : "No"
 		1 : "Yes"
@@ -1420,3 +1518,41 @@
 	output OnEscapeImpossible(void) : "Fired if there are no survivors standing in the trigger"
 ]
 
+@SolidClass base(Targetname, Parentname, Origin) = func_buildable_button: 
+	"A timed button which calls into its script scope during button-pressing related events."
+[
+	spawnflags(flags) =
+	[
+		2048: "Starts locked" : 0
+	]
+
+	is_cumulative_use(choices) : "Cumulative Use" : 0 =
+	[
+		0: "No"
+		1: "Yes"
+	]
+	
+	// Inputs
+	input Enable(void) : "Enable the button, so it glows and can be used."
+	input Disable(void) : "Disable the button, so it can't be used and doesn't glow."
+
+	// Outputs
+	output OnPressed(void) : "Fired when the button is pressed."
+	output OnUnPressed(void) : "Fired when the button is unpressed."
+	output OnTimeUp(void) : "Fired when the button has been held more than the required amount of time."
+	output OnUseLocked(void) : "Fired when the button is used while locked."
+]
+
+@PointClass base(Origin,Targetname) = point_script_use_target: "Makes an entity 'usable' by a player. An attached script determines the display text and use time."
+[
+	model(target_destination) : "Use Model" : : "The name of the entity the player will be using."
+
+	output OnUseStarted(void) : "Fired when a player starts using this target."	
+	output OnUseCanceled(void) : "Fired when a player use is canceled."	
+	output OnUseFinished(void) : "Fired when a player use is complete."	
+]
+
+@PointClass base(Targetname, Parentname, Angles, Studiomodel) studioprop() = scripted_item_drop : 
+	"An item with basic physics that detects player touch."
+[
+]
