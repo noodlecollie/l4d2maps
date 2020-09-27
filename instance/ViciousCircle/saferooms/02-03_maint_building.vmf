@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7145"
-	"mapversion" "41"
+	"editorbuild" "8664"
+	"mapversion" "44"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "41"
+	"mapversion" "44"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1402,6 +1402,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-511.783 26.1775 40.1667"
 	editor
 	{
@@ -1418,6 +1419,7 @@ entity
 	"angles" "88 253 0"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-532.876 23.5419 42.4098"
 	editor
 	{
@@ -1434,6 +1436,7 @@ entity
 	"angles" "88 299.5 0"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-539.387 36.9387 42.4098"
 	editor
 	{
@@ -1450,6 +1453,7 @@ entity
 	"angles" "88 299.5 0"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-550.53 26.2964 42.4098"
 	editor
 	{
@@ -1466,6 +1470,7 @@ entity
 	"angles" "88 265.5 0"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-554.036 37.1891 42.4098"
 	editor
 	{
@@ -1481,9 +1486,11 @@ entity
 	"classname" "weapon_spawn"
 	"angles" "0 173 -90"
 	"count" "5"
+	"no_cs_weapons" "1"
 	"solid" "6"
 	"spawnflags" "2"
 	"weapon_selection" "tier1_shotgun"
+	"weaponskin" "-1"
 	"origin" "-566.221 21.56 40.5337"
 	editor
 	{
@@ -1499,9 +1506,11 @@ entity
 	"classname" "weapon_spawn"
 	"angles" "0 189.5 -90"
 	"count" "5"
+	"no_cs_weapons" "1"
 	"solid" "6"
 	"spawnflags" "2"
 	"weapon_selection" "any_smg"
+	"weaponskin" "-1"
 	"origin" "-571.78 35.7669 40.5337"
 	editor
 	{
@@ -1542,6 +1551,7 @@ entity
 	"count" "5"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-745.915 95.0227 15.9556"
 	editor
 	{
@@ -1559,6 +1569,7 @@ entity
 	"count" "5"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-745.734 91.3999 15.9556"
 	editor
 	{
@@ -1576,6 +1587,7 @@ entity
 	"count" "5"
 	"solid" "6"
 	"spawnflags" "2"
+	"weaponskin" "-1"
 	"origin" "-745.734 87.4753 15.9556"
 	editor
 	{
@@ -1596,6 +1608,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"spawnflags" "0"
+	"weaponskin" "-1"
 	"origin" "-747.222 89.8895 63.2901"
 	editor
 	{

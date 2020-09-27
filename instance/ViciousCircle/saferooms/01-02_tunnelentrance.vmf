@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8664"
-	"mapversion" "74"
+	"mapversion" "75"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "74"
+	"mapversion" "75"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2119,6 +2119,7 @@ entity
 	"classname" "weapon_spawn"
 	"angles" "0 87 -90"
 	"count" "5"
+	"no_cs_weapons" "1"
 	"solid" "6"
 	"weapon_selection" "any_smg"
 	"weaponskin" "-1"
@@ -2137,6 +2138,7 @@ entity
 	"classname" "weapon_spawn"
 	"angles" "0 91 -90"
 	"count" "5"
+	"no_cs_weapons" "1"
 	"solid" "6"
 	"weapon_selection" "tier1_shotgun"
 	"weaponskin" "-1"
