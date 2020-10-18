@@ -22,7 +22,7 @@
 	// who has a newer version, you will be directed to download the new
 	// version.  You must increment this to the next integer (whole numbers)every
     // time you release an update.
-	"Version"       "15"
+	"Version"       "18"
  
 	// Author is displayed in the UI when people see others playing your
 	// campaign.
@@ -32,7 +32,7 @@
 	// to this URL if they try to join a friend running your campaign.  This
 	// should be the home page for your campaign and it should provide a
 	// description, a link to download it, and installation instructions.
-	"Website"	"http://this.link.doesnt.work"
+	"Website"	"http://need.a.link.here"
  
 	// This name is used when refering to the campaign in the UI.
 	"DisplayTitle"	"Under Command"
