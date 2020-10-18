@@ -1,2 +1,2 @@
 @echo off
-start javaw -cp bspsrc.jar info.ata4.bspsrc.gui.BspSourceFrame %*
+start javaw -jar "%~dp0\bspsrc.jar" %*
