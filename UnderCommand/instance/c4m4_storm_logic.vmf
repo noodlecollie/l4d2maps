@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "6158"
-	"mapversion" "22"
+	"editorbuild" "8755"
+	"mapversion" "24"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "22"
+	"mapversion" "24"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -147,7 +147,6 @@ entity
 	{
 		"OnTrigger" "fog_stormSetEndDistLerpTo7680-1"
 		"OnTrigger" "fog_stormSetStartDistLerpTo-5120-1"
-		"OnTrigger" "fog_stormSetFarZ10245-1"
 		"OnTrigger" "fog_stormStartFogTransition0.1-1"
 		"OnTrigger" "timer_storm_blendinEnable0-1"
 		"OnTrigger" "fog_stormSetmaxdensitylerpto10-1"
@@ -188,7 +187,6 @@ entity
 	connections
 	{
 		"OnTrigger" "fog_stormSetStartDistLerpTo00-1"
-		"OnTrigger" "fog_stormSetFarZ20000-1"
 		"OnTrigger" "fog_stormStartFogTransition0.1-1"
 		"OnTrigger" "timer_storm_blendoutEnable0-1"
 		"OnTrigger" "fog_stormSetmaxdensitylerpto10-1"
