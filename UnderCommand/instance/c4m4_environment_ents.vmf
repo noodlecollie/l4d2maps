@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "6158"
-	"mapversion" "127"
+	"editorbuild" "8755"
+	"mapversion" "128"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "127"
+	"mapversion" "128"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -195,7 +195,7 @@ entity
 	"angles" "0 45 0"
 	"farz" "-1"
 	"fogblend" "0"
-	"fogcolor" "20 25 25"
+	"fogcolor" "10 12 12"
 	"fogcolor2" "255 255 255"
 	"fogdir" "1 0 0"
 	"fogenable" "1"
@@ -233,7 +233,7 @@ entity
 	"angles" "0 45 0"
 	"farz" "2000"
 	"fogblend" "0"
-	"fogcolor" "20 25 25"
+	"fogcolor" "10 12 12"
 	"fogcolor2" "255 255 255"
 	"fogdir" "1 0 0"
 	"fogenable" "1"
@@ -354,7 +354,7 @@ entity
 	"angles" "0 45 0"
 	"farz" "-1"
 	"fogblend" "0"
-	"fogcolor" "20 25 25"
+	"fogcolor" "10 12 12"
 	"fogcolor2" "255 255 255"
 	"fogdir" "1 0 0"
 	"fogenable" "1"

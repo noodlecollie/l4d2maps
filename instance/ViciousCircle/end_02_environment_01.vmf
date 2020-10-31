@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "63"
+	"mapversion" "64"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "63"
+	"mapversion" "64"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -11171,8 +11171,8 @@ entity
 			"id" "1206"
 			"plane" "(188 -232 148) (188 -232 0) (188 -208 0)"
 			"material" "TOOLS/CLIMB_VERSUS"
-			"uaxis" "[0 1 0 -64] 0.25"
-			"vaxis" "[0 0 -1 64] 0.25"
+			"uaxis" "[0 1 0 48] 0.25"
+			"vaxis" "[0 0 -1 80] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -11942,7 +11942,7 @@ entity
 		}
 		editor
 		{
-			"color" "0 176 169"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -12018,7 +12018,7 @@ entity
 		}
 		editor
 		{
-			"color" "0 176 169"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -12094,7 +12094,7 @@ entity
 		}
 		editor
 		{
-			"color" "0 176 169"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -12170,7 +12170,7 @@ entity
 		}
 		editor
 		{
-			"color" "0 176 169"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}

@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7554"
-	"mapversion" "262"
+	"editorbuild" "8755"
+	"mapversion" "263"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "262"
+	"mapversion" "263"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -8599,6 +8599,81 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1500 -14268]"
+	}
+}
+entity
+{
+	"id" "8992"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "-2.51245 2.146 64.0015"
+	editor
+	{
+		"color" "104 233 0"
+		"groupid" "8990"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "8997"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "0.664063 -0.11792 368.002"
+	editor
+	{
+		"color" "104 233 0"
+		"groupid" "8995"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "9002"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "13.2532 12.9519 672.002"
+	editor
+	{
+		"color" "104 233 0"
+		"groupid" "9000"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "9007"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "7.77563 -17.0642 976.002"
+	editor
+	{
+		"color" "104 233 0"
+		"groupid" "9005"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "9012"
+	"classname" "env_cubemap"
+	"sides" ""
+	"origin" "6.12207 5.47925 -255.998"
+	editor
+	{
+		"color" "104 233 0"
+		"groupid" "9010"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -18855,6 +18930,7 @@ entity
 	"item4" "1"
 	"item5" "1"
 	"item8" "1"
+	"weaponskin" "-1"
 	"origin" "-71.8582 -373.232 9"
 	editor
 	{
@@ -18873,6 +18949,7 @@ entity
 	"item4" "1"
 	"item5" "1"
 	"item8" "1"
+	"weaponskin" "-1"
 	"origin" "-10.4048 -306.166 8"
 	editor
 	{
@@ -19901,6 +19978,7 @@ entity
 	"angles" "0 0 0"
 	"item12" "1"
 	"item2" "1"
+	"weaponskin" "-1"
 	"origin" "-160.776 -7.82181 593"
 	editor
 	{
@@ -21665,6 +21743,7 @@ entity
 	"model" "models/props/terror/ammo_stack.mdl"
 	"skin" "0"
 	"solid" "6"
+	"weaponskin" "-1"
 	"origin" "-24.7081 -51.6127 305.109"
 	editor
 	{
@@ -21829,81 +21908,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 -16268]"
-	}
-}
-entity
-{
-	"id" "8992"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "-2.51245 2.146 64.0015"
-	editor
-	{
-		"color" "104 233 0"
-		"groupid" "8990"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "8997"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "0.664063 -0.11792 368.002"
-	editor
-	{
-		"color" "104 233 0"
-		"groupid" "8995"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "9002"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "13.2532 12.9519 672.002"
-	editor
-	{
-		"color" "104 233 0"
-		"groupid" "9000"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "9007"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "7.77563 -17.0642 976.002"
-	editor
-	{
-		"color" "104 233 0"
-		"groupid" "9005"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "9012"
-	"classname" "env_cubemap"
-	"sides" ""
-	"origin" "6.12207 5.47925 -255.998"
-	editor
-	{
-		"color" "104 233 0"
-		"groupid" "9010"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
 	}
 }
 cameras
