@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7971"
-	"mapversion" "147"
+	"editorbuild" "8755"
+	"mapversion" "149"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "147"
+	"mapversion" "149"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -241,7 +241,7 @@ entity
 	"id" "137"
 	"classname" "env_fog_controller"
 	"angles" "0 0 0"
-	"farz" "5000"
+	"farz" "3000"
 	"fogblend" "0"
 	"fogcolor" "31 44 52"
 	"fogcolor2" "255 255 255"

@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "52"
+	"mapversion" "60"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "52"
+	"mapversion" "60"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1261,11 +1261,9 @@ entity
 	"spawnflags" "1"
 	connections
 	{
-		"OnMapSpawn" "rescue_boat_gaugeSetParentAttachmentMaintainOffsetattachment_root0-1"
-		"OnMapSpawn" "rescue_boat_nozzleSetParentAttachmentMaintainOffsetattachment_root0-1"
-		"OnMapSpawn" "rescue_boat_general_propsSetParentAttachmentMaintainOffsetattachment_root0-1"
-		"OnMapSpawn" "rescue_boat_floorSetParentAttachmentMaintainOffsetattachment_root0-1"
 		"OnMapSpawn" "scavenge_progressTurnOff0-1"
+		"OnMapSpawn" "rescue_boat_floorDisable0-1"
+		"OnMapSpawn" "rescue_boatDisable0-1"
 	}
 	"origin" "-210.993 -585.412 -15.8091"
 	editor
@@ -1567,6 +1565,7 @@ entity
 		"OnTrigger" "finale_transition_fadeFade0-1"
 		"OnTrigger" "outro_cameraEnable0-1"
 		"OnTrigger" "finale_triggerFinaleEscapeForceSurvivorPositions0-1"
+		"OnTrigger" "rescue_boat_floorDisable0-1"
 	}
 	"origin" "-224 -640 -16"
 	editor
@@ -1582,6 +1581,10 @@ entity
 	"id" "1880"
 	"classname" "logic_relay"
 	"targetname" "arrived_relay"
+	connections
+	{
+		"OnTrigger" "rescue_boat_floorEnable0-1"
+	}
 	"origin" "-224 -624 -16"
 	editor
 	{

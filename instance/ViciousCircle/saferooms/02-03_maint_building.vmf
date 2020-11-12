@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "117"
+	"mapversion" "118"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "117"
+	"mapversion" "118"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -7257,6 +7257,7 @@ entity
 	"classname" "prop_static"
 	"angles" "0 180 0"
 	"disableselfshadowing" "1"
+	"disableshadows" "1"
 	"disablevertexlighting" "1"
 	"fademindist" "-1"
 	"fadescale" "1"
@@ -7280,6 +7281,7 @@ entity
 	"classname" "prop_static"
 	"angles" "0 270 0"
 	"disableselfshadowing" "1"
+	"disableshadows" "1"
 	"disablevertexlighting" "1"
 	"fademindist" "-1"
 	"fadescale" "1"
@@ -7303,6 +7305,7 @@ entity
 	"classname" "prop_static"
 	"angles" "0 346.5 0"
 	"disableselfshadowing" "1"
+	"disableshadows" "1"
 	"disablevertexlighting" "1"
 	"fademindist" "-1"
 	"fadescale" "1"
