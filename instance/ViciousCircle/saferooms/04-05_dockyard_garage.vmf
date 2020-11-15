@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "213"
+	"mapversion" "218"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "213"
+	"mapversion" "218"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -9797,89 +9797,6 @@ entity
 }
 entity
 {
-	"id" "643"
-	"classname" "weapon_ammo_spawn"
-	"angles" "0 314.5 0"
-	"count" "5"
-	"model" "models/props/terror/ammo_stack.mdl"
-	"skin" "0"
-	"solid" "6"
-	"weaponskin" "-1"
-	"origin" "-408.724 278.625 -216.195"
-	editor
-	{
-		"color" "0 0 200"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
-	"id" "653"
-	"classname" "weapon_first_aid_kit_spawn"
-	"angles" "90 49.5 0"
-	"solid" "6"
-	"weaponskin" "-1"
-	"origin" "-403.181 247.54 -213.959"
-	editor
-	{
-		"color" "0 0 200"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
-	"id" "663"
-	"classname" "weapon_first_aid_kit_spawn"
-	"angles" "90 218.5 0"
-	"solid" "6"
-	"weaponskin" "-1"
-	"origin" "-411.229 256.626 -213.959"
-	editor
-	{
-		"color" "0 0 200"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
-	"id" "665"
-	"classname" "weapon_first_aid_kit_spawn"
-	"angles" "90 51 0"
-	"solid" "6"
-	"weaponskin" "-1"
-	"origin" "-400.585 234.299 -213.959"
-	editor
-	{
-		"color" "0 0 200"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
-	"id" "667"
-	"classname" "weapon_first_aid_kit_spawn"
-	"angles" "90 281 0"
-	"solid" "6"
-	"weaponskin" "-1"
-	"origin" "-413.825 237.674 -213.959"
-	editor
-	{
-		"color" "0 0 200"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
 	"id" "756"
 	"classname" "func_detail"
 	solid
@@ -12994,6 +12911,89 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "5154"
+	"classname" "weapon_ammo_spawn"
+	"angles" "0 314.5 0"
+	"count" "5"
+	"model" "models/props/terror/ammo_stack.mdl"
+	"skin" "0"
+	"solid" "6"
+	"weaponskin" "-1"
+	"origin" "-408.26 267.459 -216.289"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "5166"
+	"classname" "weapon_first_aid_kit_spawn"
+	"angles" "90 51 0"
+	"solid" "6"
+	"weaponskin" "-1"
+	"origin" "-402.783 214.196 -213.697"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "5168"
+	"classname" "weapon_first_aid_kit_spawn"
+	"angles" "90 49.5 0"
+	"solid" "6"
+	"weaponskin" "-1"
+	"origin" "-405.379 227.437 -213.697"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "5170"
+	"classname" "weapon_first_aid_kit_spawn"
+	"angles" "90 218.5 0"
+	"solid" "6"
+	"weaponskin" "-1"
+	"origin" "-413.427 236.523 -213.697"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "5172"
+	"classname" "weapon_first_aid_kit_spawn"
+	"angles" "90 281 0"
+	"solid" "6"
+	"weaponskin" "-1"
+	"origin" "-416.023 217.571 -213.697"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
 	}
 }
 cameras

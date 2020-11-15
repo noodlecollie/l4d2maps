@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "60"
+	"mapversion" "93"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,20 +20,96 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "60"
+	"mapversion" "93"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
 	"maxpropscreenwidth" "-1"
 	"musicpostfix" "Waterfront"
 	"skyname" "sky_l4d_rural02_hdr"
+	solid
+	{
+		"id" "1901"
+		side
+		{
+			"id" "338"
+			"plane" "(-384 -844 -24.0001) (-384 -844 -40) (-384 -564 -40)"
+			"material" "TOOLS/TOOLSNPCCLIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "337"
+			"plane" "(-56 -564 -24.0001) (-56 -564 -40) (-56 -844 -40)"
+			"material" "TOOLS/TOOLSNPCCLIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "336"
+			"plane" "(-384 -564 -24.0001) (-384 -564 -40) (-56 -564 -40)"
+			"material" "TOOLS/TOOLSNPCCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "335"
+			"plane" "(-56 -844 -24.0001) (-56 -844 -40) (-384 -844 -40)"
+			"material" "TOOLS/TOOLSNPCCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "334"
+			"plane" "(-384 -844 -24) (-384 -564 -24) (-56 -564 -24)"
+			"material" "TOOLS/TOOLSNPCCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "333"
+			"plane" "(-384 -564 -40) (-384 -844 -40) (-56 -844 -40)"
+			"material" "TOOLS/TOOLSNPCCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
 	"id" "2"
 	"classname" "prop_dynamic"
 	"angles" "0 270 0"
-	"DefaultAnim" "outro_arrive_idle"
+	"DefaultAnim" "outro_preidle"
 	"disableshadows" "1"
 	"fademindist" "-1"
 	"fadescale" "1"
@@ -46,6 +122,7 @@ entity
 	"rendercolor" "255 255 255"
 	"skin" "0"
 	"solid" "6"
+	"StartDisabled" "0"
 	"targetname" "rescue_boat"
 	"origin" "3.25 74.5017 120.062"
 	editor
@@ -81,7 +158,7 @@ entity
 	"solidbsp" "0"
 	"Solidity" "0"
 	"spawnflags" "2"
-	"StartDisabled" "0"
+	"StartDisabled" "1"
 	"targetname" "rescue_boat_floor"
 	"vrad_brush_cast_shadows" "0"
 	solid
@@ -1118,11 +1195,11 @@ entity
 	}
 	solid
 	{
-		"id" "1250"
+		"id" "1910"
 		side
 		{
-			"id" "302"
-			"plane" "(-132 -564 0.128906) (-132 -564 -23.8711) (-132 -588 -23.8711)"
+			"id" "343"
+			"plane" "(-132 -820 -23.8711) (-132 -844 -23.8711) (-132 -844 0.132814)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1132,8 +1209,8 @@ entity
 		}
 		side
 		{
-			"id" "301"
-			"plane" "(-132 -588 -23.8711) (-132 -564 -23.8711) (-384 -564 -23.8711)"
+			"id" "342"
+			"plane" "(-384 -844 -23.8711) (-132 -844 -23.8711) (-132 -820 -23.8711)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1143,8 +1220,8 @@ entity
 		}
 		side
 		{
-			"id" "300"
-			"plane" "(-384 -564 -23.8711) (-132 -564 -23.8711) (-132 -564 0.128906)"
+			"id" "341"
+			"plane" "(-132 -844 0.128906) (-132 -844 -23.8711) (-384 -844 -23.8711)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1154,8 +1231,8 @@ entity
 		}
 		side
 		{
-			"id" "299"
-			"plane" "(-132 -564 0.128906) (-132 -588 -23.8711) (-360 -588 -23.8711)"
+			"id" "340"
+			"plane" "(-384 -820 -23.8711) (-132 -820 -23.8711) (-132 -844 0.128908)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1165,73 +1242,8 @@ entity
 		}
 		side
 		{
-			"id" "298"
-			"plane" "(-360 -588 -23.8711) (-384 -564 -23.8711) (-384 -564 0.128906)"
-			"material" "TOOLS/TOOLSCLIP"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
-		"id" "1241"
-		side
-		{
-			"id" "293"
-			"plane" "(-360 -844 -23.8711) (-360 -588 -23.8711) (-384 -564 -23.8711)"
-			"material" "TOOLS/TOOLSCLIP"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "292"
-			"plane" "(-384 -844 -23.8711) (-384 -564 -23.8711) (-384 -564 0.128906)"
-			"material" "TOOLS/TOOLSCLIP"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "291"
-			"plane" "(-360 -588 -23.8711) (-360 -844 -23.8711) (-384 -844 0.128906)"
-			"material" "TOOLS/TOOLSCLIP"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "290"
-			"plane" "(-360 -844 -23.8711) (-384 -844 -23.8711) (-384 -844 0.128906)"
-			"material" "TOOLS/TOOLSCLIP"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "289"
-			"plane" "(-384 -564 0.128906) (-384 -564 -23.8711) (-360 -588 -23.8711)"
+			"id" "339"
+			"plane" "(-384 -844 0.128906) (-384 -844 -23.8711) (-384 -820 -23.8711)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1256,26 +1268,6 @@ entity
 }
 entity
 {
-	"id" "962"
-	"classname" "logic_auto"
-	"spawnflags" "1"
-	connections
-	{
-		"OnMapSpawn" "scavenge_progressTurnOff0-1"
-		"OnMapSpawn" "rescue_boat_floorDisable0-1"
-		"OnMapSpawn" "rescue_boatDisable0-1"
-	}
-	"origin" "-210.993 -585.412 -15.8091"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[3000 7000]"
-	}
-}
-entity
-{
 	"id" "1355"
 	"classname" "trigger_multiple"
 	"allowghost" "0"
@@ -1289,6 +1281,7 @@ entity
 	connections
 	{
 		"OnEntireTeamStartTouch" "leave_relayTrigger0-1"
+		"OnStartTouch" "rescue_boatStopGlowing0-1"
 	}
 	solid
 	{
@@ -1540,8 +1533,12 @@ entity
 	"targetname" "arrive_relay"
 	connections
 	{
-		"OnTrigger" "rescue_boatSetAnimationoutro_arrive0-1"
-		"OnTrigger" "rescue_boatSetDefaultAnimationoutro_arrive_idle0.01-1"
+		"OnTrigger" "rescue_boatSetAnimationoutro_arrive0.01-1"
+		"OnTrigger" "rescue_boatSetDefaultAnimationoutro_arrive_idle0.02-1"
+		"OnTrigger" "rescue_boat_templateForceSpawn0-1"
+		"OnTrigger" "arrived_relayEnable0.03-1"
+		"OnTrigger" "rescue_pushawayEnable0-1"
+		"OnTrigger" "arrived_relayTrigger23-1"
 	}
 	"origin" "-224 -608 -16"
 	editor
@@ -1580,10 +1577,14 @@ entity
 {
 	"id" "1880"
 	"classname" "logic_relay"
+	"StartDisabled" "0"
 	"targetname" "arrived_relay"
 	connections
 	{
 		"OnTrigger" "rescue_boat_floorEnable0-1"
+		"OnTrigger" "finale_triggerFinaleEscapeVehicleReadyForSurvivors0-1"
+		"OnTrigger" "rescue_triggerEnable0-1"
+		"OnTrigger" "rescue_pushawayDisable0-1"
 	}
 	"origin" "-224 -624 -16"
 	editor
@@ -1592,6 +1593,22 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "2067"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "rescue_boat_template"
+	"Template01" "rescue_boat"
+	"origin" "-224 -592 -16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
 	}
 }
 cameras

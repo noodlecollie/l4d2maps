@@ -1,18 +1,22 @@
-Msg("UC05 map script "+"\n")
+Msg("Initiating UC05 map script (general)\n");
 
-// This script is called on MapSpawn, so the CommonLimit is for play before the finale start.
-/*DirectorOptions <-
+DirectorOptions <-
 {
-    
-CommonLimit = 15
+	CommonLimit = 30
+	ProhibitBosses = true
+}
 
-}*/
+GasCanOptions <-
+{
+	Required = 8
+	Poured = 0
+}
 
-NumCansNeeded <- 3
+getroottable()["GasCansRequired"] <- GasCanOptions.Required;
+EntFire("scavenge_progress", "SetTotalItems", GasCanOptions.Required);
 
-NavMesh.UnblockRescueVehicleNav() // Unblock so humans can be rescued when incapped near nozzle
-
-EntFire( "scavenge_progress", "SetTotalItems", 3 ) // Set number of cans with game_scavenge_progress_display
-
-
-function GasCanPoured(){} // Declaration of function, but was moved to main finale script
+function GasCanPoured()
+{
+	GasCanOptions.Poured += 1;
+	getroottable()["GasCansPoured"] <- GasCanOptions.Poured;
+}
