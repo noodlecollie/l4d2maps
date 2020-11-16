@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "93"
+	"mapversion" "101"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "93"
+	"mapversion" "101"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1562,7 +1562,7 @@ entity
 		"OnTrigger" "finale_transition_fadeFade0-1"
 		"OnTrigger" "outro_cameraEnable0-1"
 		"OnTrigger" "finale_triggerFinaleEscapeForceSurvivorPositions0-1"
-		"OnTrigger" "rescue_boat_floorDisable0-1"
+		"OnTrigger" "rescue_boat_floorDisable1-1"
 	}
 	"origin" "-224 -640 -16"
 	editor
@@ -1585,6 +1585,7 @@ entity
 		"OnTrigger" "finale_triggerFinaleEscapeVehicleReadyForSurvivors0-1"
 		"OnTrigger" "rescue_triggerEnable0-1"
 		"OnTrigger" "rescue_pushawayDisable0-1"
+		"OnTrigger" "rescue_boatSetAnimationoutro_arrive_idle0-1"
 	}
 	"origin" "-224 -624 -16"
 	editor

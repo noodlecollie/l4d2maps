@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "218"
+	"mapversion" "219"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "218"
+	"mapversion" "219"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -11950,29 +11950,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 9500]"
-	}
-}
-entity
-{
-	"id" "2856"
-	"classname" "weapon_item_spawn"
-	"angles" "0 0 0"
-	"item1" "1"
-	"item11" "1"
-	"item17" "1"
-	"item18" "1"
-	"item3" "1"
-	"item4" "1"
-	"item5" "1"
-	"spawnflags" "2"
-	"weaponskin" "-1"
-	"origin" "-438.678 308.588 -248"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -3768]"
 	}
 }
 entity
