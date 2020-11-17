@@ -10,7 +10,7 @@ ONSLAUGHT <- 3
 
 DirectorOptions <-
 {
-	A_CustomFinale_StageCount = 4
+	A_CustomFinale_StageCount = 8
 	
 	A_CustomFinale1 		= ONSLAUGHT
 	A_CustomFinaleValue1 	= "uc05_dockyard_scavenge_gauntlet"
@@ -22,11 +22,23 @@ DirectorOptions <-
 	A_CustomFinaleValue3 	= 1
 	
 	A_CustomFinale4 		= DELAY
-	A_CustomFinaleValue4 	= PreEscapeDelay
+	A_CustomFinaleValue4 	= StageDelay
+	
+	A_CustomFinale5 		= ONSLAUGHT
+	A_CustomFinaleValue5 	= "uc05_dockyard_scavenge_gauntlet"
+	
+	A_CustomFinale6 		= DELAY
+	A_CustomFinaleValue6 	= StageDelay
+	
+	A_CustomFinale7 		= TANK
+	A_CustomFinaleValue7 	= 2
+	
+	A_CustomFinale8 		= DELAY
+	A_CustomFinaleValue8 	= PreEscapeDelay
 
 	ProhibitBosses = true
 	HordeEscapeCommonLimit = 20
-	EscapeSpawnTanks = false
+	EscapeSpawnTanks = true
 }
 
 GasCanOptions <-
@@ -46,7 +58,16 @@ function GasCanPoured()
 		Msg("Poured: " + GasCanOptions.Poured + " of " + GasCanOptions.Required + "\n");
 	}
 	
-	if ( GasCanOptions.Poured == GasCanOptions.Required )
+	if ( GasCanOptions.Poured.tointeger() == (GasCanOptions.Required / 2).tointeger() )
+	{
+		if ( developer() > 0 )
+		{
+			Msg("Half of required gas cans have been poured.\n");
+		}
+		
+		DoEntFire("director", "EndCustomScriptedStage", "", 0, null, null);
+	}
+	else if ( GasCanOptions.Poured == GasCanOptions.Required )
 	{
 		if ( developer() > 0 )
 		{
@@ -64,7 +85,16 @@ function OnBeginCustomFinaleStage(num, type)
 		Msg("Beginning custom finale stage " + num + " of type " + type + "\n");
 	}
 	
-	if ( num == PreEscapeStage )
+	if ( num == 5 && GasCanOptions.Poured == GasCanOptions.Required )
+	{
+		if ( developer() > 0 )
+		{
+			Msg("All required gas cans have been poured already, skipping second gauntlet stage in 10 seconds.\n");
+		}
+		
+		DoEntFire("director", "EndCustomScriptedStage", "", 10, null, null);
+	}
+	else if ( num == PreEscapeStage )
 	{
 		if ( developer() > 0 )
 		{

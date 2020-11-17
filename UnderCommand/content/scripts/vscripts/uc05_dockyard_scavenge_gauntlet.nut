@@ -5,7 +5,7 @@ DirectorOptions <-
 	CommonLimit = 20
 	MobSpawnMinTime = 10
 	MobSpawnMaxTime = 10
-	MobSpawnSize = 6
+	MobSpawnSize = 15
 	MobMaxPending = 15
 	IntensityRelaxThreshold = 0.99
 	RelaxMinInterval = 1
