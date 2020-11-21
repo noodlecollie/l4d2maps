@@ -9,24 +9,38 @@ DirectorOptions <-
 GasCanOptions <-
 {
 	Required = 0
+	RequiredFromGeneralSpawns = 0
 	Poured = 0
 }
 
-// These do not include the first gas can that is poured before the finale.
 GasCanSpawners <- []
+BeginningGasCans <- []
+EssentialGasCans <- []
+
+function FindAllGasCanSpawnersWithName(name, output)
+{
+	output.clear();
+	local spawner = null;
+	
+	while ( spawner = Entities.FindByName(spawner, name) )
+	{
+		output.append(spawner);
+	}
+}
 
 function FindAllGasCanSpawners()
 {
-	local spawner = null;
-	
-	while ( spawner = Entities.FindByName(spawner, "scavenge_gascans") )
-	{
-		GasCanSpawners.append(spawner);
-	}
+	FindAllGasCanSpawnersWithName("scavenge_gascans", GasCanSpawners);
+	FindAllGasCanSpawnersWithName("essential_gascans", EssentialGasCans);
+	FindAllGasCanSpawnersWithName("begin_gascan", BeginningGasCans);
 	
 	if ( developer() > 0 )
 	{
-		Msg("Found " + GasCanSpawners.len() + " gas can spawners in level, plus beginning can.\n");
+		Msg("Gas cans found:\n");
+		Msg("    " + EssentialGasCans.len() + " essential\n");
+		Msg("    " + BeginningGasCans.len() + " pre-finale\n");
+		Msg("    " + GasCanSpawners.len() + " general\n");
+		Msg("= " + (EssentialGasCans.len() + BeginningGasCans.len() + GasCanSpawners.len()) + " total\n");
 	}
 }
 
@@ -34,27 +48,36 @@ function FindAllGasCanSpawners()
 function CalcNumGasCansRequired()
 {
 	// TODO: Modify based on difficulty.
-	local additionalRequired = 7;
+	GasCanOptions.Required = 8;
 	
-	GasCanOptions.Required = 1 + (additionalRequired > GasCanSpawners.len() ? GasCanSpawners.len() : additionalRequired);
+	GasCanOptions.RequiredFromGeneralSpawns = GasCanOptions.Required - BeginningGasCans.len() - EssentialGasCans.len();
+	
+	// Shouldn't happen if we've been sensible:
+	if ( GasCanOptions.RequiredFromGeneralSpawns > GasCanSpawners.len() )
+	{
+		if ( developer() > 0 )
+		{
+			Msg(GasCanOptions.RequiredFromGeneralSpawns + " cans were required from general spawners, when only " + GasCanSpawners.len() + " spawners were available.\n");
+		}
+	
+		GasCanOptions.RequiredFromGeneralSpawns = GasCanSpawners.len();
+		GasCanOptions.Required = GasCanOptions.RequiredFromGeneralSpawns + BeginningGasCans.len() + EssentialGasCans.len();
+	}
 	
 	if ( developer() > 0 )
 	{
-		Msg("Gas cans required: " + GasCanOptions.Required + "\n");
+		Msg("Gas cans required: " + GasCanOptions.Required + " (" + GasCanOptions.RequiredFromGeneralSpawns + " from general spawns)\n");
 	}
 }
 
 function KillUnnecessarySpawnersAtRandom()
 {
-	// -1 here to allow the pre-finale gas can to exist.
-	local requiredCount = GasCanOptions.Required - 1;
-	
 	if ( developer() > 0 )
 	{
-		Msg("Killing " + (GasCanSpawners.len() - requiredCount) + " gas can spawners.\n");
+		Msg("Killing " + (GasCanSpawners.len() - GasCanOptions.RequiredFromGeneralSpawns) + " general gas can spawners.\n");
 	}
 
-	while ( GasCanSpawners.len() > requiredCount )
+	while ( GasCanSpawners.len() > GasCanOptions.RequiredFromGeneralSpawns ) 
 	{
 		local index = RandomInt(0, GasCanSpawners.len() - 1);
 		GasCanSpawners[index].Kill();

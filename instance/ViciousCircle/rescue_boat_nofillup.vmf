@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "102"
+	"mapversion" "104"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "102"
+	"mapversion" "104"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1123,7 +1123,7 @@ entity
 		side
 		{
 			"id" "343"
-			"plane" "(-132 -820 -23.8711) (-132 -844 -23.8711) (-132 -844 0.132814)"
+			"plane" "(-176 -820 -23.8711) (-176 -844 -23.8711) (-176 -844 0.13282)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1134,7 +1134,7 @@ entity
 		side
 		{
 			"id" "342"
-			"plane" "(-384 -844 -23.8711) (-132 -844 -23.8711) (-132 -820 -23.8711)"
+			"plane" "(-384 -844 -23.8711) (-176 -844 -23.8711) (-176 -820 -23.8711)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1145,7 +1145,7 @@ entity
 		side
 		{
 			"id" "341"
-			"plane" "(-132 -844 0.128906) (-132 -844 -23.8711) (-384 -844 -23.8711)"
+			"plane" "(-176 -844 0.128906) (-176 -844 -23.8711) (-384 -844 -23.8711)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1156,7 +1156,7 @@ entity
 		side
 		{
 			"id" "340"
-			"plane" "(-384 -820 -23.8711) (-132 -820 -23.8711) (-132 -844 0.128908)"
+			"plane" "(-384 -820 -23.8711) (-176 -820 -23.8711) (-176 -844 0.128916)"
 			"material" "TOOLS/TOOLSCLIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -1558,7 +1558,7 @@ entity
 	{
 		"OnTrigger" "rescue_boatSetDefaultAnimationoutro_postIdle1.01-1"
 		"OnTrigger" "rescue_boatSetAnimationoutro_leave1-1"
-		"OnTrigger" "finale_triggerFinaleEscapeFinished2-1"
+		"OnTrigger" "finale_triggerFinaleEscapeFinished4-1"
 		"OnTrigger" "finale_transition_fadeFade0-1"
 		"OnTrigger" "outro_cameraEnable0-1"
 		"OnTrigger" "finale_triggerFinaleEscapeForceSurvivorPositions0-1"

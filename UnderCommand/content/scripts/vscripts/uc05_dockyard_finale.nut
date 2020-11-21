@@ -85,6 +85,7 @@ function OnBeginCustomFinaleStage(num, type)
 		Msg("Beginning custom finale stage " + num + " of type " + type + "\n");
 	}
 	
+	// TODO: Make into switch
 	if ( num == 5 && GasCanOptions.Poured == GasCanOptions.Required )
 	{
 		if ( developer() > 0 )
@@ -93,6 +94,10 @@ function OnBeginCustomFinaleStage(num, type)
 		}
 		
 		DoEntFire("director", "EndCustomScriptedStage", "", 10, null, null);
+	}
+	else if ( num == 7 ) // Tank stage after pouring is complete
+	{
+		EntFire("scavenge_progress", "TurnOff", "");
 	}
 	else if ( num == PreEscapeStage )
 	{
@@ -112,16 +117,4 @@ function OnBeginCustomFinaleStage(num, type)
 		
 		DoEntFire("rescue_boat", "StartGlowing", "", 0, null, null);
 	}
-}
-
-function GetCustomScriptedStageProgress(defvalue)
-{
-	local progress = GasCanOptions.Poured.tofloat() / GasCanOptions.Required.tofloat();
-	
-	if ( developer() > 0 )
-	{
-		Msg("Progress was " + defvalue + ", now: " + GasCanOptions.Poured + " poured / " + GasCanOptions.Required + " required = " + progress + "\n" );
-	}
-	
-	return progress;
 }

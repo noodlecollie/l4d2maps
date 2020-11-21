@@ -1,0 +1,13 @@
+- Gnome-related secret
+- Item density configuration
+- Vphysics clipping for scavenge
+- Clipping
+- Soundscapes
+- Build with final lighting, static prop lighting and polys
+- Empty/no mobs nav on roofs
+- Nav trouble report (including ladders)
+- Uncommon common infected
+- Speech response concepts for events
+- Cubemaps
+- Build sound cache
+- Poster/screenshots

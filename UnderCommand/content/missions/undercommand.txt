@@ -22,11 +22,11 @@
 	// who has a newer version, you will be directed to download the new
 	// version.  You must increment this to the next integer (whole numbers)every
     // time you release an update.
-	"Version"       "19"
+	"Version"       "20"
  
 	// Author is displayed in the UI when people see others playing your
 	// campaign.
-	"Author"	"Bordertricks"
+	"Author"	"[X6] Herbius"
  
 	// Website is extremely important as people will automatically be sent
 	// to this URL if they try to join a friend running your campaign.  This
@@ -100,33 +100,33 @@
 			{
 				"Map" "uc01_town"
 				"DisplayName" "Broken Quarantine"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc01_town"
 			}
 			
 			"2"
 			{
 				"Map" "uc02_tunnels"
 				"DisplayName" "Down and Dirty"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc02_tunnels"
 			}
 			
 			"3"
 			{
 				"Map" "uc03_woodland"
 				"DisplayName" "Midnight Approach"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc03_woodland"
 			}
 			"4"
 			{
 				"Map" "uc04_military"
 				"DisplayName" "The Armoury"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc04_military"
 			}
 			"5"
 			{
 				"Map" "uc05_dockyard"
-				"DisplayName" "Cargo Run"
-				"Image" "maps/l4d_deadline"
+				"DisplayName" "Rescue Beacon"
+				"Image" "maps/uc05_dockyard"
 			}
 		}
  
@@ -136,33 +136,33 @@
 			{
 				"Map" "uc01_town"
 				"DisplayName" "Broken Quarantine (VS)"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc01_town"
 			}
 			
 			"2"
 			{
 				"Map" "uc02_tunnels"
 				"DisplayName" "Down and Dirty (VS)"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc02_tunnels"
 			}
 			
 			"3"
 			{
 				"Map" "uc03_woodland"
 				"DisplayName" "Midnight Approach (VS)"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc03_woodland"
 			}
 			"4"
 			{
 				"Map" "uc04_military"
 				"DisplayName" "The Armoury (VS)"
-				"Image" "maps/l4d_deadline"
+				"Image" "maps/uc04_military"
 			}
 			"5"
 			{
 				"Map" "uc05_dockyard"
-				"DisplayName" "Cargo Run (VS)"
-				"Image" "maps/l4d_deadline"
+				"DisplayName" "Rescue Beacon (VS)"
+				"Image" "maps/uc05_dockyard"
 			}
 		}	
 	}
