@@ -1,0 +1,10 @@
+LightmappedGeneric
+{
+	$baseTexture "overlays/fuelstain"
+	$translucent 1
+	$decal 1
+	$decalscale "0.25"
+
+	$envmap env_cubemap
+	$envmaptint "[ .1 .1 .1 ]"
+}

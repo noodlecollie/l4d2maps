@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8755"
-	"mapversion" "1436"
+	"mapversion" "1438"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -44,7 +44,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1436"
+	"mapversion" "1438"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/ruraldetailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -51323,7 +51323,7 @@ entity
 		}
 		editor
 		{
-			"color" "0 111 124"
+			"color" "220 30 220"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -76075,7 +76075,7 @@ entity
 	"hint_icon_offset" "24"
 	"hint_icon_onscreen" "icon_tip"
 	"hint_instance_type" "2"
-	"hint_name" "finale_prompts"
+	"hint_name" "uc05_finale_gascan"
 	"hint_range" "0"
 	"hint_target" "generator_nozzle"
 	"targetname" "gascan_pour_hint"
@@ -76687,7 +76687,7 @@ entity
 	"hint_icon_offset" "24"
 	"hint_icon_onscreen" "icon_tip"
 	"hint_instance_type" "2"
-	"hint_name" "finale_prompts"
+	"hint_name" "uc05_finale_start"
 	"hint_range" "0"
 	"hint_target" "finale_entry_gate_button"
 	"targetname" "finale_start_hint"
@@ -83739,8 +83739,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-4304.32 -2404.12 -933.54]"
-		"look" "[-4505.52 -3084.31 -1147.69]"
+		"position" "[-4328 -2160 -1040]"
+		"look" "[-4328 -1419.05 -1040]"
 	}
 }
 cordons
