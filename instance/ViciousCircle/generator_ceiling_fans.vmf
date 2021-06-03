@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "6602"
-	"mapversion" "15"
+	"editorbuild" "8755"
+	"mapversion" "16"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "15"
+	"mapversion" "16"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -382,25 +382,27 @@ entity
 }
 entity
 {
-	"id" "20"
-	"classname" "light"
-	"_castentityshadow" "1"
-	"_fifty_percent_distance" "80"
-	"_light" "255 94 109 400"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "0.5"
-	"_linear_attn" "1"
-	"_quadratic_attn" "0"
-	"_shadoworiginoffset" "0 0 0"
-	"_zero_percent_distance" "350"
-	"pattern" "zzqzzzxzzz"
-	"origin" "0 -48 -8.05533"
+	"id" "12"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "0"
+	"disablevertexlighting" "1"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"model" "models/props/de_prodigy/fan.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"skin" "0"
+	"solid" "6"
+	"origin" "0 0 7.94467"
 	editor
 	{
-		"color" "220 30 220"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[6000 500]"
+		"logicalpos" "[5500 -3768]"
 	}
 }
 entity
@@ -429,29 +431,6 @@ entity
 }
 entity
 {
-	"id" "29"
-	"classname" "light"
-	"_castentityshadow" "1"
-	"_fifty_percent_distance" "80"
-	"_light" "255 94 109 400"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "0.5"
-	"_linear_attn" "1"
-	"_quadratic_attn" "0"
-	"_shadoworiginoffset" "0 0 0"
-	"_zero_percent_distance" "350"
-	"pattern" "zzqzzzxzzz"
-	"origin" "0 48 -8.05533"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[6000 500]"
-	}
-}
-entity
-{
 	"id" "34"
 	"classname" "prop_static"
 	"angles" "0 0 -180"
@@ -472,31 +451,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[6000 0]"
-	}
-}
-entity
-{
-	"id" "12"
-	"classname" "prop_static"
-	"angles" "0 0 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "0"
-	"disablevertexlighting" "1"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"model" "models/props/de_prodigy/fan.mdl"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"skin" "0"
-	"solid" "6"
-	"origin" "0 0 7.94467"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[5500 -3768]"
 	}
 }
 cameras
