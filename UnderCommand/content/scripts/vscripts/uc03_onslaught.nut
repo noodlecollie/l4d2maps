@@ -6,13 +6,13 @@ DirectorOptions <-
 	ProhibitBosses = true
 
 	// Min/max time in seconds between mob spawns.
-	MobSpawnMinTime = 8
+	MobSpawnMinTime = 6
 	MobSpawnMaxTime = 8
 	
 	MobMinSize = 20
 	MobMaxSize = 30
 	SustainPeakMinTime = 6
-	SustainPeakMaxTime = 8
+	SustainPeakMaxTime = 10
 	IntensityRelaxThreshold = 0.90
 	RelaxMinInterval = 3
 	RelaxMaxInterval = 6
