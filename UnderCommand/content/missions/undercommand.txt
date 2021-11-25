@@ -15,24 +15,24 @@
 	// your campaign when looking for a dedicated server.  Generally it should
 	// be something unique.  One suggestion to is use your initials and a short
 	// abbreviated name for your campaign.
-	"Name"		"X6HUC"
+	"Name"		"NoodleUC"
  
 	// The version number is used when finding campaigns on dedicated servers
 	// and in matchmaking. If you try to connect to someone in matchmaking
 	// who has a newer version, you will be directed to download the new
 	// version.  You must increment this to the next integer (whole numbers)every
     // time you release an update.
-	"Version"       "20"
+	"Version"       "21"
  
 	// Author is displayed in the UI when people see others playing your
 	// campaign.
-	"Author"	"[X6] Herbius"
+	"Author"	"NoodleCollie"
  
 	// Website is extremely important as people will automatically be sent
 	// to this URL if they try to join a friend running your campaign.  This
 	// should be the home page for your campaign and it should provide a
 	// description, a link to download it, and installation instructions.
-	"Website"	"http://need.a.link.here"
+	"Website"	"https://www.mediafire.com/folder/dtnyl3782y77i/undercommand"
  
 	// This name is used when refering to the campaign in the UI.
 	"DisplayTitle"	"Under Command"
