@@ -300,6 +300,7 @@
 		1 : "Yes"
 	]
 ]
+
 @SolidClass base(Targetname, NavBlocker) = func_nav_blocker : "A brush entity that can block nav areas touching its AABB." 
 [
 ]
@@ -824,7 +825,7 @@
 	item17(integer) : "Grenade Launcher" : 0	
 	item18(integer) : "M60 Machinegun" : 0	
 
-	melee_weapon(string) : "Melee Weapon" : "" : "Options: 'Any' or a comma-delimited string of melee weapon script names. Leave blank for none. Weapons are: golfclub, fireaxe, frying_pan, machete, baseball_bat, crowbar, cricket_bat, tonfa, katana, electric_guitar."
+	melee_weapon(string) : "Melee Weapon" : "" : "Options: 'Any' or a comma-delimited string of melee weapon script names. Leave blank for none."
 	
 	spawnflags(Flags) =
 	[
@@ -903,9 +904,10 @@
 @PointClass base(WeaponSpawnSingle) studioprop("models/w_models/weapons/w_grenade_launcher.mdl") = weapon_grenade_launcher : "Grenade Launcher - This entity is intended to be used in scripted events where a single item needs to spawned with physics active." []
 
 // Melee --------------------
-@PointClass base(WeaponSpawn) studioprop("models/weapons/melee/w_fireaxe.mdl") = weapon_melee_spawn : "Melee Weapon"
+@PointClass base(WeaponSpawn) studioprop() = weapon_melee_spawn : "Melee Weapon"
 [
-	melee_weapon(string) : "Melee Weapon" : "any" : "Options: 'Any' or a comma-delimited string of melee weapon script names. Leave blank for none. Weapons are: golfclub, fireaxe, frying_pan, machete, baseball_bat, crowbar, cricket_bat, tonfa, katana, electric_guitar."
+	melee_weapon(string) : "Melee Weapon" : "any" : "Options: 'Any' or a comma-delimited string of melee weapon script names. Leave blank for none."
+	model(studio) : "Model" : "models/weapons/melee/w_fireaxe.mdl" : "Helper Model"
 ]
 
 // Scavenge Mode --------------------
